@@ -1,0 +1,11 @@
+//
+//  PrefixHeader.pch
+//  TestCHGAdapterOC
+//
+//  Created by 燕来秋 on 2021/1/20.
+//
+
+#import "CHGAdapter.h"
+#import "Masonry.h"
+#import "MJExtension.h"
+#import "FSJUtilityGlobal.h"
