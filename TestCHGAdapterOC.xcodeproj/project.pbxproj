@@ -29,6 +29,13 @@
 		E9A344D525B7DE5B003EB215 /* TTViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A344D425B7DE5B003EB215 /* TTViewControllerA.m */; };
 		E9A344DE25B7DE6A003EB215 /* TTViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A344DD25B7DE6A003EB215 /* TTViewControllerB.m */; };
 		E9A344E625B82A7C003EB215 /* TTViewControllerB+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A344E525B82A7C003EB215 /* TTViewControllerB+TT.m */; };
+		E9A344F625B95170003EB215 /* TTLeiZuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A344F525B95170003EB215 /* TTLeiZuViewController.m */; };
+		E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3450A25B968DA003EB215 /* TTSameMethodCallLogicController.m */; };
+		E9A3451725B96939003EB215 /* TTSameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3451625B96939003EB215 /* TTSameModel.m */; };
+		E9A3452025B96953003EB215 /* TTSameModel+SameA.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3451F25B96953003EB215 /* TTSameModel+SameA.m */; };
+		E9A3452625B9695F003EB215 /* TTSameModel+SameB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3452525B9695F003EB215 /* TTSameModel+SameB.m */; };
+		E9A3453025B96CA1003EB215 /* TTGCDGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3452F25B96CA1003EB215 /* TTGCDGroupController.m */; };
+		E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3453725B9710A003EB215 /* TTGCDSemaphoreController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +102,20 @@
 		E9A344DD25B7DE6A003EB215 /* TTViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewControllerB.m; sourceTree = "<group>"; };
 		E9A344E425B82A7C003EB215 /* TTViewControllerB+TT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTViewControllerB+TT.h"; sourceTree = "<group>"; };
 		E9A344E525B82A7C003EB215 /* TTViewControllerB+TT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TTViewControllerB+TT.m"; sourceTree = "<group>"; };
+		E9A344F425B95170003EB215 /* TTLeiZuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTLeiZuViewController.h; sourceTree = "<group>"; };
+		E9A344F525B95170003EB215 /* TTLeiZuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTLeiZuViewController.m; sourceTree = "<group>"; };
+		E9A3450925B968DA003EB215 /* TTSameMethodCallLogicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSameMethodCallLogicController.h; sourceTree = "<group>"; };
+		E9A3450A25B968DA003EB215 /* TTSameMethodCallLogicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSameMethodCallLogicController.m; sourceTree = "<group>"; };
+		E9A3451525B96939003EB215 /* TTSameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSameModel.h; sourceTree = "<group>"; };
+		E9A3451625B96939003EB215 /* TTSameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSameModel.m; sourceTree = "<group>"; };
+		E9A3451E25B96953003EB215 /* TTSameModel+SameA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTSameModel+SameA.h"; sourceTree = "<group>"; };
+		E9A3451F25B96953003EB215 /* TTSameModel+SameA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TTSameModel+SameA.m"; sourceTree = "<group>"; };
+		E9A3452425B9695F003EB215 /* TTSameModel+SameB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTSameModel+SameB.h"; sourceTree = "<group>"; };
+		E9A3452525B9695F003EB215 /* TTSameModel+SameB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TTSameModel+SameB.m"; sourceTree = "<group>"; };
+		E9A3452E25B96CA1003EB215 /* TTGCDGroupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGCDGroupController.h; sourceTree = "<group>"; };
+		E9A3452F25B96CA1003EB215 /* TTGCDGroupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTGCDGroupController.m; sourceTree = "<group>"; };
+		E9A3453625B9710A003EB215 /* TTGCDSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGCDSemaphoreController.h; sourceTree = "<group>"; };
+		E9A3453725B9710A003EB215 /* TTGCDSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTGCDSemaphoreController.m; sourceTree = "<group>"; };
 		F21C51526D9EA7087BA1860E /* Pods-TestCHGAdapterOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOCTests.release.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOCTests/Pods-TestCHGAdapterOCTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,6 +276,9 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				E9A3452D25B96BF2003EB215 /* 测试GCD */,
+				E9A3450825B968B0003EB215 /* 测试分类中的相同方法谁先调用 */,
+				E9A344F325B9514C003EB215 /* 类簇 */,
 				E9A344D225B7DE41003EB215 /* 测试load方法 */,
 			);
 			path = Test;
@@ -271,6 +295,57 @@
 				E9A344E525B82A7C003EB215 /* TTViewControllerB+TT.m */,
 			);
 			path = "测试load方法";
+			sourceTree = "<group>";
+		};
+		E9A344F325B9514C003EB215 /* 类簇 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A344F425B95170003EB215 /* TTLeiZuViewController.h */,
+				E9A344F525B95170003EB215 /* TTLeiZuViewController.m */,
+			);
+			path = "类簇";
+			sourceTree = "<group>";
+		};
+		E9A3450825B968B0003EB215 /* 测试分类中的相同方法谁先调用 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A3450925B968DA003EB215 /* TTSameMethodCallLogicController.h */,
+				E9A3450A25B968DA003EB215 /* TTSameMethodCallLogicController.m */,
+				E9A3451525B96939003EB215 /* TTSameModel.h */,
+				E9A3451625B96939003EB215 /* TTSameModel.m */,
+				E9A3451E25B96953003EB215 /* TTSameModel+SameA.h */,
+				E9A3451F25B96953003EB215 /* TTSameModel+SameA.m */,
+				E9A3452425B9695F003EB215 /* TTSameModel+SameB.h */,
+				E9A3452525B9695F003EB215 /* TTSameModel+SameB.m */,
+			);
+			path = "测试分类中的相同方法谁先调用";
+			sourceTree = "<group>";
+		};
+		E9A3452D25B96BF2003EB215 /* 测试GCD */ = {
+			isa = PBXGroup;
+			children = (
+				E9A3453525B970DB003EB215 /* 测试GCD_信号量的用法 */,
+				E9A3453425B97060003EB215 /* 测试GCD_Group用法 */,
+			);
+			path = "测试GCD";
+			sourceTree = "<group>";
+		};
+		E9A3453425B97060003EB215 /* 测试GCD_Group用法 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A3452E25B96CA1003EB215 /* TTGCDGroupController.h */,
+				E9A3452F25B96CA1003EB215 /* TTGCDGroupController.m */,
+			);
+			path = "测试GCD_Group用法";
+			sourceTree = "<group>";
+		};
+		E9A3453525B970DB003EB215 /* 测试GCD_信号量的用法 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A3453625B9710A003EB215 /* TTGCDSemaphoreController.h */,
+				E9A3453725B9710A003EB215 /* TTGCDSemaphoreController.m */,
+			);
+			path = "测试GCD_信号量的用法";
 			sourceTree = "<group>";
 		};
 		FC3D60A8FF85478560626811 /* Frameworks */ = {
@@ -523,13 +598,20 @@
 				E9A3445E25B7D7F0003EB215 /* main.m in Sources */,
 				E9A3445025B7D7EE003EB215 /* ViewController.m in Sources */,
 				E9A344D525B7DE5B003EB215 /* TTViewControllerA.m in Sources */,
+				E9A344F625B95170003EB215 /* TTLeiZuViewController.m in Sources */,
 				E9A344E625B82A7C003EB215 /* TTViewControllerB+TT.m in Sources */,
+				E9A3451725B96939003EB215 /* TTSameModel.m in Sources */,
+				E9A3452025B96953003EB215 /* TTSameModel+SameA.m in Sources */,
+				E9A3452625B9695F003EB215 /* TTSameModel+SameB.m in Sources */,
+				E9A3453025B96CA1003EB215 /* TTGCDGroupController.m in Sources */,
 				E9A3444A25B7D7EE003EB215 /* AppDelegate.m in Sources */,
 				E9A3449C25B7D993003EB215 /* TTBaseViewController.m in Sources */,
 				E9A344C425B7DB5F003EB215 /* TTMenuTableViewCell.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
+				E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */,
+				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
 				E9A344DE25B7DE6A003EB215 /* TTViewControllerB.m in Sources */,
 				E9A3445625B7D7EE003EB215 /* TestCHGAdapterOC.xcdatamodeld in Sources */,

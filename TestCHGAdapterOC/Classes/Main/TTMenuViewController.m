@@ -6,6 +6,11 @@
 //
 
 #import "TTMenuViewController.h"
+#import "TTLeiZuViewController.h"
+
+typedef NS_ENUM(NSInteger, TTMenuType) {
+    TTMenuTypeGCD = 1,
+};
 
 @interface TTMenuViewController ()
 
@@ -28,22 +33,45 @@
         FSJ_STRONG_SELF
         TTMenuModel *model = itemData;
         if (model.toClassString) {
-            NSString *clsStr = model.toClassString;
-            Class cls = NSClassFromString(clsStr);
-            UIViewController *vc = [cls new];
-            [self.navigationController pushViewController:vc animated:YES];
+            if ([model.toClassString isEqualToString:@"TTLeiZuViewController"]) {
+                TTLeiZuViewController *vc = [TTLeiZuViewController new];
+                vc.name = @"fansj";
+                [self.navigationController pushViewController:vc animated:YES];
+            }else {
+                NSString *clsStr = model.toClassString;
+                Class cls = NSClassFromString(clsStr);
+                UIViewController *vc = [cls new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+        }else {
+            // 没有class，走type逻辑
+            TTMenuType type = model.type;
+            switch (type) {
+                case TTMenuTypeGCD:
+                {
+                    // GCD 功能测试集合
+                    TTMenuViewController *vc = [TTMenuViewController new];
+                    vc.dataArray = @[
+                        [TTMenuModel createT:@"GCD 测试Group用法" toCS:@"TTGCDGroupController"],
+                        [TTMenuModel createT:@"GCD 测试信号量用法" toCS:@"TTGCDSemaphoreController"]];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
         }
     };
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-//    NSLog(@"======");
-}
-
 - (void)initData {
     if (!self.dataArray) {
-        self.dataArray = @[[TTMenuModel createT:@"测试load方法" toCS:@"TTViewControllerB"]];
+        self.dataArray = @[
+            [TTMenuModel createT:@"测试load方法" toCS:@"TTViewControllerB"],
+            [TTMenuModel createT:@"测试类簇" toCS:@"TTLeiZuViewController"],
+            [TTMenuModel createT:@"测试分类中相同方法调用逻辑" toCS:@"TTSameMethodCallLogicController"],
+            [TTMenuModel createT:@"测试GCD" type:TTMenuTypeGCD]];
     }
 }
 

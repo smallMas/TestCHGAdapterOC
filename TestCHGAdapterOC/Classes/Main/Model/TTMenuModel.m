@@ -20,6 +20,10 @@
     return [self createT:title toCS:toClassString type:0];
 }
 
++ (instancetype)createT:(NSString *)title type:(NSInteger)type {
+    return [self createT:title toCS:nil type:type];
+}
+
 #pragma mark - adapter
 
 /**

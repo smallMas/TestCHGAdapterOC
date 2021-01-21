@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger type;
 + (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString type:(NSInteger)type;
 + (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString;
++ (instancetype)createT:(NSString *)title type:(NSInteger)type;
 @end
 
 NS_ASSUME_NONNULL_END
