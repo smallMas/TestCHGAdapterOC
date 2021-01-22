@@ -10,6 +10,8 @@
 
 typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeGCD = 1,
+    TTMenuTypeAnimation = 2,
+    TTMenuTypeRunloop = 3,
 };
 
 @interface TTMenuViewController ()
@@ -51,13 +53,31 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 {
                     // GCD 功能测试集合
                     TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.dataArray = @[
-                        [TTMenuModel createT:@"GCD 测试Group用法" toCS:@"TTGCDGroupController"],
-                        [TTMenuModel createT:@"GCD 测试信号量用法" toCS:@"TTGCDSemaphoreController"]];
+                    vc.title = @"测试GCD";
+                    vc.dataArray = [self gcdArray];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                     break;
                     
+                case TTMenuTypeAnimation:
+                {
+                    // 动画 功能测试集合
+                    TTMenuViewController *vc = [TTMenuViewController new];
+                    vc.title = @"测试动画";
+                    vc.dataArray = [self animationArray];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                    break;
+                    
+                case TTMenuTypeRunloop:
+                {
+                    // RunLoop 功能测试集合
+                    TTMenuViewController *vc = [TTMenuViewController new];
+                    vc.title = @"测试RunLoop";
+                    vc.dataArray = [self runloopArray];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                    break;
                 default:
                     break;
             }
@@ -71,9 +91,33 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试load方法" toCS:@"TTViewControllerB"],
             [TTMenuModel createT:@"测试类簇" toCS:@"TTLeiZuViewController"],
             [TTMenuModel createT:@"测试分类中相同方法调用逻辑" toCS:@"TTSameMethodCallLogicController"],
-            [TTMenuModel createT:@"测试GCD" type:TTMenuTypeGCD]];
+            [TTMenuModel createT:@"测试GCD" type:TTMenuTypeGCD],
+            [TTMenuModel createT:@"测试动画" type:TTMenuTypeAnimation],
+            [TTMenuModel createT:@"测试RunLoop" type:TTMenuTypeRunloop]];
     }
 }
 
+- (NSArray *)gcdArray {
+    return @[
+        [TTMenuModel createT:@"GCD 测试Group用法" toCS:@"TTGCDGroupController"],
+        [TTMenuModel createT:@"GCD 测试信号量用法" toCS:@"TTGCDSemaphoreController"],
+        [TTMenuModel createT:@"GCD 执行两组数据完成之后再执行其他任务" toCS:@"TTGCDBarrierController"]];
+}
+
+- (NSArray *)animationArray {
+    return @[
+        [TTMenuModel createT:@"动画 测试postion动画" toCS:@"TTAnimationPositionController"],
+        [TTMenuModel createT:@"动画 测试属性动画" toCS:@"TTAnimationPropertyController"],
+        [TTMenuModel createT:@"动画 测试组合动画" toCS:@"TTAnimationGroupController"],
+        [TTMenuModel createT:@"动画 测试波浪动画" toCS:@"TTAnimationWaterController"]
+    ];
+}
+
+- (NSArray *)runloopArray {
+    return @[
+        [TTMenuModel createT:@"RunLoop 测试子线程中调用PerformSelector" toCS:@"TTRunLoopPerformController"],
+        [TTMenuModel createT:@"Runloop 测试观察者" toCS:@"TTRunloopObserverController"]
+    ];
+}
 
 @end
