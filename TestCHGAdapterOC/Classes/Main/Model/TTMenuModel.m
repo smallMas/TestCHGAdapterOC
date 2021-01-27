@@ -8,20 +8,25 @@
 #import "TTMenuModel.h"
 
 @implementation TTMenuModel
-+ (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString type:(NSInteger)type {
++ (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString type:(NSInteger)type data:(id)data {
     TTMenuModel *model = [[self class] new];
     model.title = title;
     model.toClassString = toClassString;
     model.type = type;
+    model.data = data;
     return model;
 }
 
 + (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString {
-    return [self createT:title toCS:toClassString type:0];
+    return [self createT:title toCS:toClassString type:0 data:nil];
 }
 
 + (instancetype)createT:(NSString *)title type:(NSInteger)type {
-    return [self createT:title toCS:nil type:type];
+    return [self createT:title toCS:nil type:type data:nil];
+}
+
++ (instancetype)createT:(NSString *)title type:(NSInteger)type data:(id)data {
+    return [self createT:title toCS:nil type:type data:data];
 }
 
 #pragma mark - adapter

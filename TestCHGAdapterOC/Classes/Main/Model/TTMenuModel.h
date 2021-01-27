@@ -13,9 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *toClassString;
 @property (nonatomic, assign) NSInteger type;
+@property (nonatomic, strong) id data;
 + (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString type:(NSInteger)type;
 + (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString;
 + (instancetype)createT:(NSString *)title type:(NSInteger)type;
++ (instancetype)createT:(NSString *)title type:(NSInteger)type data:(id)data;
 @end
 
 NS_ASSUME_NONNULL_END

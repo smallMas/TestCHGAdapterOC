@@ -10,6 +10,12 @@
 		6EE29B54C8158701606F9046 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */; };
 		86F44DF2EC57C4097E4ECD61 /* Pods_TestCHGAdapterOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0185A8F4590D895340DF2AF9 /* Pods_TestCHGAdapterOC.framework */; };
 		99A1AF87777D4B74B31C2034 /* Pods_TestCHGAdapterOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */; };
+		E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660E825C12FDB002DFCCA /* TTGongShiViewController.m */; };
+		E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660FA25C131E8002DFCCA /* NSString+TT.m */; };
+		E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956611A25C142DF002DFCCA /* TTExerciseModel.m */; };
+		E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E956611D25C142DF002DFCCA /* TTCalculateUtility.m */; };
+		E956612525C15D4A002DFCCA /* TTTreeQuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956612425C15D4A002DFCCA /* TTTreeQuestionModel.m */; };
+		E956612C25C166F8002DFCCA /* TTTreeSortUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E956612B25C166F8002DFCCA /* TTTreeSortUtility.m */; };
 		E960ED8525B9852600AFB3AB /* TTViewControllerB+TT2.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED8425B9852600AFB3AB /* TTViewControllerB+TT2.m */; };
 		E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED8D25B9872800AFB3AB /* TTGCDBarrierController.m */; };
 		E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED9E25BA61D800AFB3AB /* TTAnimationPositionController.m */; };
@@ -79,6 +85,18 @@
 		9D7EB3D324D38DF0E22CA51B /* Pods-TestCHGAdapterOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC/Pods-TestCHGAdapterOC.debug.xcconfig"; sourceTree = "<group>"; };
 		B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA613E6C0B9690659D7C3C1C /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E95660E725C12FDB002DFCCA /* TTGongShiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGongShiViewController.h; sourceTree = "<group>"; };
+		E95660E825C12FDB002DFCCA /* TTGongShiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTGongShiViewController.m; sourceTree = "<group>"; };
+		E95660F925C131E8002DFCCA /* NSString+TT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TT.h"; sourceTree = "<group>"; };
+		E95660FA25C131E8002DFCCA /* NSString+TT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TT.m"; sourceTree = "<group>"; };
+		E956611925C142DF002DFCCA /* TTExerciseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTExerciseModel.h; sourceTree = "<group>"; };
+		E956611A25C142DF002DFCCA /* TTExerciseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTExerciseModel.m; sourceTree = "<group>"; };
+		E956611C25C142DF002DFCCA /* TTCalculateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCalculateUtility.h; sourceTree = "<group>"; };
+		E956611D25C142DF002DFCCA /* TTCalculateUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCalculateUtility.m; sourceTree = "<group>"; };
+		E956612325C15D4A002DFCCA /* TTTreeQuestionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTreeQuestionModel.h; sourceTree = "<group>"; };
+		E956612425C15D4A002DFCCA /* TTTreeQuestionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTreeQuestionModel.m; sourceTree = "<group>"; };
+		E956612A25C166F8002DFCCA /* TTTreeSortUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTreeSortUtility.h; sourceTree = "<group>"; };
+		E956612B25C166F8002DFCCA /* TTTreeSortUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTreeSortUtility.m; sourceTree = "<group>"; };
 		E960ED8325B9852600AFB3AB /* TTViewControllerB+TT2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTViewControllerB+TT2.h"; sourceTree = "<group>"; };
 		E960ED8425B9852600AFB3AB /* TTViewControllerB+TT2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TTViewControllerB+TT2.m"; sourceTree = "<group>"; };
 		E960ED8C25B9872800AFB3AB /* TTGCDBarrierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGCDBarrierController.h; sourceTree = "<group>"; };
@@ -203,6 +221,61 @@
 				F21C51526D9EA7087BA1860E /* Pods-TestCHGAdapterOCTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E95660E625C12FB8002DFCCA /* 公式算法 */ = {
+			isa = PBXGroup;
+			children = (
+				E956611B25C142DF002DFCCA /* Calculate */,
+				E956611825C142DF002DFCCA /* Model */,
+				E95660E725C12FDB002DFCCA /* TTGongShiViewController.h */,
+				E95660E825C12FDB002DFCCA /* TTGongShiViewController.m */,
+			);
+			path = "公式算法";
+			sourceTree = "<group>";
+		};
+		E95660F725C131C6002DFCCA /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				E95660F825C131D0002DFCCA /* Tool */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		E95660F825C131D0002DFCCA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E95660F925C131E8002DFCCA /* NSString+TT.h */,
+				E95660FA25C131E8002DFCCA /* NSString+TT.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E956611825C142DF002DFCCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E956611925C142DF002DFCCA /* TTExerciseModel.h */,
+				E956611A25C142DF002DFCCA /* TTExerciseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E956611B25C142DF002DFCCA /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				E956611C25C142DF002DFCCA /* TTCalculateUtility.h */,
+				E956611D25C142DF002DFCCA /* TTCalculateUtility.m */,
+			);
+			path = Calculate;
+			sourceTree = "<group>";
+		};
+		E956612925C166E6002DFCCA /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				E956612A25C166F8002DFCCA /* TTTreeSortUtility.h */,
+				E956612B25C166F8002DFCCA /* TTTreeSortUtility.m */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 		E960ED8225B983A900AFB3AB /* 测试GCD_执行两组数据完成之后再执行其他任务 */ = {
@@ -340,6 +413,7 @@
 		E960EE0D25C0FA5B00AFB3AB /* 测试算法题 */ = {
 			isa = PBXGroup;
 			children = (
+				E95660E625C12FB8002DFCCA /* 公式算法 */,
 				E960EE0E25C0FA6500AFB3AB /* 二叉树 */,
 			);
 			path = "测试算法题";
@@ -348,6 +422,7 @@
 		E960EE0E25C0FA6500AFB3AB /* 二叉树 */ = {
 			isa = PBXGroup;
 			children = (
+				E956612925C166E6002DFCCA /* Sort */,
 				E960EE0F25C0FAE700AFB3AB /* Model */,
 				E960EE1025C0FC3300AFB3AB /* TTTreeSortViewController.h */,
 				E960EE1125C0FC3300AFB3AB /* TTTreeSortViewController.m */,
@@ -360,6 +435,8 @@
 			children = (
 				E960EE1925C0FC4900AFB3AB /* TTTreeModel.h */,
 				E960EE1A25C0FC4900AFB3AB /* TTTreeModel.m */,
+				E956612325C15D4A002DFCCA /* TTTreeQuestionModel.h */,
+				E956612425C15D4A002DFCCA /* TTTreeQuestionModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -389,6 +466,7 @@
 		E9A3444725B7D7EE003EB215 /* TestCHGAdapterOC */ = {
 			isa = PBXGroup;
 			children = (
+				E95660F725C131C6002DFCCA /* Public */,
 				E9A3449725B7D961003EB215 /* Classes */,
 				E9A3444825B7D7EE003EB215 /* AppDelegate.h */,
 				E9A3444925B7D7EE003EB215 /* AppDelegate.m */,
@@ -811,17 +889,20 @@
 				E9A3445025B7D7EE003EB215 /* ViewController.m in Sources */,
 				E960EDBD25BA976D00AFB3AB /* TTAnimationTableViewCell.m in Sources */,
 				E9A344D525B7DE5B003EB215 /* TTViewControllerA.m in Sources */,
+				E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */,
 				E960EDE525BACAFC00AFB3AB /* TTRunLoopPerformController.m in Sources */,
 				E9A344F625B95170003EB215 /* TTLeiZuViewController.m in Sources */,
 				E960EDA925BA801200AFB3AB /* TTAnimationPropertyController.m in Sources */,
 				E960ED8525B9852600AFB3AB /* TTViewControllerB+TT2.m in Sources */,
 				E9A344E625B82A7C003EB215 /* TTViewControllerB+TT.m in Sources */,
 				E9A3451725B96939003EB215 /* TTSameModel.m in Sources */,
+				E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */,
 				E9A3452025B96953003EB215 /* TTSameModel+SameA.m in Sources */,
 				E9A3452625B9695F003EB215 /* TTSameModel+SameB.m in Sources */,
 				E960EE1B25C0FC4900AFB3AB /* TTTreeModel.m in Sources */,
 				E9A3453025B96CA1003EB215 /* TTGCDGroupController.m in Sources */,
 				E9A3444A25B7D7EE003EB215 /* AppDelegate.m in Sources */,
+				E956612C25C166F8002DFCCA /* TTTreeSortUtility.m in Sources */,
 				E960EE1225C0FC3300AFB3AB /* TTTreeSortViewController.m in Sources */,
 				E9A3449C25B7D993003EB215 /* TTBaseViewController.m in Sources */,
 				E9A344C425B7DB5F003EB215 /* TTMenuTableViewCell.m in Sources */,
@@ -829,14 +910,17 @@
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E960EDD025BABBC100AFB3AB /* TTAnimationWaterController.m in Sources */,
+				E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */,
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
 				E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */,
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
 				E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */,
+				E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
 				E960EDC425BAA7CE00AFB3AB /* TTAnimationGroupController.m in Sources */,
+				E956612525C15D4A002DFCCA /* TTTreeQuestionModel.m in Sources */,
 				E960EDEF25BAD89700AFB3AB /* TTRunloopObserverController.m in Sources */,
 				E960EDDA25BABBE000AFB3AB /* TTWaterView.m in Sources */,
 				E9A344DE25B7DE6A003EB215 /* TTViewControllerB.m in Sources */,

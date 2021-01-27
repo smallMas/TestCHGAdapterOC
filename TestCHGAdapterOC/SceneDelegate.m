@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TTMenuViewController.h"
 #import "TTNavigationViewController.h"
+#import "IQKeyboardManager.h"
 
 @interface SceneDelegate ()
 
@@ -27,6 +28,8 @@
     self.window.rootViewController = nav;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [self initIQKeyboardManager];
 }
 
 
@@ -65,5 +68,12 @@
     [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
 }
 
+- (void)initIQKeyboardManager
+{
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;//    控制整个功能是否启用。
+    manager.shouldResignOnTouchOutside = YES;
+    manager.enableAutoToolbar = NO;
+}
 
 @end

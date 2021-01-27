@@ -7,6 +7,7 @@
 
 #import "TTTreeSortViewController.h"
 #import "TTTreeModel.h"
+#import "TTTreeSortUtility.h"
 
 @interface TTTreeSortViewController ()
 
@@ -17,7 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    /*
+     二叉树：
+             4
+           /   \
+          2     7
+         / \   / \
+        1  3  6   9
+     */
+
     TTTreeModel *one = [TTTreeModel createTreeValue:4];
     one.left = [TTTreeModel createTreeValue:2];
     one.right = [TTTreeModel createTreeValue:7];
@@ -30,75 +39,28 @@
     twoR.left = [TTTreeModel createTreeValue:6];
     twoR.right = [TTTreeModel createTreeValue:9];
     
-    NSLog(@"前序排列 : %@",[self beforeSort:one]);
-    NSLog(@"中序排列 : %@",[self centerSort:one]);
-    NSLog(@"后序排列 : %@",[self afterSort:one]);
-}
-
-// 前序 [根，左，右]
-- (NSArray *)beforeSort:(TTTreeModel *)model {
-    if (model == nil) {
-        return nil;
+    if (self.queModel) {
+        switch (self.queModel.type) {
+            case TTTreeTypeBeforeSort:
+                NSLog(@"前序排列 : %@",[TTTreeSortUtility beforeSort:one]);
+                break;
+                
+            case TTTreeTypeCenterSort:
+                NSLog(@"中序排列 : %@",[TTTreeSortUtility centerSort:one]);
+                break;
+            
+            case TTTreeTypeAfterSort:
+                NSLog(@"后序排列 : %@",[TTTreeSortUtility afterSort:one]);
+                break;
+                
+            case TTTreeTypeUpDownLeftRight:
+                NSLog(@"从上到下排列 : %@",[TTTreeSortUtility updownSort:one]);
+                break;
+                
+            default:
+                break;
+        }
     }
-    
-    NSMutableArray *array = [NSMutableArray new];
-    [self __beforeSort:model array:array];
-    
-    return array;
-}
-
-- (void)__beforeSort:(TTTreeModel *)model array:(NSMutableArray *)array {
-    if (model == nil) {
-        return ;
-    }
-    
-    [array addObject:@(model.value)];
-    [self __beforeSort:model.left array:array];
-    [self __beforeSort:model.right array:array];
-}
-
-// 中序 [左，根，右]
-- (NSArray *)centerSort:(TTTreeModel *)model {
-    if (model == nil) {
-        return nil;
-    }
-    
-    NSMutableArray *array = [NSMutableArray new];
-    [self __centerSort:model array:array];
-    return array;
-}
-
-- (void)__centerSort:(TTTreeModel *)model array:(NSMutableArray *)array {
-    if (model == nil) {
-        return;
-    }
-    
-    [self __centerSort:model.left array:array];
-    [array addObject:@(model.value)];
-    [self __centerSort:model.right array:array];
-    
-}
-
-// 后序 [左，右，根]
-- (NSArray *)afterSort:(TTTreeModel *)model {
-    if (model == nil) {
-        return nil;
-    }
-    
-    NSMutableArray *array = [NSMutableArray new];
-    [self __afterSort:model array:array];
-    return array;
-}
-
-- (void)__afterSort:(TTTreeModel *)model array:(NSMutableArray *)array {
-    if (model == nil) {
-        return;
-    }
-    
-    [self __afterSort:model.left array:array];
-    [self __afterSort:model.right array:array];
-    [array addObject:@(model.value)];
-    
 }
 
 @end

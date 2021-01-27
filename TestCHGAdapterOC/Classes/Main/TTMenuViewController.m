@@ -7,6 +7,9 @@
 
 #import "TTMenuViewController.h"
 #import "TTLeiZuViewController.h"
+#import "TTGongShiViewController.h"
+#import "TTExerciseModel.h"
+#import "TTTreeSortViewController.h"
 
 typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeGCD = 1,
@@ -14,6 +17,10 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeRunloop = 3,
     TTMenuTypeTimer = 4,
     TTMenuTypeSuanFa = 5,
+    // 公式
+    TTMenuTypeGongShi = 6,
+    // 二叉树
+    TTMenuTypeTree = 7,
 };
 
 @interface TTMenuViewController ()
@@ -98,8 +105,42 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                     // 算法
                     TTMenuViewController *vc = [TTMenuViewController new];
                     vc.title = model.title;
-                    vc.dataArray = [self treeArray];
+                    vc.dataArray = [self suanfaArray];
                     [self.navigationController pushViewController:vc animated:YES];
+                }
+                    break;
+                    
+                case TTMenuTypeGongShi:
+                {
+                    if (model.data) {
+                        TTGongShiViewController *vc = [TTGongShiViewController new];
+                        vc.title = model.title;
+                        vc.exeModel = model.data;
+                        [self.navigationController pushViewController:vc animated:YES];
+                    }else {
+                        // 计算公式题目列表
+                        TTMenuViewController *vc = [TTMenuViewController new];
+                        vc.title = model.title;
+                        vc.dataArray = [self gongShiArray];
+                        [self.navigationController pushViewController:vc animated:YES];
+                    }
+                }
+                    break;
+                    
+                case TTMenuTypeTree:
+                {
+                    if (model.data) {
+                        TTTreeSortViewController *vc = [TTTreeSortViewController new];
+                        vc.title = model.title;
+                        vc.queModel = model.data;
+                        [self.navigationController pushViewController:vc animated:YES];
+                    }else {
+                        // 二叉树题目列表
+                        TTMenuViewController *vc = [TTMenuViewController new];
+                        vc.title = model.title;
+                        vc.dataArray = [self treeArray];
+                        [self.navigationController pushViewController:vc animated:YES];
+                    }
                 }
                     break;
                 default:
@@ -153,9 +194,25 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     ];
 }
 
+- (NSArray *)suanfaArray {
+    return @[
+        [TTMenuModel createT:@"测试二叉树算法" type:TTMenuTypeTree],
+        [TTMenuModel createT:@"测试公式算法" type:TTMenuTypeGongShi]
+    ];
+}
+
 - (NSArray *)treeArray {
     return @[
-        [TTMenuModel createT:@"测试二叉序前中后遍历" toCS:@"TTTreeSortViewController"]
+        [TTMenuModel createT:@"二叉树前序遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeBeforeSort]],
+        [TTMenuModel createT:@"二叉树中序遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeCenterSort]],
+        [TTMenuModel createT:@"二叉树后序遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeAfterSort]],
+        [TTMenuModel createT:@"二叉树从上到下，从左到右遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeUpDownLeftRight]],
+    ];
+}
+
+- (NSArray *)gongShiArray {
+    return @[
+        [TTMenuModel createT:@"根据字母计算在第几行" type:TTMenuTypeGongShi data:[TTExerciseModel createExeType:TTExerciseTypeZiMuToColum]]
     ];
 }
 
