@@ -13,6 +13,10 @@
 
 @implementation TTBaseViewController
 
+- (void)dealloc {
+    NSLog(@"%@ dealloc",NSStringFromClass([self class]));
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

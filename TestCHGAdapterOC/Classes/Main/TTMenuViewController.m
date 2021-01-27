@@ -12,6 +12,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeGCD = 1,
     TTMenuTypeAnimation = 2,
     TTMenuTypeRunloop = 3,
+    TTMenuTypeTimer = 4,
+    TTMenuTypeSuanFa = 5,
 };
 
 @interface TTMenuViewController ()
@@ -37,12 +39,14 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
         if (model.toClassString) {
             if ([model.toClassString isEqualToString:@"TTLeiZuViewController"]) {
                 TTLeiZuViewController *vc = [TTLeiZuViewController new];
+                vc.title = model.title;
                 vc.name = @"fansj";
                 [self.navigationController pushViewController:vc animated:YES];
             }else {
                 NSString *clsStr = model.toClassString;
                 Class cls = NSClassFromString(clsStr);
                 UIViewController *vc = [cls new];
+                vc.title = model.title;
                 [self.navigationController pushViewController:vc animated:YES];
             }
         }else {
@@ -53,7 +57,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 {
                     // GCD 功能测试集合
                     TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = @"测试GCD";
+                    vc.title = model.title;
                     vc.dataArray = [self gcdArray];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
@@ -63,7 +67,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 {
                     // 动画 功能测试集合
                     TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = @"测试动画";
+                    vc.title = model.title;
                     vc.dataArray = [self animationArray];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
@@ -73,8 +77,28 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 {
                     // RunLoop 功能测试集合
                     TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = @"测试RunLoop";
+                    vc.title = model.title;
                     vc.dataArray = [self runloopArray];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                    break;
+                    
+                case TTMenuTypeTimer:
+                {
+                    // 定时器 功能
+                    TTMenuViewController *vc = [TTMenuViewController new];
+                    vc.title = model.title;
+                    vc.dataArray = [self timerArray];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                    break;
+                    
+                case TTMenuTypeSuanFa:
+                {
+                    // 算法
+                    TTMenuViewController *vc = [TTMenuViewController new];
+                    vc.title = model.title;
+                    vc.dataArray = [self treeArray];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                     break;
@@ -93,7 +117,10 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试分类中相同方法调用逻辑" toCS:@"TTSameMethodCallLogicController"],
             [TTMenuModel createT:@"测试GCD" type:TTMenuTypeGCD],
             [TTMenuModel createT:@"测试动画" type:TTMenuTypeAnimation],
-            [TTMenuModel createT:@"测试RunLoop" type:TTMenuTypeRunloop]];
+            [TTMenuModel createT:@"测试RunLoop" type:TTMenuTypeRunloop],
+            [TTMenuModel createT:@"测试定时器" type:TTMenuTypeTimer],
+            [TTMenuModel createT:@"测试算法" type:TTMenuTypeSuanFa]
+        ];
     }
 }
 
@@ -117,6 +144,18 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     return @[
         [TTMenuModel createT:@"RunLoop 测试子线程中调用PerformSelector" toCS:@"TTRunLoopPerformController"],
         [TTMenuModel createT:@"Runloop 测试观察者" toCS:@"TTRunloopObserverController"]
+    ];
+}
+
+- (NSArray *)timerArray {
+    return @[
+        [TTMenuModel createT:@"测试NSTimer释放问题" toCS:@"TTTimerReleaseController"]
+    ];
+}
+
+- (NSArray *)treeArray {
+    return @[
+        [TTMenuModel createT:@"测试二叉序前中后遍历" toCS:@"TTTreeSortViewController"]
     ];
 }
 

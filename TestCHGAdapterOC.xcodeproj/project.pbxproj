@@ -21,6 +21,10 @@
 		E960EDDA25BABBE000AFB3AB /* TTWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E960EDD925BABBE000AFB3AB /* TTWaterView.m */; };
 		E960EDE525BACAFC00AFB3AB /* TTRunLoopPerformController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960EDE425BACAFC00AFB3AB /* TTRunLoopPerformController.m */; };
 		E960EDEF25BAD89700AFB3AB /* TTRunloopObserverController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960EDEE25BAD89700AFB3AB /* TTRunloopObserverController.m */; };
+		E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960EDF625BE5A9A00AFB3AB /* TTTimerReleaseController.m */; };
+		E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */ = {isa = PBXBuildFile; fileRef = E960EDFF25BE5BD100AFB3AB /* TTTimeMedium.m */; };
+		E960EE1225C0FC3300AFB3AB /* TTTreeSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960EE1125C0FC3300AFB3AB /* TTTreeSortViewController.m */; };
+		E960EE1B25C0FC4900AFB3AB /* TTTreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E960EE1A25C0FC4900AFB3AB /* TTTreeModel.m */; };
 		E9A3444A25B7D7EE003EB215 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3444925B7D7EE003EB215 /* AppDelegate.m */; };
 		E9A3444D25B7D7EE003EB215 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3444C25B7D7EE003EB215 /* SceneDelegate.m */; };
 		E9A3445025B7D7EE003EB215 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3444F25B7D7EE003EB215 /* ViewController.m */; };
@@ -97,6 +101,14 @@
 		E960EDE425BACAFC00AFB3AB /* TTRunLoopPerformController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRunLoopPerformController.m; sourceTree = "<group>"; };
 		E960EDED25BAD89700AFB3AB /* TTRunloopObserverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRunloopObserverController.h; sourceTree = "<group>"; };
 		E960EDEE25BAD89700AFB3AB /* TTRunloopObserverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRunloopObserverController.m; sourceTree = "<group>"; };
+		E960EDF525BE5A9A00AFB3AB /* TTTimerReleaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTimerReleaseController.h; sourceTree = "<group>"; };
+		E960EDF625BE5A9A00AFB3AB /* TTTimerReleaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTimerReleaseController.m; sourceTree = "<group>"; };
+		E960EDFE25BE5BD100AFB3AB /* TTTimeMedium.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTimeMedium.h; sourceTree = "<group>"; };
+		E960EDFF25BE5BD100AFB3AB /* TTTimeMedium.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTimeMedium.m; sourceTree = "<group>"; };
+		E960EE1025C0FC3300AFB3AB /* TTTreeSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTreeSortViewController.h; sourceTree = "<group>"; };
+		E960EE1125C0FC3300AFB3AB /* TTTreeSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTreeSortViewController.m; sourceTree = "<group>"; };
+		E960EE1925C0FC4900AFB3AB /* TTTreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTreeModel.h; sourceTree = "<group>"; };
+		E960EE1A25C0FC4900AFB3AB /* TTTreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTreeModel.m; sourceTree = "<group>"; };
 		E9A3444525B7D7EE003EB215 /* TestCHGAdapterOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCHGAdapterOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A3444825B7D7EE003EB215 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9A3444925B7D7EE003EB215 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -306,6 +318,52 @@
 			path = "测试Runloop运行";
 			sourceTree = "<group>";
 		};
+		E960EDF325BE5A5600AFB3AB /* 测试定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				E960EDF425BE5A5E00AFB3AB /* 测试NSTimer释放问题 */,
+			);
+			path = "测试定时器";
+			sourceTree = "<group>";
+		};
+		E960EDF425BE5A5E00AFB3AB /* 测试NSTimer释放问题 */ = {
+			isa = PBXGroup;
+			children = (
+				E960EDF525BE5A9A00AFB3AB /* TTTimerReleaseController.h */,
+				E960EDF625BE5A9A00AFB3AB /* TTTimerReleaseController.m */,
+				E960EDFE25BE5BD100AFB3AB /* TTTimeMedium.h */,
+				E960EDFF25BE5BD100AFB3AB /* TTTimeMedium.m */,
+			);
+			path = "测试NSTimer释放问题";
+			sourceTree = "<group>";
+		};
+		E960EE0D25C0FA5B00AFB3AB /* 测试算法题 */ = {
+			isa = PBXGroup;
+			children = (
+				E960EE0E25C0FA6500AFB3AB /* 二叉树 */,
+			);
+			path = "测试算法题";
+			sourceTree = "<group>";
+		};
+		E960EE0E25C0FA6500AFB3AB /* 二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				E960EE0F25C0FAE700AFB3AB /* Model */,
+				E960EE1025C0FC3300AFB3AB /* TTTreeSortViewController.h */,
+				E960EE1125C0FC3300AFB3AB /* TTTreeSortViewController.m */,
+			);
+			path = "二叉树";
+			sourceTree = "<group>";
+		};
+		E960EE0F25C0FAE700AFB3AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E960EE1925C0FC4900AFB3AB /* TTTreeModel.h */,
+				E960EE1A25C0FC4900AFB3AB /* TTTreeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E9A3443C25B7D7EE003EB215 = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +480,8 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				E960EE0D25C0FA5B00AFB3AB /* 测试算法题 */,
+				E960EDF325BE5A5600AFB3AB /* 测试定时器 */,
 				E960EDE125BACABF00AFB3AB /* 测试Runloop */,
 				E960ED9B25BA61A100AFB3AB /* 测试动画 */,
 				E9A3452D25B96BF2003EB215 /* 测试GCD */,
@@ -759,17 +819,21 @@
 				E9A3451725B96939003EB215 /* TTSameModel.m in Sources */,
 				E9A3452025B96953003EB215 /* TTSameModel+SameA.m in Sources */,
 				E9A3452625B9695F003EB215 /* TTSameModel+SameB.m in Sources */,
+				E960EE1B25C0FC4900AFB3AB /* TTTreeModel.m in Sources */,
 				E9A3453025B96CA1003EB215 /* TTGCDGroupController.m in Sources */,
 				E9A3444A25B7D7EE003EB215 /* AppDelegate.m in Sources */,
+				E960EE1225C0FC3300AFB3AB /* TTTreeSortViewController.m in Sources */,
 				E9A3449C25B7D993003EB215 /* TTBaseViewController.m in Sources */,
 				E9A344C425B7DB5F003EB215 /* TTMenuTableViewCell.m in Sources */,
 				E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E960EDD025BABBC100AFB3AB /* TTAnimationWaterController.m in Sources */,
+				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
 				E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */,
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
+				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
 				E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
 				E960EDC425BAA7CE00AFB3AB /* TTAnimationGroupController.m in Sources */,
