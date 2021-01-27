@@ -21,7 +21,10 @@
             question = @"二叉树后序遍历";
             break;
         case TTTreeTypeUpDownLeftRight:
-            question = @"二叉树从上到下，从左到右遍历";
+            question = @"二叉树自上而下，自左而右遍历";
+            break;
+        case TTTreeTypeDownUpLeftRight:
+            question = @"二叉树自下而上，自左而右遍历";
             break;
         default:
             break;

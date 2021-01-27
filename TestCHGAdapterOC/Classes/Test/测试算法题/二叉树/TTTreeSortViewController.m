@@ -54,7 +54,11 @@
                 break;
                 
             case TTTreeTypeUpDownLeftRight:
-                NSLog(@"从上到下排列 : %@",[TTTreeSortUtility updownSort:one]);
+                NSLog(@"自上而下排列 : %@",[TTTreeSortUtility updownSort:one]);
+                break;
+                
+            case TTTreeTypeDownUpLeftRight:
+                NSLog(@"自下而上排列 : %@",[TTTreeSortUtility downupSort:one]);
                 break;
                 
             default:

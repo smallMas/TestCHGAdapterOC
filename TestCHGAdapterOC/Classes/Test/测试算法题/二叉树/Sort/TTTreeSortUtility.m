@@ -73,7 +73,7 @@
     [array addObject:@(model.value)];
 }
 
-// 二叉树从上到下，从左到右
+// 二叉树自上而下，自左而右
 + (NSArray *)updownSort:(TTTreeModel *)model {
     if (model == nil) {
         return nil;
@@ -100,5 +100,34 @@
     }
 }
 
+// 二叉树自下而上，自左而右
++ (NSArray *)downupSort:(TTTreeModel *)model {
+    if (model == nil) {
+        return nil;
+    }
+    
+    NSMutableArray *array = [NSMutableArray new];
+    [self __downupSortArray:array tmp:@[model]];
+    return array;
+}
+
++ (void)__downupSortArray:(NSMutableArray *)array tmp:(NSArray *)tmpArray {
+    if (tmpArray && tmpArray.count > 0) {
+        NSMutableArray *arr = [[NSMutableArray alloc] init];
+        for (TTTreeModel *m in tmpArray) {
+            if (m.left) {
+                [arr addObject:m.left];
+            }
+            if (m.right) {
+                [arr addObject:m.right];
+            }
+        }
+        [self __downupSortArray:array tmp:arr];
+        
+        for (TTTreeModel *m in tmpArray) {
+            [array addObject:@(m.value)];
+        }
+    }
+}
 
 @end

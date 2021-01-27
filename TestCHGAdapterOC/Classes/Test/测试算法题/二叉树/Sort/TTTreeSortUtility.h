@@ -18,8 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray *)centerSort:(TTTreeModel *)model;
 // 后序 [左，右，根]
 + (NSArray *)afterSort:(TTTreeModel *)model;
-// 二叉树从上到下，从左到右
+// 二叉树自上而下，自左而右
 + (NSArray *)updownSort:(TTTreeModel *)model;
+// 二叉树自下而上，自左而右
++ (NSArray *)downupSort:(TTTreeModel *)model;
 @end
 
 NS_ASSUME_NONNULL_END

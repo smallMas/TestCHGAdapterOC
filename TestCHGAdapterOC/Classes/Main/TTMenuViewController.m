@@ -206,7 +206,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
         [TTMenuModel createT:@"二叉树前序遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeBeforeSort]],
         [TTMenuModel createT:@"二叉树中序遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeCenterSort]],
         [TTMenuModel createT:@"二叉树后序遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeAfterSort]],
-        [TTMenuModel createT:@"二叉树从上到下，从左到右遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeUpDownLeftRight]],
+        [TTMenuModel createT:@"二叉树自上而下，自左而右遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeUpDownLeftRight]],
+        [TTMenuModel createT:@"二叉树自下而上，自左而右遍历" type:TTMenuTypeTree data:[TTTreeQuestionModel createT:TTTreeTypeDownUpLeftRight]]
     ];
 }
 

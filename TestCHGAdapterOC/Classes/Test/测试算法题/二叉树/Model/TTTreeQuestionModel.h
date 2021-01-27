@@ -16,8 +16,10 @@ typedef NS_ENUM(NSInteger, TTTreeType) {
     TTTreeTypeCenterSort,
     // 二叉树后序遍历
     TTTreeTypeAfterSort,
-    // 二叉树从上到下，从左到右
+    // 二叉树自上而下，自左而右
     TTTreeTypeUpDownLeftRight,
+    // 二叉树自下而上，自左而右
+    TTTreeTypeDownUpLeftRight,
 };
 
 @interface TTTreeQuestionModel : NSObject
