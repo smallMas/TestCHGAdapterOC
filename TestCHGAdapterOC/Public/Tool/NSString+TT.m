@@ -15,4 +15,10 @@
     return [self fsj_checkWithPredicate:regex];
 }
 
+// 判断是否全是整数
+- (BOOL)isNumber {
+    NSString *regex = @"[0-9]*";
+    return [self fsj_checkWithPredicate:regex];
+}
+
 @end

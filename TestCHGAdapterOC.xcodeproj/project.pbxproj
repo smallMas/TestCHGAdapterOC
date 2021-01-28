@@ -16,6 +16,12 @@
 		E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E956611D25C142DF002DFCCA /* TTCalculateUtility.m */; };
 		E956612525C15D4A002DFCCA /* TTTreeQuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956612425C15D4A002DFCCA /* TTTreeQuestionModel.m */; };
 		E956612C25C166F8002DFCCA /* TTTreeSortUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E956612B25C166F8002DFCCA /* TTTreeSortUtility.m */; };
+		E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E956613225C254DF002DFCCA /* TTSudoKuViewController.m */; };
+		E956613A25C25FCF002DFCCA /* TTSudoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956613925C25FCF002DFCCA /* TTSudoModel.m */; };
+		E956614025C27F67002DFCCA /* TTGongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956613F25C27F67002DFCCA /* TTGongModel.m */; };
+		E956614725C285D2002DFCCA /* TTSudoCalculateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E956614625C285D2002DFCCA /* TTSudoCalculateUtility.m */; };
+		E956615025C28A74002DFCCA /* TTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E956614F25C28A74002DFCCA /* TTCollectionViewController.m */; };
+		E956615725C28B4D002DFCCA /* TTSudoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E956615625C28B4D002DFCCA /* TTSudoCollectionViewCell.m */; };
 		E960ED8525B9852600AFB3AB /* TTViewControllerB+TT2.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED8425B9852600AFB3AB /* TTViewControllerB+TT2.m */; };
 		E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED8D25B9872800AFB3AB /* TTGCDBarrierController.m */; };
 		E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED9E25BA61D800AFB3AB /* TTAnimationPositionController.m */; };
@@ -97,6 +103,18 @@
 		E956612425C15D4A002DFCCA /* TTTreeQuestionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTreeQuestionModel.m; sourceTree = "<group>"; };
 		E956612A25C166F8002DFCCA /* TTTreeSortUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTreeSortUtility.h; sourceTree = "<group>"; };
 		E956612B25C166F8002DFCCA /* TTTreeSortUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTreeSortUtility.m; sourceTree = "<group>"; };
+		E956613125C254DF002DFCCA /* TTSudoKuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudoKuViewController.h; sourceTree = "<group>"; };
+		E956613225C254DF002DFCCA /* TTSudoKuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudoKuViewController.m; sourceTree = "<group>"; };
+		E956613825C25FCF002DFCCA /* TTSudoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudoModel.h; sourceTree = "<group>"; };
+		E956613925C25FCF002DFCCA /* TTSudoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudoModel.m; sourceTree = "<group>"; };
+		E956613E25C27F67002DFCCA /* TTGongModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGongModel.h; sourceTree = "<group>"; };
+		E956613F25C27F67002DFCCA /* TTGongModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTGongModel.m; sourceTree = "<group>"; };
+		E956614525C285D2002DFCCA /* TTSudoCalculateUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudoCalculateUtility.h; sourceTree = "<group>"; };
+		E956614625C285D2002DFCCA /* TTSudoCalculateUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudoCalculateUtility.m; sourceTree = "<group>"; };
+		E956614E25C28A74002DFCCA /* TTCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTCollectionViewController.h; sourceTree = "<group>"; };
+		E956614F25C28A74002DFCCA /* TTCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTCollectionViewController.m; sourceTree = "<group>"; };
+		E956615525C28B4D002DFCCA /* TTSudoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudoCollectionViewCell.h; sourceTree = "<group>"; };
+		E956615625C28B4D002DFCCA /* TTSudoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudoCollectionViewCell.m; sourceTree = "<group>"; };
 		E960ED8325B9852600AFB3AB /* TTViewControllerB+TT2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTViewControllerB+TT2.h"; sourceTree = "<group>"; };
 		E960ED8425B9852600AFB3AB /* TTViewControllerB+TT2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TTViewControllerB+TT2.m"; sourceTree = "<group>"; };
 		E960ED8C25B9872800AFB3AB /* TTGCDBarrierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGCDBarrierController.h; sourceTree = "<group>"; };
@@ -278,6 +296,47 @@
 			path = Sort;
 			sourceTree = "<group>";
 		};
+		E956613025C254BD002DFCCA /* 九宫格数独 */ = {
+			isa = PBXGroup;
+			children = (
+				E956615425C28B3A002DFCCA /* Cell */,
+				E956614425C28598002DFCCA /* Calculate */,
+				E956613725C25E5B002DFCCA /* Model */,
+				E956613125C254DF002DFCCA /* TTSudoKuViewController.h */,
+				E956613225C254DF002DFCCA /* TTSudoKuViewController.m */,
+			);
+			path = "九宫格数独";
+			sourceTree = "<group>";
+		};
+		E956613725C25E5B002DFCCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E956613825C25FCF002DFCCA /* TTSudoModel.h */,
+				E956613925C25FCF002DFCCA /* TTSudoModel.m */,
+				E956613E25C27F67002DFCCA /* TTGongModel.h */,
+				E956613F25C27F67002DFCCA /* TTGongModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E956614425C28598002DFCCA /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				E956614525C285D2002DFCCA /* TTSudoCalculateUtility.h */,
+				E956614625C285D2002DFCCA /* TTSudoCalculateUtility.m */,
+			);
+			path = Calculate;
+			sourceTree = "<group>";
+		};
+		E956615425C28B3A002DFCCA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E956615525C28B4D002DFCCA /* TTSudoCollectionViewCell.h */,
+				E956615625C28B4D002DFCCA /* TTSudoCollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E960ED8225B983A900AFB3AB /* 测试GCD_执行两组数据完成之后再执行其他任务 */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +472,7 @@
 		E960EE0D25C0FA5B00AFB3AB /* 测试算法题 */ = {
 			isa = PBXGroup;
 			children = (
+				E956613025C254BD002DFCCA /* 九宫格数独 */,
 				E95660E625C12FB8002DFCCA /* 公式算法 */,
 				E960EE0E25C0FA6500AFB3AB /* 二叉树 */,
 			);
@@ -533,6 +593,8 @@
 				E9A344A125B7D9A4003EB215 /* TTTableViewController.m */,
 				E9A344CB25B7DD9F003EB215 /* TTNavigationViewController.h */,
 				E9A344CC25B7DD9F003EB215 /* TTNavigationViewController.m */,
+				E956614E25C28A74002DFCCA /* TTCollectionViewController.h */,
+				E956614F25C28A74002DFCCA /* TTCollectionViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -885,6 +947,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E960EDB425BA974B00AFB3AB /* TTAnimationModel.m in Sources */,
+				E956615025C28A74002DFCCA /* TTCollectionViewController.m in Sources */,
+				E956614025C27F67002DFCCA /* TTGongModel.m in Sources */,
 				E9A3445E25B7D7F0003EB215 /* main.m in Sources */,
 				E9A3445025B7D7EE003EB215 /* ViewController.m in Sources */,
 				E960EDBD25BA976D00AFB3AB /* TTAnimationTableViewCell.m in Sources */,
@@ -908,6 +972,7 @@
 				E9A344C425B7DB5F003EB215 /* TTMenuTableViewCell.m in Sources */,
 				E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
+				E956613A25C25FCF002DFCCA /* TTSudoModel.m in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E960EDD025BABBC100AFB3AB /* TTAnimationWaterController.m in Sources */,
 				E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */,
@@ -917,8 +982,10 @@
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
 				E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */,
+				E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */,
 				E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
+				E956614725C285D2002DFCCA /* TTSudoCalculateUtility.m in Sources */,
 				E960EDC425BAA7CE00AFB3AB /* TTAnimationGroupController.m in Sources */,
 				E956612525C15D4A002DFCCA /* TTTreeQuestionModel.m in Sources */,
 				E960EDEF25BAD89700AFB3AB /* TTRunloopObserverController.m in Sources */,
@@ -926,6 +993,7 @@
 				E9A344DE25B7DE6A003EB215 /* TTViewControllerB.m in Sources */,
 				E9A3445625B7D7EE003EB215 /* TestCHGAdapterOC.xcdatamodeld in Sources */,
 				E9A3444D25B7D7EE003EB215 /* SceneDelegate.m in Sources */,
+				E956615725C28B4D002DFCCA /* TTSudoCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

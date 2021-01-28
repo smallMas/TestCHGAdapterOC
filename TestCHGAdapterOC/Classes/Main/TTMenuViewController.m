@@ -8,8 +8,9 @@
 #import "TTMenuViewController.h"
 #import "TTLeiZuViewController.h"
 #import "TTGongShiViewController.h"
-#import "TTExerciseModel.h"
 #import "TTTreeSortViewController.h"
+
+#import "TTExerciseModel.h"
 
 typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeGCD = 1,
@@ -21,6 +22,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeGongShi = 6,
     // 二叉树
     TTMenuTypeTree = 7,
+    // 9宫格数独
+    TTMenuTypeNineSudoku = 8,
 };
 
 @interface TTMenuViewController ()
@@ -143,6 +146,16 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                     }
                 }
                     break;
+                    
+                case TTMenuTypeNineSudoku:
+                {
+                    // 九宫格数独
+                    TTMenuViewController *vc = [TTMenuViewController new];
+                    vc.title = model.title;
+                    vc.dataArray = [self sudoKuArray];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                    break;
                 default:
                     break;
             }
@@ -197,7 +210,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
 - (NSArray *)suanfaArray {
     return @[
         [TTMenuModel createT:@"测试二叉树算法" type:TTMenuTypeTree],
-        [TTMenuModel createT:@"测试公式算法" type:TTMenuTypeGongShi]
+        [TTMenuModel createT:@"测试公式算法" type:TTMenuTypeGongShi],
+        [TTMenuModel createT:@"测试九宫格数独" type:TTMenuTypeNineSudoku]
     ];
 }
 
@@ -214,6 +228,12 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
 - (NSArray *)gongShiArray {
     return @[
         [TTMenuModel createT:@"根据字母计算在第几行" type:TTMenuTypeGongShi data:[TTExerciseModel createExeType:TTExerciseTypeZiMuToColum]]
+    ];
+}
+
+- (NSArray *)sudoKuArray {
+    return @[
+        [TTMenuModel createT:@"计算九宫格数独" toCS:@"TTSudoKuViewController"]
     ];
 }
 

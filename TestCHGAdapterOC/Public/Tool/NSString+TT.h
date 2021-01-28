@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 判断是否全是字母
 - (BOOL)isLetter;
+// 判断是否全是整数
+- (BOOL)isNumber;
 
 @end
 
