@@ -8,7 +8,8 @@
 #import "TTTestKVCViewController.h"
 #import "TTPerson.h"
 @interface TTTestKVCViewController ()
-
+@property (nonatomic, strong) TTPerson *person;
+@property (nonatomic, strong) NSString *name;
 @end
 
 @implementation TTTestKVCViewController
@@ -31,7 +32,19 @@
     NSLog(@"p _isName : %@",p->_isName);
     NSLog(@"p name : %@",p->name);
     NSLog(@"p isName : %@",p->isName);
+    
+    // __block 需要设置为nil才能解决循环引用的问题
+    self.person = p;
+    self.name = @"ac";
+    __block TTTestKVCViewController *wSelf = self;
+    [self.person setBlock:^{
+        NSLog(@"self.person  :%@",wSelf.person);
+        wSelf.name = @"bc";
+//        wSelf = nil;
+    }];
+    [self.person test];
+    
+    NSLog(@"self.name :: %@",self.name);
 }
-
 
 @end

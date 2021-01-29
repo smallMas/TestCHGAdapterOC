@@ -44,4 +44,9 @@
 //    _isName = name;
 //}
 
+- (void)test {
+    if (self.block) {
+        self.block();
+    }
+}
 @end
