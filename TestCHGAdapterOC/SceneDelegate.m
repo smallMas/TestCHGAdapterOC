@@ -24,6 +24,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     
     TTMenuViewController *vc = [TTMenuViewController new];
+    vc.title = @"OC 知识点总结";
     TTNavigationViewController *nav = [[TTNavigationViewController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     self.window.backgroundColor = [UIColor whiteColor];

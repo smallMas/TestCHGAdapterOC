@@ -173,7 +173,9 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试动画" type:TTMenuTypeAnimation],
             [TTMenuModel createT:@"测试RunLoop" type:TTMenuTypeRunloop],
             [TTMenuModel createT:@"测试定时器" type:TTMenuTypeTimer],
-            [TTMenuModel createT:@"测试算法" type:TTMenuTypeSuanFa]
+            [TTMenuModel createT:@"测试算法" type:TTMenuTypeSuanFa],
+            [TTMenuModel createT:@"测试KVC原理" toCS:@"TTTestKVCViewController"],
+            [TTMenuModel createT:@"测试深拷贝浅拷贝" toCS:@"TTTestCopyViewController"],
         ];
     }
 }

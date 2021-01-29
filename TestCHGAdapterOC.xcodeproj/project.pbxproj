@@ -22,6 +22,9 @@
 		E956614725C285D2002DFCCA /* TTSudoCalculateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E956614625C285D2002DFCCA /* TTSudoCalculateUtility.m */; };
 		E956615025C28A74002DFCCA /* TTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E956614F25C28A74002DFCCA /* TTCollectionViewController.m */; };
 		E956615725C28B4D002DFCCA /* TTSudoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E956615625C28B4D002DFCCA /* TTSudoCollectionViewCell.m */; };
+		E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E956617A25C3A428002DFCCA /* TTTestKVCViewController.m */; };
+		E956618125C3A454002DFCCA /* TTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E956618025C3A454002DFCCA /* TTPerson.m */; };
+		E956618825C3B151002DFCCA /* TTTestCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E956618725C3B151002DFCCA /* TTTestCopyViewController.m */; };
 		E960ED8525B9852600AFB3AB /* TTViewControllerB+TT2.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED8425B9852600AFB3AB /* TTViewControllerB+TT2.m */; };
 		E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED8D25B9872800AFB3AB /* TTGCDBarrierController.m */; };
 		E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED9E25BA61D800AFB3AB /* TTAnimationPositionController.m */; };
@@ -115,6 +118,12 @@
 		E956614F25C28A74002DFCCA /* TTCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTCollectionViewController.m; sourceTree = "<group>"; };
 		E956615525C28B4D002DFCCA /* TTSudoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudoCollectionViewCell.h; sourceTree = "<group>"; };
 		E956615625C28B4D002DFCCA /* TTSudoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudoCollectionViewCell.m; sourceTree = "<group>"; };
+		E956617925C3A428002DFCCA /* TTTestKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestKVCViewController.h; sourceTree = "<group>"; };
+		E956617A25C3A428002DFCCA /* TTTestKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestKVCViewController.m; sourceTree = "<group>"; };
+		E956617F25C3A454002DFCCA /* TTPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPerson.h; sourceTree = "<group>"; };
+		E956618025C3A454002DFCCA /* TTPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPerson.m; sourceTree = "<group>"; };
+		E956618625C3B151002DFCCA /* TTTestCopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestCopyViewController.h; sourceTree = "<group>"; };
+		E956618725C3B151002DFCCA /* TTTestCopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestCopyViewController.m; sourceTree = "<group>"; };
 		E960ED8325B9852600AFB3AB /* TTViewControllerB+TT2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTViewControllerB+TT2.h"; sourceTree = "<group>"; };
 		E960ED8425B9852600AFB3AB /* TTViewControllerB+TT2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TTViewControllerB+TT2.m"; sourceTree = "<group>"; };
 		E960ED8C25B9872800AFB3AB /* TTGCDBarrierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGCDBarrierController.h; sourceTree = "<group>"; };
@@ -335,6 +344,26 @@
 				E956615625C28B4D002DFCCA /* TTSudoCollectionViewCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		E956617825C3A40B002DFCCA /* 测试KVC */ = {
+			isa = PBXGroup;
+			children = (
+				E956617925C3A428002DFCCA /* TTTestKVCViewController.h */,
+				E956617A25C3A428002DFCCA /* TTTestKVCViewController.m */,
+				E956617F25C3A454002DFCCA /* TTPerson.h */,
+				E956618025C3A454002DFCCA /* TTPerson.m */,
+			);
+			path = "测试KVC";
+			sourceTree = "<group>";
+		};
+		E956618525C3B12E002DFCCA /* 深拷贝浅拷贝 */ = {
+			isa = PBXGroup;
+			children = (
+				E956618625C3B151002DFCCA /* TTTestCopyViewController.h */,
+				E956618725C3B151002DFCCA /* TTTestCopyViewController.m */,
+			);
+			path = "深拷贝浅拷贝";
 			sourceTree = "<group>";
 		};
 		E960ED8225B983A900AFB3AB /* 测试GCD_执行两组数据完成之后再执行其他任务 */ = {
@@ -620,6 +649,8 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				E956618525C3B12E002DFCCA /* 深拷贝浅拷贝 */,
+				E956617825C3A40B002DFCCA /* 测试KVC */,
 				E960EE0D25C0FA5B00AFB3AB /* 测试算法题 */,
 				E960EDF325BE5A5600AFB3AB /* 测试定时器 */,
 				E960EDE125BACABF00AFB3AB /* 测试Runloop */,
@@ -948,6 +979,7 @@
 			files = (
 				E960EDB425BA974B00AFB3AB /* TTAnimationModel.m in Sources */,
 				E956615025C28A74002DFCCA /* TTCollectionViewController.m in Sources */,
+				E956618125C3A454002DFCCA /* TTPerson.m in Sources */,
 				E956614025C27F67002DFCCA /* TTGongModel.m in Sources */,
 				E9A3445E25B7D7F0003EB215 /* main.m in Sources */,
 				E9A3445025B7D7EE003EB215 /* ViewController.m in Sources */,
@@ -971,6 +1003,7 @@
 				E9A3449C25B7D993003EB215 /* TTBaseViewController.m in Sources */,
 				E9A344C425B7DB5F003EB215 /* TTMenuTableViewCell.m in Sources */,
 				E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */,
+				E956618825C3B151002DFCCA /* TTTestCopyViewController.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
 				E956613A25C25FCF002DFCCA /* TTSudoModel.m in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
@@ -982,6 +1015,7 @@
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
 				E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */,
+				E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */,
 				E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */,
 				E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
