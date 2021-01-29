@@ -184,7 +184,9 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     return @[
         [TTMenuModel createT:@"GCD 测试Group用法" toCS:@"TTGCDGroupController"],
         [TTMenuModel createT:@"GCD 测试信号量用法" toCS:@"TTGCDSemaphoreController"],
-        [TTMenuModel createT:@"GCD 执行两组数据完成之后再执行其他任务" toCS:@"TTGCDBarrierController"]];
+        [TTMenuModel createT:@"GCD 执行两组数据完成之后再执行其他任务" toCS:@"TTGCDBarrierController"],
+        [TTMenuModel createT:@"NSThread 常驻内存" toCS:@"TTTestThreadViewController"]
+    ];
 }
 
 - (NSArray *)animationArray {

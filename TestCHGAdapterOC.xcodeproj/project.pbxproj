@@ -25,6 +25,8 @@
 		E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E956617A25C3A428002DFCCA /* TTTestKVCViewController.m */; };
 		E956618125C3A454002DFCCA /* TTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E956618025C3A454002DFCCA /* TTPerson.m */; };
 		E956618825C3B151002DFCCA /* TTTestCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E956618725C3B151002DFCCA /* TTTestCopyViewController.m */; };
+		E956618F25C3DBFE002DFCCA /* TTTestThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E956618E25C3DBFE002DFCCA /* TTTestThreadViewController.m */; };
+		E956619825C3DC41002DFCCA /* UIViewController+TTThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E956619725C3DC41002DFCCA /* UIViewController+TTThread.m */; };
 		E960ED8525B9852600AFB3AB /* TTViewControllerB+TT2.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED8425B9852600AFB3AB /* TTViewControllerB+TT2.m */; };
 		E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED8D25B9872800AFB3AB /* TTGCDBarrierController.m */; };
 		E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960ED9E25BA61D800AFB3AB /* TTAnimationPositionController.m */; };
@@ -124,6 +126,10 @@
 		E956618025C3A454002DFCCA /* TTPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPerson.m; sourceTree = "<group>"; };
 		E956618625C3B151002DFCCA /* TTTestCopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestCopyViewController.h; sourceTree = "<group>"; };
 		E956618725C3B151002DFCCA /* TTTestCopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestCopyViewController.m; sourceTree = "<group>"; };
+		E956618D25C3DBFE002DFCCA /* TTTestThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestThreadViewController.h; sourceTree = "<group>"; };
+		E956618E25C3DBFE002DFCCA /* TTTestThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestThreadViewController.m; sourceTree = "<group>"; };
+		E956619625C3DC41002DFCCA /* UIViewController+TTThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTThread.h"; sourceTree = "<group>"; };
+		E956619725C3DC41002DFCCA /* UIViewController+TTThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTThread.m"; sourceTree = "<group>"; };
 		E960ED8325B9852600AFB3AB /* TTViewControllerB+TT2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTViewControllerB+TT2.h"; sourceTree = "<group>"; };
 		E960ED8425B9852600AFB3AB /* TTViewControllerB+TT2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TTViewControllerB+TT2.m"; sourceTree = "<group>"; };
 		E960ED8C25B9872800AFB3AB /* TTGCDBarrierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGCDBarrierController.h; sourceTree = "<group>"; };
@@ -364,6 +370,17 @@
 				E956618725C3B151002DFCCA /* TTTestCopyViewController.m */,
 			);
 			path = "深拷贝浅拷贝";
+			sourceTree = "<group>";
+		};
+		E956618C25C3DBDD002DFCCA /* NSThread常驻内存 */ = {
+			isa = PBXGroup;
+			children = (
+				E956618D25C3DBFE002DFCCA /* TTTestThreadViewController.h */,
+				E956618E25C3DBFE002DFCCA /* TTTestThreadViewController.m */,
+				E956619625C3DC41002DFCCA /* UIViewController+TTThread.h */,
+				E956619725C3DC41002DFCCA /* UIViewController+TTThread.m */,
+			);
+			path = "NSThread常驻内存";
 			sourceTree = "<group>";
 		};
 		E960ED8225B983A900AFB3AB /* 测试GCD_执行两组数据完成之后再执行其他任务 */ = {
@@ -705,6 +722,7 @@
 		E9A3452D25B96BF2003EB215 /* 测试GCD */ = {
 			isa = PBXGroup;
 			children = (
+				E956618C25C3DBDD002DFCCA /* NSThread常驻内存 */,
 				E960ED8225B983A900AFB3AB /* 测试GCD_执行两组数据完成之后再执行其他任务 */,
 				E9A3453525B970DB003EB215 /* 测试GCD_信号量的用法 */,
 				E9A3453425B97060003EB215 /* 测试GCD_Group用法 */,
@@ -1012,6 +1030,7 @@
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
 				E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */,
+				E956619825C3DC41002DFCCA /* UIViewController+TTThread.m in Sources */,
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
 				E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */,
@@ -1023,6 +1042,7 @@
 				E960EDC425BAA7CE00AFB3AB /* TTAnimationGroupController.m in Sources */,
 				E956612525C15D4A002DFCCA /* TTTreeQuestionModel.m in Sources */,
 				E960EDEF25BAD89700AFB3AB /* TTRunloopObserverController.m in Sources */,
+				E956618F25C3DBFE002DFCCA /* TTTestThreadViewController.m in Sources */,
 				E960EDDA25BABBE000AFB3AB /* TTWaterView.m in Sources */,
 				E9A344DE25B7DE6A003EB215 /* TTViewControllerB.m in Sources */,
 				E9A3445625B7D7EE003EB215 /* TestCHGAdapterOC.xcdatamodeld in Sources */,
