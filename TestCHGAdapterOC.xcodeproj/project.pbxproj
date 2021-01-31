@@ -10,6 +10,10 @@
 		6EE29B54C8158701606F9046 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */; };
 		86F44DF2EC57C4097E4ECD61 /* Pods_TestCHGAdapterOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0185A8F4590D895340DF2AF9 /* Pods_TestCHGAdapterOC.framework */; };
 		99A1AF87777D4B74B31C2034 /* Pods_TestCHGAdapterOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */; };
+		9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176D325C685B300B0526D /* TTCallFunViewController.m */; };
+		9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176DD25C6878A00B0526D /* TTPeople.m */; };
+		9C5176E225C68F0E00B0526D /* TTOCOffsetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176E125C68F0E00B0526D /* TTOCOffsetViewController.m */; };
+		9C5176E525C69D1300B0526D /* TTNewReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176E425C69D1200B0526D /* TTNewReceiver.m */; };
 		E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660E825C12FDB002DFCCA /* TTGongShiViewController.m */; };
 		E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660FA25C131E8002DFCCA /* NSString+TT.m */; };
 		E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956611A25C142DF002DFCCA /* TTExerciseModel.m */; };
@@ -93,6 +97,14 @@
 		33D598B4D5AAF2B987D7A2EC /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB6AE0B33F7077206339566 /* Pods-TestCHGAdapterOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOCTests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOCTests/Pods-TestCHGAdapterOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C5176D225C685B300B0526D /* TTCallFunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTCallFunViewController.h; sourceTree = "<group>"; };
+		9C5176D325C685B300B0526D /* TTCallFunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTCallFunViewController.m; sourceTree = "<group>"; };
+		9C5176DC25C6878A00B0526D /* TTPeople.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPeople.h; sourceTree = "<group>"; };
+		9C5176DD25C6878A00B0526D /* TTPeople.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPeople.m; sourceTree = "<group>"; };
+		9C5176E025C68F0E00B0526D /* TTOCOffsetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTOCOffsetViewController.h; sourceTree = "<group>"; };
+		9C5176E125C68F0E00B0526D /* TTOCOffsetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTOCOffsetViewController.m; sourceTree = "<group>"; };
+		9C5176E325C69D1200B0526D /* TTNewReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTNewReceiver.h; sourceTree = "<group>"; };
+		9C5176E425C69D1200B0526D /* TTNewReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTNewReceiver.m; sourceTree = "<group>"; };
 		9D7EB3D324D38DF0E22CA51B /* Pods-TestCHGAdapterOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC/Pods-TestCHGAdapterOC.debug.xcconfig"; sourceTree = "<group>"; };
 		B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA613E6C0B9690659D7C3C1C /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -254,6 +266,28 @@
 				F21C51526D9EA7087BA1860E /* Pods-TestCHGAdapterOCTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C5176D125C6856A00B0526D /* 还原方法调用的本质 */ = {
+			isa = PBXGroup;
+			children = (
+				9C5176D225C685B300B0526D /* TTCallFunViewController.h */,
+				9C5176D325C685B300B0526D /* TTCallFunViewController.m */,
+				9C5176DC25C6878A00B0526D /* TTPeople.h */,
+				9C5176DD25C6878A00B0526D /* TTPeople.m */,
+				9C5176E325C69D1200B0526D /* TTNewReceiver.h */,
+				9C5176E425C69D1200B0526D /* TTNewReceiver.m */,
+			);
+			path = "还原方法调用的本质";
+			sourceTree = "<group>";
+		};
+		9C5176DF25C68ED500B0526D /* OC层级以及偏移问题 */ = {
+			isa = PBXGroup;
+			children = (
+				9C5176E025C68F0E00B0526D /* TTOCOffsetViewController.h */,
+				9C5176E125C68F0E00B0526D /* TTOCOffsetViewController.m */,
+			);
+			path = "OC层级以及偏移问题";
 			sourceTree = "<group>";
 		};
 		E95660E625C12FB8002DFCCA /* 公式算法 */ = {
@@ -666,6 +700,8 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9C5176DF25C68ED500B0526D /* OC层级以及偏移问题 */,
+				9C5176D125C6856A00B0526D /* 还原方法调用的本质 */,
 				E956618525C3B12E002DFCCA /* 深拷贝浅拷贝 */,
 				E956617825C3A40B002DFCCA /* 测试KVC */,
 				E960EE0D25C0FA5B00AFB3AB /* 测试算法题 */,
@@ -1004,10 +1040,12 @@
 				E960EDBD25BA976D00AFB3AB /* TTAnimationTableViewCell.m in Sources */,
 				E9A344D525B7DE5B003EB215 /* TTViewControllerA.m in Sources */,
 				E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */,
+				9C5176E525C69D1300B0526D /* TTNewReceiver.m in Sources */,
 				E960EDE525BACAFC00AFB3AB /* TTRunLoopPerformController.m in Sources */,
 				E9A344F625B95170003EB215 /* TTLeiZuViewController.m in Sources */,
 				E960EDA925BA801200AFB3AB /* TTAnimationPropertyController.m in Sources */,
 				E960ED8525B9852600AFB3AB /* TTViewControllerB+TT2.m in Sources */,
+				9C5176E225C68F0E00B0526D /* TTOCOffsetViewController.m in Sources */,
 				E9A344E625B82A7C003EB215 /* TTViewControllerB+TT.m in Sources */,
 				E9A3451725B96939003EB215 /* TTSameModel.m in Sources */,
 				E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */,
@@ -1029,6 +1067,7 @@
 				E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */,
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
+				9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */,
 				E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */,
 				E956619825C3DC41002DFCCA /* UIViewController+TTThread.m in Sources */,
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
@@ -1037,6 +1076,7 @@
 				E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */,
 				E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */,
 				E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */,
+				9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
 				E956614725C285D2002DFCCA /* TTSudoCalculateUtility.m in Sources */,
 				E960EDC425BAA7CE00AFB3AB /* TTAnimationGroupController.m in Sources */,
@@ -1153,7 +1193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1206,7 +1246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

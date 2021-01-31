@@ -176,6 +176,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试算法" type:TTMenuTypeSuanFa],
             [TTMenuModel createT:@"测试KVC原理" toCS:@"TTTestKVCViewController"],
             [TTMenuModel createT:@"测试深拷贝浅拷贝" toCS:@"TTTestCopyViewController"],
+            [TTMenuModel createT:@"还原方法调用的本质和方法崩溃的原因" toCS:@"TTCallFunViewController"],
+            [TTMenuModel createT:@"OC层级以及偏移问题" toCS:@"TTOCOffsetViewController"]
         ];
     }
 }
