@@ -14,16 +14,16 @@
 
 typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeGCD = 1,
-    TTMenuTypeAnimation = 2,
-    TTMenuTypeRunloop = 3,
-    TTMenuTypeTimer = 4,
-    TTMenuTypeSuanFa = 5,
+    TTMenuTypeAnimation,
+    TTMenuTypeRunloop,
+    TTMenuTypeTimer,
+    TTMenuTypeSuanFa,
     // 公式
-    TTMenuTypeGongShi = 6,
+    TTMenuTypeGongShi,
     // 二叉树
-    TTMenuTypeTree = 7,
+    TTMenuTypeTree,
     // 9宫格数独
-    TTMenuTypeNineSudoku = 8,
+    TTMenuTypeNineSudoku,
 };
 
 @interface TTMenuViewController ()
@@ -166,6 +166,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
 - (void)initData {
     if (!self.dataArray) {
         self.dataArray = @[
+            [TTMenuModel createT:@"测试其他的" toCS:@"TTOtherViewController"],
             [TTMenuModel createT:@"测试load方法" toCS:@"TTViewControllerB"],
             [TTMenuModel createT:@"测试类簇" toCS:@"TTLeiZuViewController"],
             [TTMenuModel createT:@"测试分类中相同方法调用逻辑" toCS:@"TTSameMethodCallLogicController"],
@@ -177,7 +178,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试KVC原理" toCS:@"TTTestKVCViewController"],
             [TTMenuModel createT:@"测试深拷贝浅拷贝" toCS:@"TTTestCopyViewController"],
             [TTMenuModel createT:@"还原方法调用的本质和方法崩溃的原因" toCS:@"TTCallFunViewController"],
-            [TTMenuModel createT:@"OC层级以及偏移问题" toCS:@"TTOCOffsetViewController"]
+            [TTMenuModel createT:@"OC层级以及偏移问题" toCS:@"TTOCOffsetViewController"],
+            [TTMenuModel createT:@"IsKindOf和isMemberOf的区别" toCS:@"TTKindMemberViewController"]
         ];
     }
 }

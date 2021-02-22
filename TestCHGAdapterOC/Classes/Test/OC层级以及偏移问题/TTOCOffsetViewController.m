@@ -23,16 +23,17 @@
     // 属性存在当前内存结构体（isa同级）
     // 入栈顺序
     
+    NSString *myName = @"fanshijian";
+    
     Class cls = [TTPeople class];
     void *kc = &cls;
     [(__bridge id)kc saySomething];
     
     
     TTPeople *person = [TTPeople alloc];
-    person.name = @"fansj";
-    person.age = 19;
     [person saySomething];
     
+    NSLog(@"===============");
     // C代码
     void *sp = (void *)&self;
     void *end = (void *)&person;

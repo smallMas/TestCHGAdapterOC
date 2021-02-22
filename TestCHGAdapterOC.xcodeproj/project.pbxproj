@@ -14,6 +14,11 @@
 		9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176DD25C6878A00B0526D /* TTPeople.m */; };
 		9C5176E225C68F0E00B0526D /* TTOCOffsetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176E125C68F0E00B0526D /* TTOCOffsetViewController.m */; };
 		9C5176E525C69D1300B0526D /* TTNewReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176E425C69D1200B0526D /* TTNewReceiver.m */; };
+		9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176EB25C79B8800B0526D /* TTKindMemberViewController.m */; };
+		9C5176EF25C79BC200B0526D /* TTSark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176EE25C79BC200B0526D /* TTSark.m */; };
+		9C5176F325C8E81E00B0526D /* TTOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176F225C8E81E00B0526D /* TTOtherViewController.m */; };
+		9C6374DB25D250EF0078F146 /* TTKLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6374D925D250EF0078F146 /* TTKLViewController.m */; };
+		9C6374DC25D250EF0078F146 /* TTKLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6374DA25D250EF0078F146 /* TTKLViewController.xib */; };
 		E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660E825C12FDB002DFCCA /* TTGongShiViewController.m */; };
 		E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660FA25C131E8002DFCCA /* NSString+TT.m */; };
 		E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956611A25C142DF002DFCCA /* TTExerciseModel.m */; };
@@ -105,6 +110,15 @@
 		9C5176E125C68F0E00B0526D /* TTOCOffsetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTOCOffsetViewController.m; sourceTree = "<group>"; };
 		9C5176E325C69D1200B0526D /* TTNewReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTNewReceiver.h; sourceTree = "<group>"; };
 		9C5176E425C69D1200B0526D /* TTNewReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTNewReceiver.m; sourceTree = "<group>"; };
+		9C5176EA25C79B8800B0526D /* TTKindMemberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTKindMemberViewController.h; sourceTree = "<group>"; };
+		9C5176EB25C79B8800B0526D /* TTKindMemberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTKindMemberViewController.m; sourceTree = "<group>"; };
+		9C5176ED25C79BC200B0526D /* TTSark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSark.h; sourceTree = "<group>"; };
+		9C5176EE25C79BC200B0526D /* TTSark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSark.m; sourceTree = "<group>"; };
+		9C5176F125C8E81E00B0526D /* TTOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTOtherViewController.h; sourceTree = "<group>"; };
+		9C5176F225C8E81E00B0526D /* TTOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTOtherViewController.m; sourceTree = "<group>"; };
+		9C6374D825D250EF0078F146 /* TTKLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTKLViewController.h; sourceTree = "<group>"; };
+		9C6374D925D250EF0078F146 /* TTKLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTKLViewController.m; sourceTree = "<group>"; };
+		9C6374DA25D250EF0078F146 /* TTKLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTKLViewController.xib; sourceTree = "<group>"; };
 		9D7EB3D324D38DF0E22CA51B /* Pods-TestCHGAdapterOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC/Pods-TestCHGAdapterOC.debug.xcconfig"; sourceTree = "<group>"; };
 		B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA613E6C0B9690659D7C3C1C /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -288,6 +302,26 @@
 				9C5176E125C68F0E00B0526D /* TTOCOffsetViewController.m */,
 			);
 			path = "OC层级以及偏移问题";
+			sourceTree = "<group>";
+		};
+		9C5176E925C79B5E00B0526D /* IsKindOf和isMemberOf */ = {
+			isa = PBXGroup;
+			children = (
+				9C5176EA25C79B8800B0526D /* TTKindMemberViewController.h */,
+				9C5176EB25C79B8800B0526D /* TTKindMemberViewController.m */,
+				9C5176ED25C79BC200B0526D /* TTSark.h */,
+				9C5176EE25C79BC200B0526D /* TTSark.m */,
+			);
+			path = "IsKindOf和isMemberOf";
+			sourceTree = "<group>";
+		};
+		9C5176F025C8E80300B0526D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9C5176F125C8E81E00B0526D /* TTOtherViewController.h */,
+				9C5176F225C8E81E00B0526D /* TTOtherViewController.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		E95660E625C12FB8002DFCCA /* 公式算法 */ = {
@@ -660,6 +694,9 @@
 				E9A344BA25B7DA8E003EB215 /* Model */,
 				E9A344B425B7DA83003EB215 /* TTMenuViewController.h */,
 				E9A344B525B7DA83003EB215 /* TTMenuViewController.m */,
+				9C6374D825D250EF0078F146 /* TTKLViewController.h */,
+				9C6374D925D250EF0078F146 /* TTKLViewController.m */,
+				9C6374DA25D250EF0078F146 /* TTKLViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -700,6 +737,8 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9C5176F025C8E80300B0526D /* Other */,
+				9C5176E925C79B5E00B0526D /* IsKindOf和isMemberOf */,
 				9C5176DF25C68ED500B0526D /* OC层级以及偏移问题 */,
 				9C5176D125C6856A00B0526D /* 还原方法调用的本质 */,
 				E956618525C3B12E002DFCCA /* 深拷贝浅拷贝 */,
@@ -902,6 +941,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A3445B25B7D7F0003EB215 /* LaunchScreen.storyboard in Resources */,
+				9C6374DC25D250EF0078F146 /* TTKLViewController.xib in Resources */,
 				E9A3445825B7D7F0003EB215 /* Assets.xcassets in Resources */,
 				E9A3445325B7D7EE003EB215 /* Main.storyboard in Resources */,
 			);
@@ -1043,6 +1083,7 @@
 				9C5176E525C69D1300B0526D /* TTNewReceiver.m in Sources */,
 				E960EDE525BACAFC00AFB3AB /* TTRunLoopPerformController.m in Sources */,
 				E9A344F625B95170003EB215 /* TTLeiZuViewController.m in Sources */,
+				9C5176EF25C79BC200B0526D /* TTSark.m in Sources */,
 				E960EDA925BA801200AFB3AB /* TTAnimationPropertyController.m in Sources */,
 				E960ED8525B9852600AFB3AB /* TTViewControllerB+TT2.m in Sources */,
 				9C5176E225C68F0E00B0526D /* TTOCOffsetViewController.m in Sources */,
@@ -1051,6 +1092,7 @@
 				E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */,
 				E9A3452025B96953003EB215 /* TTSameModel+SameA.m in Sources */,
 				E9A3452625B9695F003EB215 /* TTSameModel+SameB.m in Sources */,
+				9C6374DB25D250EF0078F146 /* TTKLViewController.m in Sources */,
 				E960EE1B25C0FC4900AFB3AB /* TTTreeModel.m in Sources */,
 				E9A3453025B96CA1003EB215 /* TTGCDGroupController.m in Sources */,
 				E9A3444A25B7D7EE003EB215 /* AppDelegate.m in Sources */,
@@ -1061,10 +1103,12 @@
 				E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */,
 				E956618825C3B151002DFCCA /* TTTestCopyViewController.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
+				9C5176F325C8E81E00B0526D /* TTOtherViewController.m in Sources */,
 				E956613A25C25FCF002DFCCA /* TTSudoModel.m in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E960EDD025BABBC100AFB3AB /* TTAnimationWaterController.m in Sources */,
 				E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */,
+				9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */,
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
 				9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */,
