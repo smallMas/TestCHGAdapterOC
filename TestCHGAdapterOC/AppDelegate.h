@@ -3,7 +3,7 @@
 //  TestCHGAdapterOC
 //
 //  Created by 燕来秋 on 2021/1/20.
-//
+//  https://github.com/smallMas/TestCHGAdapterOC.git
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
