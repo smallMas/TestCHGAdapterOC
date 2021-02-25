@@ -80,6 +80,7 @@
     CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
     group.animations = @[animation, animation2];
     group.duration = 12;
+    
     [self.centerView.layer addAnimation:group forKey:nil];
 }
 

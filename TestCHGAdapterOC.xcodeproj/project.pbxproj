@@ -19,6 +19,11 @@
 		9C5176F325C8E81E00B0526D /* TTOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176F225C8E81E00B0526D /* TTOtherViewController.m */; };
 		9C6374DB25D250EF0078F146 /* TTKLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6374D925D250EF0078F146 /* TTKLViewController.m */; };
 		9C6374DC25D250EF0078F146 /* TTKLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6374DA25D250EF0078F146 /* TTKLViewController.xib */; };
+		9CB8647A25E74B4100904C82 /* DNPlayerNetworkErrView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */; };
+		9CB8647B25E74B4100904C82 /* DNPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647825E74B4000904C82 /* DNPlayer.m */; };
+		9CB8647C25E74B4100904C82 /* DNPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647925E74B4000904C82 /* DNPlayerControlView.m */; };
+		9CB8648225E74B9700904C82 /* DNBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8648025E74B9600904C82 /* DNBaseView.m */; };
+		9CB864BB25E7502F00904C82 /* TTTestVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB864BA25E7502F00904C82 /* TTTestVideoViewController.m */; };
 		E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660E825C12FDB002DFCCA /* TTGongShiViewController.m */; };
 		E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660FA25C131E8002DFCCA /* NSString+TT.m */; };
 		E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956611A25C142DF002DFCCA /* TTExerciseModel.m */; };
@@ -119,6 +124,16 @@
 		9C6374D825D250EF0078F146 /* TTKLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTKLViewController.h; sourceTree = "<group>"; };
 		9C6374D925D250EF0078F146 /* TTKLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTKLViewController.m; sourceTree = "<group>"; };
 		9C6374DA25D250EF0078F146 /* TTKLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTKLViewController.xib; sourceTree = "<group>"; };
+		9CB8647425E74B4000904C82 /* DNPlayerNetworkErrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayerNetworkErrView.h; sourceTree = "<group>"; };
+		9CB8647525E74B4000904C82 /* DNPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayer.h; sourceTree = "<group>"; };
+		9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPlayerNetworkErrView.m; sourceTree = "<group>"; };
+		9CB8647725E74B4000904C82 /* DNPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayerControlView.h; sourceTree = "<group>"; };
+		9CB8647825E74B4000904C82 /* DNPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPlayer.m; sourceTree = "<group>"; };
+		9CB8647925E74B4000904C82 /* DNPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPlayerControlView.m; sourceTree = "<group>"; };
+		9CB8648025E74B9600904C82 /* DNBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNBaseView.m; sourceTree = "<group>"; };
+		9CB8648125E74B9700904C82 /* DNBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNBaseView.h; sourceTree = "<group>"; };
+		9CB864B925E7502F00904C82 /* TTTestVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestVideoViewController.h; sourceTree = "<group>"; };
+		9CB864BA25E7502F00904C82 /* TTTestVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestVideoViewController.m; sourceTree = "<group>"; };
 		9D7EB3D324D38DF0E22CA51B /* Pods-TestCHGAdapterOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC/Pods-TestCHGAdapterOC.debug.xcconfig"; sourceTree = "<group>"; };
 		B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA613E6C0B9690659D7C3C1C /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -324,6 +339,30 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		9CB8647325E74AFA00904C82 /* VideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				9CB8648125E74B9700904C82 /* DNBaseView.h */,
+				9CB8648025E74B9600904C82 /* DNBaseView.m */,
+				9CB8647525E74B4000904C82 /* DNPlayer.h */,
+				9CB8647825E74B4000904C82 /* DNPlayer.m */,
+				9CB8647725E74B4000904C82 /* DNPlayerControlView.h */,
+				9CB8647925E74B4000904C82 /* DNPlayerControlView.m */,
+				9CB8647425E74B4000904C82 /* DNPlayerNetworkErrView.h */,
+				9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */,
+			);
+			path = VideoPlay;
+			sourceTree = "<group>";
+		};
+		9CB864B825E7500600904C82 /* 测试视频播放 */ = {
+			isa = PBXGroup;
+			children = (
+				9CB864B925E7502F00904C82 /* TTTestVideoViewController.h */,
+				9CB864BA25E7502F00904C82 /* TTTestVideoViewController.m */,
+			);
+			path = "测试视频播放";
+			sourceTree = "<group>";
+		};
 		E95660E625C12FB8002DFCCA /* 公式算法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +377,7 @@
 		E95660F725C131C6002DFCCA /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				9CB8647325E74AFA00904C82 /* VideoPlay */,
 				E95660F825C131D0002DFCCA /* Tool */,
 			);
 			path = Public;
@@ -737,6 +777,7 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9CB864B825E7500600904C82 /* 测试视频播放 */,
 				9C5176F025C8E80300B0526D /* Other */,
 				9C5176E925C79B5E00B0526D /* IsKindOf和isMemberOf */,
 				9C5176DF25C68ED500B0526D /* OC层级以及偏移问题 */,
@@ -1096,6 +1137,7 @@
 				E960EE1B25C0FC4900AFB3AB /* TTTreeModel.m in Sources */,
 				E9A3453025B96CA1003EB215 /* TTGCDGroupController.m in Sources */,
 				E9A3444A25B7D7EE003EB215 /* AppDelegate.m in Sources */,
+				9CB864BB25E7502F00904C82 /* TTTestVideoViewController.m in Sources */,
 				E956612C25C166F8002DFCCA /* TTTreeSortUtility.m in Sources */,
 				E960EE1225C0FC3300AFB3AB /* TTTreeSortViewController.m in Sources */,
 				E9A3449C25B7D993003EB215 /* TTBaseViewController.m in Sources */,
@@ -1104,15 +1146,18 @@
 				E956618825C3B151002DFCCA /* TTTestCopyViewController.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
 				9C5176F325C8E81E00B0526D /* TTOtherViewController.m in Sources */,
+				9CB8648225E74B9700904C82 /* DNBaseView.m in Sources */,
 				E956613A25C25FCF002DFCCA /* TTSudoModel.m in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E960EDD025BABBC100AFB3AB /* TTAnimationWaterController.m in Sources */,
+				9CB8647A25E74B4100904C82 /* DNPlayerNetworkErrView.m in Sources */,
 				E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */,
 				9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */,
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
 				9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */,
 				E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */,
+				9CB8647C25E74B4100904C82 /* DNPlayerControlView.m in Sources */,
 				E956619825C3DC41002DFCCA /* UIViewController+TTThread.m in Sources */,
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
@@ -1123,6 +1168,7 @@
 				9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
 				E956614725C285D2002DFCCA /* TTSudoCalculateUtility.m in Sources */,
+				9CB8647B25E74B4100904C82 /* DNPlayer.m in Sources */,
 				E960EDC425BAA7CE00AFB3AB /* TTAnimationGroupController.m in Sources */,
 				E956612525C15D4A002DFCCA /* TTTreeQuestionModel.m in Sources */,
 				E960EDEF25BAD89700AFB3AB /* TTRunloopObserverController.m in Sources */,

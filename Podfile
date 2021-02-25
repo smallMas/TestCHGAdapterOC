@@ -13,6 +13,7 @@ target 'TestCHGAdapterOC' do
     pod 'CHGAdapter'
     pod 'FSJUtility'
     pod 'IQKeyboardManager' #键盘库
+    pod 'AFNetworking'
     
   target 'TestCHGAdapterOCTests' do
     inherit! :search_paths
