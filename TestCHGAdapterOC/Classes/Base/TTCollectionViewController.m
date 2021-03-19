@@ -6,6 +6,7 @@
 //
 
 #import "TTCollectionViewController.h"
+#import <objc/message.h>
 
 @interface TTCollectionViewController ()
 
@@ -20,7 +21,19 @@
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.layout];
+        NSString *clsStr = nil;
+        if (self.clsBlock) {
+            clsStr = self.clsBlock();
+        }
+        if (clsStr) {
+            Class cls = NSClassFromString(clsStr);
+            id myobjc = ((id (*)(id, SEL))objc_msgSend)(cls, @selector(alloc));
+            _collectionView = ((id (*)(id, SEL, CGRect, id))objc_msgSend)(myobjc, @selector(initWithFrame:collectionViewLayout:),self.view.bounds,self.layout);
+            _collectionView.collectionViewLayout = self.layout;
+            _collectionView.frame = self.view.bounds;
+        }else {
+            _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.layout];
+        }
         _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class])];
 

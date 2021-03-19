@@ -49,4 +49,13 @@
     return 44;
 }
 
+#pragma mark - collection
+-(NSString*)cellClassNameInCollectionView:(UICollectionView*)collectionView atIndexPath:(NSIndexPath*)indexPath {
+    return @"TTMenuCollectionViewCell";
+}
+
+- (CGSize)chg_collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(FSJSCREENWIDTH, 44);
+}
+
 @end

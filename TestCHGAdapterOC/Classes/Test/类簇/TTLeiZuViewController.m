@@ -80,6 +80,8 @@
     NSLog(@"arr3 class : %@",[arr3 class]);
     
     NSLog(@"name : %@",self.name);
+    
+    NSLog(@"dict model : %@",self.dict[@"model"]);
 }
 
 @end

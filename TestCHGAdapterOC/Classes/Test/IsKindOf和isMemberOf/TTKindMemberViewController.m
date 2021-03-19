@@ -27,6 +27,10 @@
     BOOL res3 = [[TTSark class] isKindOfClass:[TTSark class]];
     BOOL res4 = [[TTSark class] isMemberOfClass:[TTSark class]];
     NSLog(@"res1 : %d res2 : %d res3 : %d res4 : %d",res1,res2,res3,res4);
+    Class cls = NSClassFromString(@"TTSark");
+    NSLog(@"xx : %@  yy : %@",[NSObject class],cls);
+    BOOL res5 = [cls isKindOfClass:[NSObject class]];
+    NSLog(@"res5 >>> %d",res5);
     
     // res1 ：先判断NSObject与NSObject的元类 是否一样 ，是不一样的，所以再判断NSObject与NSObject的元类的父类判断，NSObject的元类的父类就是NSObject，所以是一样的，返回YES
     // res3 ：先判断TTSark与TTSark的元类是否一样，不一样，再判断TTSark与TTSark的元类的父类是否一样，TTSark的元类父类是NSObject的元类，所以也不一样，所以TTSark与NSObject的元类的父类进行比较，而NSObject的元类的父类是NSObject，所以也不一样，所以返回NO

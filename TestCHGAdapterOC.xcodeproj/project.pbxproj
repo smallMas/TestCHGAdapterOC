@@ -10,6 +10,11 @@
 		6EE29B54C8158701606F9046 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */; };
 		86F44DF2EC57C4097E4ECD61 /* Pods_TestCHGAdapterOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0185A8F4590D895340DF2AF9 /* Pods_TestCHGAdapterOC.framework */; };
 		99A1AF87777D4B74B31C2034 /* Pods_TestCHGAdapterOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */; };
+		9C44A5B625FB47F9000E6839 /* TTTestLoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5B525FB47F9000E6839 /* TTTestLoadDataController.m */; };
+		9C44A5D425FB4F68000E6839 /* TTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5D325FB4F68000E6839 /* TTTableView.m */; };
+		9C44A5DA25FB592E000E6839 /* TTTestLoadDataCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5D925FB592E000E6839 /* TTTestLoadDataCollectionController.m */; };
+		9C44A5E025FB5A0A000E6839 /* TTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5DF25FB5A0A000E6839 /* TTCollectionView.m */; };
+		9C44A5E625FB5ADB000E6839 /* TTMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5E525FB5ADB000E6839 /* TTMenuCollectionViewCell.m */; };
 		9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176D325C685B300B0526D /* TTCallFunViewController.m */; };
 		9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176DD25C6878A00B0526D /* TTPeople.m */; };
 		9C5176E225C68F0E00B0526D /* TTOCOffsetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176E125C68F0E00B0526D /* TTOCOffsetViewController.m */; };
@@ -17,8 +22,16 @@
 		9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176EB25C79B8800B0526D /* TTKindMemberViewController.m */; };
 		9C5176EF25C79BC200B0526D /* TTSark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176EE25C79BC200B0526D /* TTSark.m */; };
 		9C5176F325C8E81E00B0526D /* TTOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176F225C8E81E00B0526D /* TTOtherViewController.m */; };
+		9C540B8E25E8BC8600CF0074 /* DNVideoPlayHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C540B8C25E8BC8600CF0074 /* DNVideoPlayHandle.m */; };
+		9C540B9A25E8D02C00CF0074 /* TTTestAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C540B9925E8D02C00CF0074 /* TTTestAudioViewController.m */; };
+		9C5A4CD12602F4DC00784145 /* TTTestSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A4CD02602F4DA00784145 /* TTTestSafeViewController.m */; };
+		9C5A4CEF2603001A00784145 /* KLLiveGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A4CEE2603001A00784145 /* KLLiveGradientView.m */; };
+		9C5A4CF5260316CC00784145 /* ZHDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A4CF4260316CC00784145 /* ZHDevice.m */; };
 		9C6374DB25D250EF0078F146 /* TTKLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6374D925D250EF0078F146 /* TTKLViewController.m */; };
 		9C6374DC25D250EF0078F146 /* TTKLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6374DA25D250EF0078F146 /* TTKLViewController.xib */; };
+		9C66E6CF25F349A200F4496A /* UITextView+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C66E6CE25F349A200F4496A /* UITextView+TT.m */; };
+		9C66E6D525F349B300F4496A /* TTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C66E6D425F349B200F4496A /* TTObject.m */; };
+		9C8042B825F0BC1A000D911E /* TTTestWKShowPDFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8042B725F0BC1A000D911E /* TTTestWKShowPDFController.m */; };
 		9CB8647A25E74B4100904C82 /* DNPlayerNetworkErrView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */; };
 		9CB8647B25E74B4100904C82 /* DNPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647825E74B4000904C82 /* DNPlayer.m */; };
 		9CB8647C25E74B4100904C82 /* DNPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647925E74B4000904C82 /* DNPlayerControlView.m */; };
@@ -107,6 +120,16 @@
 		33D598B4D5AAF2B987D7A2EC /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB6AE0B33F7077206339566 /* Pods-TestCHGAdapterOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOCTests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOCTests/Pods-TestCHGAdapterOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C44A5B425FB47F9000E6839 /* TTTestLoadDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestLoadDataController.h; sourceTree = "<group>"; };
+		9C44A5B525FB47F9000E6839 /* TTTestLoadDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestLoadDataController.m; sourceTree = "<group>"; };
+		9C44A5D225FB4F68000E6839 /* TTTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTableView.h; sourceTree = "<group>"; };
+		9C44A5D325FB4F68000E6839 /* TTTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTableView.m; sourceTree = "<group>"; };
+		9C44A5D825FB592E000E6839 /* TTTestLoadDataCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestLoadDataCollectionController.h; sourceTree = "<group>"; };
+		9C44A5D925FB592E000E6839 /* TTTestLoadDataCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestLoadDataCollectionController.m; sourceTree = "<group>"; };
+		9C44A5DE25FB5A0A000E6839 /* TTCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTCollectionView.h; sourceTree = "<group>"; };
+		9C44A5DF25FB5A0A000E6839 /* TTCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTCollectionView.m; sourceTree = "<group>"; };
+		9C44A5E425FB5ADB000E6839 /* TTMenuCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMenuCollectionViewCell.h; sourceTree = "<group>"; };
+		9C44A5E525FB5ADB000E6839 /* TTMenuCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMenuCollectionViewCell.m; sourceTree = "<group>"; };
 		9C5176D225C685B300B0526D /* TTCallFunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTCallFunViewController.h; sourceTree = "<group>"; };
 		9C5176D325C685B300B0526D /* TTCallFunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTCallFunViewController.m; sourceTree = "<group>"; };
 		9C5176DC25C6878A00B0526D /* TTPeople.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPeople.h; sourceTree = "<group>"; };
@@ -121,9 +144,25 @@
 		9C5176EE25C79BC200B0526D /* TTSark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSark.m; sourceTree = "<group>"; };
 		9C5176F125C8E81E00B0526D /* TTOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTOtherViewController.h; sourceTree = "<group>"; };
 		9C5176F225C8E81E00B0526D /* TTOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTOtherViewController.m; sourceTree = "<group>"; };
+		9C540B8C25E8BC8600CF0074 /* DNVideoPlayHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNVideoPlayHandle.m; sourceTree = "<group>"; };
+		9C540B8D25E8BC8600CF0074 /* DNVideoPlayHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNVideoPlayHandle.h; sourceTree = "<group>"; };
+		9C540B9825E8D02C00CF0074 /* TTTestAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestAudioViewController.h; sourceTree = "<group>"; };
+		9C540B9925E8D02C00CF0074 /* TTTestAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestAudioViewController.m; sourceTree = "<group>"; };
+		9C5A4CCF2602F4DA00784145 /* TTTestSafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestSafeViewController.h; sourceTree = "<group>"; };
+		9C5A4CD02602F4DA00784145 /* TTTestSafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestSafeViewController.m; sourceTree = "<group>"; };
+		9C5A4CED2603001A00784145 /* KLLiveGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLLiveGradientView.h; sourceTree = "<group>"; };
+		9C5A4CEE2603001A00784145 /* KLLiveGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLLiveGradientView.m; sourceTree = "<group>"; };
+		9C5A4CF3260316CC00784145 /* ZHDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHDevice.h; sourceTree = "<group>"; };
+		9C5A4CF4260316CC00784145 /* ZHDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHDevice.m; sourceTree = "<group>"; };
 		9C6374D825D250EF0078F146 /* TTKLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTKLViewController.h; sourceTree = "<group>"; };
 		9C6374D925D250EF0078F146 /* TTKLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTKLViewController.m; sourceTree = "<group>"; };
 		9C6374DA25D250EF0078F146 /* TTKLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTKLViewController.xib; sourceTree = "<group>"; };
+		9C66E6CD25F349A200F4496A /* UITextView+TT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+TT.h"; sourceTree = "<group>"; };
+		9C66E6CE25F349A200F4496A /* UITextView+TT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TT.m"; sourceTree = "<group>"; };
+		9C66E6D325F349B200F4496A /* TTObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTObject.h; sourceTree = "<group>"; };
+		9C66E6D425F349B200F4496A /* TTObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTObject.m; sourceTree = "<group>"; };
+		9C8042B625F0BC1A000D911E /* TTTestWKShowPDFController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestWKShowPDFController.h; sourceTree = "<group>"; };
+		9C8042B725F0BC1A000D911E /* TTTestWKShowPDFController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestWKShowPDFController.m; sourceTree = "<group>"; };
 		9CB8647425E74B4000904C82 /* DNPlayerNetworkErrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayerNetworkErrView.h; sourceTree = "<group>"; };
 		9CB8647525E74B4000904C82 /* DNPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayer.h; sourceTree = "<group>"; };
 		9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPlayerNetworkErrView.m; sourceTree = "<group>"; };
@@ -297,6 +336,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9C44A59F25FB475D000E6839 /* 测试上一页数据下一页数据 */ = {
+			isa = PBXGroup;
+			children = (
+				9C44A5B425FB47F9000E6839 /* TTTestLoadDataController.h */,
+				9C44A5B525FB47F9000E6839 /* TTTestLoadDataController.m */,
+				9C44A5D225FB4F68000E6839 /* TTTableView.h */,
+				9C44A5D325FB4F68000E6839 /* TTTableView.m */,
+				9C44A5D825FB592E000E6839 /* TTTestLoadDataCollectionController.h */,
+				9C44A5D925FB592E000E6839 /* TTTestLoadDataCollectionController.m */,
+				9C44A5DE25FB5A0A000E6839 /* TTCollectionView.h */,
+				9C44A5DF25FB5A0A000E6839 /* TTCollectionView.m */,
+			);
+			path = "测试上一页数据下一页数据";
+			sourceTree = "<group>";
+		};
 		9C5176D125C6856A00B0526D /* 还原方法调用的本质 */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,13 +389,50 @@
 			children = (
 				9C5176F125C8E81E00B0526D /* TTOtherViewController.h */,
 				9C5176F225C8E81E00B0526D /* TTOtherViewController.m */,
+				9C66E6CD25F349A200F4496A /* UITextView+TT.h */,
+				9C66E6CE25F349A200F4496A /* UITextView+TT.m */,
+				9C66E6D325F349B200F4496A /* TTObject.h */,
+				9C66E6D425F349B200F4496A /* TTObject.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		9C540B9725E8D00D00CF0074 /* 测试音频播放 */ = {
+			isa = PBXGroup;
+			children = (
+				9C540B9825E8D02C00CF0074 /* TTTestAudioViewController.h */,
+				9C540B9925E8D02C00CF0074 /* TTTestAudioViewController.m */,
+			);
+			path = "测试音频播放";
+			sourceTree = "<group>";
+		};
+		9C5A4CCE2602F4A900784145 /* 测试SafeTop */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A4CF3260316CC00784145 /* ZHDevice.h */,
+				9C5A4CF4260316CC00784145 /* ZHDevice.m */,
+				9C5A4CED2603001A00784145 /* KLLiveGradientView.h */,
+				9C5A4CEE2603001A00784145 /* KLLiveGradientView.m */,
+				9C5A4CCF2602F4DA00784145 /* TTTestSafeViewController.h */,
+				9C5A4CD02602F4DA00784145 /* TTTestSafeViewController.m */,
+			);
+			path = "测试SafeTop";
+			sourceTree = "<group>";
+		};
+		9C8042B525F0BBEF000D911E /* 测试WK加载PDF */ = {
+			isa = PBXGroup;
+			children = (
+				9C8042B625F0BC1A000D911E /* TTTestWKShowPDFController.h */,
+				9C8042B725F0BC1A000D911E /* TTTestWKShowPDFController.m */,
+			);
+			path = "测试WK加载PDF";
 			sourceTree = "<group>";
 		};
 		9CB8647325E74AFA00904C82 /* VideoPlay */ = {
 			isa = PBXGroup;
 			children = (
+				9C540B8D25E8BC8600CF0074 /* DNVideoPlayHandle.h */,
+				9C540B8C25E8BC8600CF0074 /* DNVideoPlayHandle.m */,
 				9CB8648125E74B9700904C82 /* DNBaseView.h */,
 				9CB8648025E74B9600904C82 /* DNBaseView.m */,
 				9CB8647525E74B4000904C82 /* DNPlayer.h */,
@@ -770,6 +861,8 @@
 			children = (
 				E9A344C225B7DB5F003EB215 /* TTMenuTableViewCell.h */,
 				E9A344C325B7DB5F003EB215 /* TTMenuTableViewCell.m */,
+				9C44A5E425FB5ADB000E6839 /* TTMenuCollectionViewCell.h */,
+				9C44A5E525FB5ADB000E6839 /* TTMenuCollectionViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -777,6 +870,10 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9C5A4CCE2602F4A900784145 /* 测试SafeTop */,
+				9C44A59F25FB475D000E6839 /* 测试上一页数据下一页数据 */,
+				9C8042B525F0BBEF000D911E /* 测试WK加载PDF */,
+				9C540B9725E8D00D00CF0074 /* 测试音频播放 */,
 				9CB864B825E7500600904C82 /* 测试视频播放 */,
 				9C5176F025C8E80300B0526D /* Other */,
 				9C5176E925C79B5E00B0526D /* IsKindOf和isMemberOf */,
@@ -1123,14 +1220,20 @@
 				E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */,
 				9C5176E525C69D1300B0526D /* TTNewReceiver.m in Sources */,
 				E960EDE525BACAFC00AFB3AB /* TTRunLoopPerformController.m in Sources */,
+				9C44A5B625FB47F9000E6839 /* TTTestLoadDataController.m in Sources */,
 				E9A344F625B95170003EB215 /* TTLeiZuViewController.m in Sources */,
+				9C44A5E625FB5ADB000E6839 /* TTMenuCollectionViewCell.m in Sources */,
 				9C5176EF25C79BC200B0526D /* TTSark.m in Sources */,
+				9C8042B825F0BC1A000D911E /* TTTestWKShowPDFController.m in Sources */,
 				E960EDA925BA801200AFB3AB /* TTAnimationPropertyController.m in Sources */,
 				E960ED8525B9852600AFB3AB /* TTViewControllerB+TT2.m in Sources */,
+				9C44A5E025FB5A0A000E6839 /* TTCollectionView.m in Sources */,
 				9C5176E225C68F0E00B0526D /* TTOCOffsetViewController.m in Sources */,
 				E9A344E625B82A7C003EB215 /* TTViewControllerB+TT.m in Sources */,
 				E9A3451725B96939003EB215 /* TTSameModel.m in Sources */,
+				9C66E6D525F349B300F4496A /* TTObject.m in Sources */,
 				E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */,
+				9C5A4CF5260316CC00784145 /* ZHDevice.m in Sources */,
 				E9A3452025B96953003EB215 /* TTSameModel+SameA.m in Sources */,
 				E9A3452625B9695F003EB215 /* TTSameModel+SameB.m in Sources */,
 				9C6374DB25D250EF0078F146 /* TTKLViewController.m in Sources */,
@@ -1155,16 +1258,22 @@
 				9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */,
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
+				9C44A5D425FB4F68000E6839 /* TTTableView.m in Sources */,
 				9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */,
 				E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */,
 				9CB8647C25E74B4100904C82 /* DNPlayerControlView.m in Sources */,
+				9C540B8E25E8BC8600CF0074 /* DNVideoPlayHandle.m in Sources */,
 				E956619825C3DC41002DFCCA /* UIViewController+TTThread.m in Sources */,
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
+				9C44A5DA25FB592E000E6839 /* TTTestLoadDataCollectionController.m in Sources */,
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
 				E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */,
 				E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */,
 				E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */,
 				E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */,
+				9C5A4CEF2603001A00784145 /* KLLiveGradientView.m in Sources */,
+				9C66E6CF25F349A200F4496A /* UITextView+TT.m in Sources */,
+				9C5A4CD12602F4DC00784145 /* TTTestSafeViewController.m in Sources */,
 				9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
 				E956614725C285D2002DFCCA /* TTSudoCalculateUtility.m in Sources */,
@@ -1174,6 +1283,7 @@
 				E960EDEF25BAD89700AFB3AB /* TTRunloopObserverController.m in Sources */,
 				E956618F25C3DBFE002DFCCA /* TTTestThreadViewController.m in Sources */,
 				E960EDDA25BABBE000AFB3AB /* TTWaterView.m in Sources */,
+				9C540B9A25E8D02C00CF0074 /* TTTestAudioViewController.m in Sources */,
 				E9A344DE25B7DE6A003EB215 /* TTViewControllerB.m in Sources */,
 				E9A3445625B7D7EE003EB215 /* TestCHGAdapterOC.xcdatamodeld in Sources */,
 				E9A3444D25B7D7EE003EB215 /* SceneDelegate.m in Sources */,
@@ -1351,13 +1461,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66V5PFWDR7;
 				GCC_PREFIX_HEADER = TestCHGAdapterOC/PrefixHeader.pch;
 				INFOPLIST_FILE = TestCHGAdapterOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TestCHGAdapterOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunluntang.kunlun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1370,13 +1481,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66V5PFWDR7;
 				GCC_PREFIX_HEADER = TestCHGAdapterOC/PrefixHeader.pch;
 				INFOPLIST_FILE = TestCHGAdapterOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TestCHGAdapterOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunluntang.kunlun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

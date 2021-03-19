@@ -14,6 +14,8 @@ target 'TestCHGAdapterOC' do
     pod 'FSJUtility'
     pod 'IQKeyboardManager' #键盘库
     pod 'AFNetworking'
+    pod 'MJRefresh'
+    pod 'SDWebImage'
     
   target 'TestCHGAdapterOCTests' do
     inherit! :search_paths

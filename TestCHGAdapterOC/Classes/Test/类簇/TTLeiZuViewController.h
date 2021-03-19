@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TTLeiZuViewController : TTBaseViewController
 @property (nonatomic, assign) NSString *name;
+@property (strong, nonatomic) NSDictionary *dict;
 @end
 
 NS_ASSUME_NONNULL_END

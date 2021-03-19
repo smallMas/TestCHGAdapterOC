@@ -7,6 +7,7 @@
 
 #import "TTOtherViewController.h"
 #import <Photos/Photos.h>
+#import "UITextView+TT.h"
 
 @interface TTOtherViewController ()
 @property (nonatomic, copy) dispatch_block_t block;
@@ -45,6 +46,15 @@
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), blockT);
 //    self.block = blockT;
     
+    UITextView *text = [[UITextView alloc] init];
+    text.obj.a = @"fansj";
+    [self.view addSubview:text];
+    [text mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(300);
+        make.height.mas_equalTo(44);
+        make.center.mas_equalTo(self.view);
+    }];
+    [text setBackgroundColor:[UIColor fsj_randomColor]];
 }
 
 

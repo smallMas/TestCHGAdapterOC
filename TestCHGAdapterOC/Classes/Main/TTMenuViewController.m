@@ -51,6 +51,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 TTLeiZuViewController *vc = [TTLeiZuViewController new];
                 vc.title = model.title;
                 vc.name = @"fansj";
+                vc.dict = @{@"model":model};
                 [self.navigationController pushViewController:vc animated:YES];
             }else {
                 NSString *clsStr = model.toClassString;
@@ -180,7 +181,12 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"还原方法调用的本质和方法崩溃的原因" toCS:@"TTCallFunViewController"],
             [TTMenuModel createT:@"OC层级以及偏移问题" toCS:@"TTOCOffsetViewController"],
             [TTMenuModel createT:@"IsKindOf和isMemberOf的区别" toCS:@"TTKindMemberViewController"],
-            [TTMenuModel createT:@"测试视频播放" toCS:@"TTTestVideoViewController"]
+            [TTMenuModel createT:@"测试视频播放" toCS:@"TTTestVideoViewController"],
+            [TTMenuModel createT:@"测试音频播放" toCS:@"TTTestAudioViewController"],
+            [TTMenuModel createT:@"测试WK加载PDF" toCS:@"TTTestWKShowPDFController"],
+            [TTMenuModel createT:@"测试上一页数据下一页数据(tableview)" toCS:@"TTTestLoadDataController"],
+            [TTMenuModel createT:@"测试上一页数据下一页数据(collcetion)" toCS:@"TTTestLoadDataCollectionController"],
+            [TTMenuModel createT:@"测试Safe布局" toCS:@"TTTestSafeViewController"]
         ];
     }
 }

@@ -6,6 +6,7 @@
 //
 
 #import "TTTableViewController.h"
+#import <objc/message.h>
 
 @interface TTTableViewController ()
 
@@ -38,7 +39,17 @@
 #pragma mark - 懒加载
 - (UITableView *)tableView {
     if ( !_tableView ) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:self.style];
+        NSString *clsStr = nil;
+        if (self.clsBlock) {
+            clsStr = self.clsBlock();
+        }
+        if (clsStr) {
+            Class cls = NSClassFromString(clsStr);
+            id myobjc = ((id (*)(id, SEL))objc_msgSend)(cls, @selector(alloc));
+            _tableView = ((id (*)(id, SEL, CGRect, UITableViewStyle))objc_msgSend)(myobjc, @selector(initWithFrame:style:), self.view.bounds, self.style);
+        }else {
+            _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:self.style];
+        }
         _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [_tableView setBackgroundColor:[UIColor whiteColor]];
         _tableView.estimatedSectionFooterHeight = 0;

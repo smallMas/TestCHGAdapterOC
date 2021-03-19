@@ -74,6 +74,10 @@
     [self buildUI];
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.playerLayer.frame = self.bounds;
+}
 
 - (void)setUrl:(NSString *)url {
     _url = url;

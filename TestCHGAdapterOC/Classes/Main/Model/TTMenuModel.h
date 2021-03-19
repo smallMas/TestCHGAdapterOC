@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TTMenuModel : NSObject <CHGTableViewCellModelProtocol>
+@interface TTMenuModel : NSObject <CHGTableViewCellModelProtocol, CHGCollectionViewCellModelProtocol>
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *toClassString;
 @property (nonatomic, assign) NSInteger type;
