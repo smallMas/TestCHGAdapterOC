@@ -6,8 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FSJMacro.h"
-#import "FSJWeakProxy.h"
+#import <FSJMacro.h>
+#import <FSJWeakProxy.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -11,3 +11,4 @@
 #import "FSJUtilityGlobal.h"
 #import "NSString+TT.h"
 #import <FSJEventEngine/UIView+FSJEvent.h>
+#import "TTMacro.h"

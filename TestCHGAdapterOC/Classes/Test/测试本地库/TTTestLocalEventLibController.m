@@ -43,7 +43,7 @@
         UIButton *obj = [UIButton buttonWithType:UIButtonTypeCustom];
         [obj setBackgroundColor:[UIColor fsj_randomColor]];
         [self.view addSubview:_btn1 = obj];
-        obj.fsj_action = @{@"app_action":@"test"};//fMsgPack(@"ttTest:",@"fansj");
+        obj.fsj_action = @{@"app_action":@"test"};
         [obj mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.mas_equalTo(0);
             make.top.mas_equalTo(0);
@@ -78,32 +78,26 @@
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
+        void(^reloadTop)(NSString *) = ^(NSString *string){
+            NSLog(@"string : %@",string);
+        };
+        
         NSMutableArray *a = [NSMutableArray new];
-        for (NSInteger i = 0; i < 10; i++) {
-            TTLocalLibModel *m = [self cModelTitle:[NSString stringWithFormat:@"%ld",i]];
-            NSInteger re = i % 4;
-            if (re == 0) {
-                // 不带参数的方法
-                m.action = fMsgForward(@"testClickCell", FWKProxy(self));
-            }else if (re == 1) {
-                // 带参数的方法
-                m.action = fMsgPackForward(@"testTapCell:", FWKProxy(self), FWKProxy(m));
-            }else if (re == 2) {
-                // 不带参数的跳转
-                m.action = fRunCMD(@"tt_basedata");
-            }else {
-                m.action = fRunCMDINFO(@"tto_controller",@{@"title":@"凡施健"});
-            }
-            [a addObject:m];
-        }
+        [a addObject:[self cModelTitle:@"不带参数的方法" action:fMsgForward(@"testClickCell", FWKProxy(self))]];
+        [a addObject:[self cModelTitle:@"带参数的方法" action:fMsgPackForward(@"testTapCell:", FWKProxy(self), @"aaaaaa")]];
+        [a addObject:[self cModelTitle:@"不带参数的跳转" action:fRunCMD(@"tt_basedata")]];
+        [a addObject:[self cModelTitle:@"带参数的跳转" action:fRunCMDINFO(@"tto_controller",@{@"title":@"凡施健"})]];
+        [a addObject:[self cModelTitle:@"不带参数的跳转，并回调，回调在VC的meta" action:fRunCMDINFO(@"tto_controller",@{@"title":@"凡施健",@"callback":[reloadTop copy]})]];
+        [a addObject:[self cModelTitle:@"不带参数的跳转，并回调，回调在setHandle" action:fMsg(@"gotoVC")]];
         _dataArray = a;
     }
     return _dataArray;
 }
 
-- (TTLocalLibModel *)cModelTitle:(NSString *)title {
+- (TTLocalLibModel *)cModelTitle:(NSString *)title action:(id)action {
     TTLocalLibModel *m = [TTLocalLibModel new];
     m.title = title;
+    m.action = action;
     return m;
 }
 
@@ -113,6 +107,14 @@
 
 - (void)testTapCell:(id)data {
     NSLog(@"%s %@",__FUNCTION__,data);
+}
+
+- (void)gotoVC {
+    void(^reloadTop)(NSString *) = ^(NSString *string){
+        NSLog(@"string : %@",string);
+    };
+    
+    TT_RunEngine(fRunCMDINFO(@"tto_controller",@{@"title":@"凡施健"}), reloadTop);
 }
 
 @end

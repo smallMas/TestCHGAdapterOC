@@ -48,7 +48,9 @@ static inline void _showBaseKindController(char *clsName, NSDictionary *info, vo
         if (info[@"animate"]) {animate = [info[@"animate"] boolValue];}
     }
     SEL set = NSSelectorFromString(@"setHandle:");
-    if (handle && [obj respondsToSelector:set]) {((void(*)(id,SEL,id))objc_msgSend)(obj,set, handle);}
+    if (handle && [obj respondsToSelector:set]) {
+        ((void(*)(id,SEL,id))objc_msgSend)(obj,set, handle);
+    }
     showController(obj, animate, nil);
     ((void(*)(id,SEL))objc_msgSend)(obj,sel_registerName("release"));
 }

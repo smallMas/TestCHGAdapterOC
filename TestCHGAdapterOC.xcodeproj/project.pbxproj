@@ -156,6 +156,7 @@
 		9C29C97626145FFE0098A923 /* UIViewController+TTMeta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTMeta.m"; sourceTree = "<group>"; };
 		9C29C97B261461E20098A923 /* TTTestToController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestToController.h; sourceTree = "<group>"; };
 		9C29C97C261461E20098A923 /* TTTestToController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestToController.m; sourceTree = "<group>"; };
+		9C29C98A261486970098A923 /* TTMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMacro.h; sourceTree = "<group>"; };
 		9C44A5B425FB47F9000E6839 /* TTTestLoadDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestLoadDataController.h; sourceTree = "<group>"; };
 		9C44A5B525FB47F9000E6839 /* TTTestLoadDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestLoadDataController.m; sourceTree = "<group>"; };
 		9C44A5D225FB4F68000E6839 /* TTTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTableView.h; sourceTree = "<group>"; };
@@ -411,6 +412,7 @@
 				9C29C949261458BE0098A923 /* TTRunEngine.m */,
 				9C29C97526145FFE0098A923 /* UIViewController+TTMeta.h */,
 				9C29C97626145FFE0098A923 /* UIViewController+TTMeta.m */,
+				9C29C98A261486970098A923 /* TTMacro.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
