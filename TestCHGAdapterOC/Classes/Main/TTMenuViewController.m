@@ -26,6 +26,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeNineSudoku,
     // 数据库
     TTMenuTypeDataBase,
+    // 本地库
+    TTMenuTypeLocalLib,
 };
 
 @interface TTMenuViewController ()
@@ -169,11 +171,25 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                     break;
+                    
+                case TTMenuTypeLocalLib:
+                {
+                    // 测试本地库
+                    [self gotoSecondMenuTitle:model.title menuArray:[self localLibArray]];
+                }
+                    break;
                 default:
                     break;
             }
         }
     };
+}
+
+- (void)gotoSecondMenuTitle:(NSString *)title menuArray:(NSArray *)menus {
+    TTMenuViewController *vc = [TTMenuViewController new];
+    vc.title = title;
+    vc.dataArray = menus;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)initData {
@@ -200,7 +216,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试上一页数据下一页数据(collcetion)" toCS:@"TTTestLoadDataCollectionController"],
             [TTMenuModel createT:@"测试Safe布局" toCS:@"TTTestSafeViewController"],
             [TTMenuModel createT:@"测试数据库" type:TTMenuTypeDataBase],
-            [TTMenuModel createT:@"测试UIStackView" toCS:@"TTTestStackViewController"]
+            [TTMenuModel createT:@"测试UIStackView" toCS:@"TTTestStackViewController"],
+            [TTMenuModel createT:@"测试本地库" type:TTMenuTypeLocalLib]
         ];
     }
 }
@@ -269,6 +286,12 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
 - (NSArray *)databaseArray {
     return @[
         [TTMenuModel createT:@"测试WCDB数据库" toCS:@"TTTestWCDBDataController"]
+    ];
+}
+
+- (NSArray *)localLibArray {
+    return @[
+        [TTMenuModel createT:@"测试本地库[事件引擎]" toCS:@"TTTestLocalEventLibController"]
     ];
 }
 

@@ -7,6 +7,7 @@
 
 #import "TTTableViewController.h"
 #import <objc/message.h>
+#import "TTBaseModel.h"
 
 @interface TTTableViewController ()
 
@@ -56,6 +57,15 @@
         _tableView.estimatedSectionHeaderHeight = 0;
         _tableView.estimatedRowHeight = 0;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        
+        FSJ_WEAK_SELF
+        // tableView的默认事件处理
+        _tableView.tableViewDidSelectRowBlock = ^(UITableView *tableView, NSIndexPath *indexPath, TTBaseModel * itemData) {
+            FSJ_STRONG_SELF
+            if ([itemData isKindOfClass:[TTBaseModel class]]) {
+                [self.view fsj_runZHAction:itemData.action];
+            }
+        };
     }
     return _tableView;
 }
