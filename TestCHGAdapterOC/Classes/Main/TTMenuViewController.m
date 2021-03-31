@@ -24,6 +24,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeTree,
     // 9宫格数独
     TTMenuTypeNineSudoku,
+    // 数据库
+    TTMenuTypeDataBase,
 };
 
 @interface TTMenuViewController ()
@@ -157,6 +159,16 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                     break;
+                    
+                case TTMenuTypeDataBase:
+                {
+                    // 数据库
+                    TTMenuViewController *vc = [TTMenuViewController new];
+                    vc.title = model.title;
+                    vc.dataArray = [self databaseArray];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                    break;
                 default:
                     break;
             }
@@ -186,7 +198,9 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试WK加载PDF" toCS:@"TTTestWKShowPDFController"],
             [TTMenuModel createT:@"测试上一页数据下一页数据(tableview)" toCS:@"TTTestLoadDataController"],
             [TTMenuModel createT:@"测试上一页数据下一页数据(collcetion)" toCS:@"TTTestLoadDataCollectionController"],
-            [TTMenuModel createT:@"测试Safe布局" toCS:@"TTTestSafeViewController"]
+            [TTMenuModel createT:@"测试Safe布局" toCS:@"TTTestSafeViewController"],
+            [TTMenuModel createT:@"测试数据库" type:TTMenuTypeDataBase],
+            [TTMenuModel createT:@"测试UIStackView" toCS:@"TTTestStackViewController"]
         ];
     }
 }
@@ -249,6 +263,12 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
 - (NSArray *)sudoKuArray {
     return @[
         [TTMenuModel createT:@"计算九宫格数独" toCS:@"TTSudoKuViewController"]
+    ];
+}
+
+- (NSArray *)databaseArray {
+    return @[
+        [TTMenuModel createT:@"测试WCDB数据库" toCS:@"TTTestWCDBDataController"]
     ];
 }
 

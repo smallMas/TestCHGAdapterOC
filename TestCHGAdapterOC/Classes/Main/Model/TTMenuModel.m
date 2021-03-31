@@ -8,6 +8,10 @@
 #import "TTMenuModel.h"
 
 @implementation TTMenuModel
+- (void)dealloc
+{
+    NSLog(@"%@ dealloc",NSStringFromClass([self class]));
+}
 + (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString type:(NSInteger)type data:(id)data {
     TTMenuModel *model = [[self class] new];
     model.title = title;
@@ -15,6 +19,9 @@
     model.type = type;
     model.data = data;
     return model;
+}
++ (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString type:(NSInteger)type {
+    return [self createT:title toCS:toClassString type:type data:nil];
 }
 
 + (instancetype)createT:(NSString *)title toCS:(NSString * __nullable)toClassString {

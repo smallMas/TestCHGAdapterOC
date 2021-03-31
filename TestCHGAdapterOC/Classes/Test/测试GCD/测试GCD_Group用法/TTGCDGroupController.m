@@ -18,7 +18,10 @@
     // Do any additional setup after loading the view.
     
     // GCD Group，有三个关键动作 enter leave notify
-    [self testGroup2];
+//    [self testGroup2];
+    
+    // 一个一个执行
+    [self testGroup3];
 }
 
 - (void)testGroup1 {
@@ -53,6 +56,26 @@
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         NSLog(@"所有任务结束");
     });
+}
+
+- (void)testGroup3 {
+    NSLog(@"%s",__FUNCTION__);
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_queue_create("com.fsj.alert", DISPATCH_QUEUE_SERIAL);
+    
+    for (NSInteger i = 0; i < 10; i++) {
+        dispatch_group_enter(group);
+        dispatch_async(queue, ^{
+            NSLog(@"任务%ld开始",(long)i+1);
+            sleep((int)(i+1));
+            NSLog(@"任务%ld结束",(long)i+1);
+            dispatch_group_leave(group);
+        });
+    }
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"所有任务结束");
+    });
+    NSLog(@"-------------2");
 }
 
 @end

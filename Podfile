@@ -11,11 +11,13 @@ target 'TestCHGAdapterOC' do
     pod 'ReactiveObjC'
     pod 'ReactiveCocoa'
     pod 'CHGAdapter'
-    pod 'FSJUtility'
+    pod 'FSJUtility', '~> 1.0.4'
     pod 'IQKeyboardManager' #键盘库
     pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'SDWebImage'
+    pod 'WCDB'
+    pod 'AFNetworking'
     
   target 'TestCHGAdapterOCTests' do
     inherit! :search_paths

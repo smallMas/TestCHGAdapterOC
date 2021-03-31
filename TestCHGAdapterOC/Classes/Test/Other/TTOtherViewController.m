@@ -55,6 +55,20 @@
         make.center.mas_equalTo(self.view);
     }];
     [text setBackgroundColor:[UIColor fsj_randomColor]];
+    
+    CGRect intersectionRect = CGRectZero;
+
+    CGRect r1 = CGRectMake(100, 100, 200, 200);
+    CGRect r2 = CGRectMake(200, 200, 300, 400);
+    intersectionRect = CGRectIntersection(r1, r2);
+    NSLog(@"CGRectIntersection(r1, r2) = %@", NSStringFromCGRect(intersectionRect));
+
+    CGRect r3 = CGRectMake(0, 0, 50, 50);
+    CGRect r4 = CGRectMake(60, 60, 50, 50);
+    intersectionRect = CGRectIntersection(r3, r4);
+    NSLog(@"CGRectIntersection(r3, r4) = %@", NSStringFromCGRect(intersectionRect));
+    
+    NSLog(@"self.view.window.safeAreaInsets.top >>> %f",self.view.window.safeAreaInsets.top);
 }
 
 
