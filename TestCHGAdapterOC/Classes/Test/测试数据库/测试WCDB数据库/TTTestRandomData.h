@@ -13,6 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSString *uuid;
 @property (strong, nonatomic) NSString *randomNum;
 @property (strong, nonatomic) NSString *name;
+
+#pragma mark - 删除
++ (BOOL)deleteDataWithuuid:(NSString *)uuid;
+
+#pragma mark - 修改
++ (BOOL)updateName:(TTTestRandomData *)data;
 @end
 
 

@@ -73,9 +73,6 @@
 }
 
 - (void)insertData:(NSObject *)object {
-//    if (object && [object conformsToProtocol:@protocol(WCTTableCoding)]) {
-//
-//    }
     WCTDatabase *db = [self db:object];
     NSString *tableName = NSStringFromClass([object class]);
     [db insertOrReplaceObject:object into:tableName];

@@ -6,6 +6,9 @@
 //
 
 #import "AppDelegate.h"
+#import "TTMenuViewController.h"
+#import "TTNavigationViewController.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +20,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // C1 D1 E1
+    if (@available(iOS 13.0, *)) {
+        
+    }else {
+        TTMenuViewController *vc = [TTMenuViewController new];
+        vc.title = @"OC 知识点总结";
+        TTNavigationViewController *nav = [[TTNavigationViewController alloc] initWithRootViewController:vc];
+        self.window.rootViewController = nav;
+        self.window.backgroundColor = [UIColor whiteColor];
+        [self.window makeKeyAndVisible];
+        [self initIQKeyboardManager];
+    }
     return YES;
 }
 
+- (void)initIQKeyboardManager
+{
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;//    控制整个功能是否启用。
+    manager.shouldResignOnTouchOutside = YES;
+    manager.enableAutoToolbar = NO;
+}
 
 #pragma mark - UISceneSession lifecycle
 

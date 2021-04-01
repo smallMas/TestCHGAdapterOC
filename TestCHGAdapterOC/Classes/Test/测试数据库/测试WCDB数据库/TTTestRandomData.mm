@@ -35,4 +35,23 @@ WCDB_PRIMARY(TTTestRandomData, uuid) //定义主键自增。
     return 44;
 }
 
+#pragma mark - BASE
++ (WCTDatabase *)db {
+    return [self database];
+}
+
+#pragma mark - 删除
++ (BOOL)deleteDataWithuuid:(NSString *)uuid {
+    BOOL result = [[self db] deleteObjectsFromTable:[self tableName]
+                                             where:TTTestRandomData.uuid == uuid];
+
+    return result;
+}
+
+#pragma mark - 更新
++ (BOOL)updateName:(TTTestRandomData *)data {
+    if (!data) {return NO;}
+    return [[self db] updateRowsInTable:[self tableName] onProperty:TTTestRandomData.name withObject:data where:TTTestRandomData.uuid == data.uuid];
+}
+
 @end

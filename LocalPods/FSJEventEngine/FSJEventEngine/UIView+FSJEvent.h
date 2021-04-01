@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** manualy excecute an action to self's viewController  */
 - (void)fsj_runZHAction:(NSDictionary *_Nonnull)action;
+- (UIViewController *)currentTopViewController;
 
 @end
 

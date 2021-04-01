@@ -43,7 +43,7 @@
         UIButton *obj = [UIButton buttonWithType:UIButtonTypeCustom];
         [obj setBackgroundColor:[UIColor fsj_randomColor]];
         [self.view addSubview:_btn1 = obj];
-        obj.fsj_action = @{@"app_action":@"test"};
+        obj.fsj_action = fMsg(@"ttTest");
         [obj mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.mas_equalTo(0);
             make.top.mas_equalTo(0);
@@ -68,8 +68,10 @@
     return _view1;
 }
 
-- (void)ttTest:(id)sender {
-    NSLog(@"%s %@",__FUNCTION__,sender);
+- (void)ttTest {
+    NSLog(@"%s ",__FUNCTION__);
+//    UIViewController *vc = [self.view currentTopViewController];
+//    NSLog(@"vc : %@",vc);
 }
 
 - (void)ttTestView {
