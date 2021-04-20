@@ -7,6 +7,8 @@ target 'TestCHGAdapterOC' do
   
   # 本地库
   pod 'FSJEventEngine', :path => './LocalPods/FSJEventEngine'
+  pod 'FSJBaseMacro', :path => './LocalPods/FSJBaseMacro'
+  pod 'FSJAudioPlayer', :path => './LocalPods/FSJAudioPlayer' #语音播放器
   
   # Pods for TestCHGAdapterOC
     pod 'Masonry', '~> 1.1.0'
@@ -14,13 +16,14 @@ target 'TestCHGAdapterOC' do
     pod 'ReactiveObjC'
     pod 'ReactiveCocoa'
     pod 'CHGAdapter'
-    pod 'FSJUtility', '~> 1.0.4'
+    pod 'FSJUtility', '~> 1.0.6'
     pod 'IQKeyboardManager' #键盘库
     pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'SDWebImage'
     pod 'WCDB'
     pod 'AFNetworking'
+    pod 'YYText'
     
   target 'TestCHGAdapterOCTests' do
     inherit! :search_paths

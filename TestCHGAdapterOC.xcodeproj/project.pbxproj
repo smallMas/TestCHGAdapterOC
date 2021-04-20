@@ -10,6 +10,7 @@
 		6EE29B54C8158701606F9046 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */; };
 		86F44DF2EC57C4097E4ECD61 /* Pods_TestCHGAdapterOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0185A8F4590D895340DF2AF9 /* Pods_TestCHGAdapterOC.framework */; };
 		99A1AF87777D4B74B31C2034 /* Pods_TestCHGAdapterOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */; };
+		9C04B6C726267AFB00ED2900 /* TTTestYYTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C04B6C626267AFB00ED2900 /* TTTestYYTextController.m */; };
 		9C29C87B261429E40098A923 /* TTTestLocalEventLibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C87A261429E40098A923 /* TTTestLocalEventLibController.m */; };
 		9C29C8AC26144B1F0098A923 /* TTLocalLibModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C8AB26144B1F0098A923 /* TTLocalLibModel.m */; };
 		9C29C8B226144B420098A923 /* TTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C8B126144B420098A923 /* TTBaseModel.m */; };
@@ -136,6 +137,8 @@
 		33D598B4D5AAF2B987D7A2EC /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB6AE0B33F7077206339566 /* Pods-TestCHGAdapterOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOCTests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOCTests/Pods-TestCHGAdapterOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C04B6C526267AFB00ED2900 /* TTTestYYTextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestYYTextController.h; sourceTree = "<group>"; };
+		9C04B6C626267AFB00ED2900 /* TTTestYYTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestYYTextController.m; sourceTree = "<group>"; };
 		9C29C879261429E40098A923 /* TTTestLocalEventLibController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestLocalEventLibController.h; sourceTree = "<group>"; };
 		9C29C87A261429E40098A923 /* TTTestLocalEventLibController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestLocalEventLibController.m; sourceTree = "<group>"; };
 		9C29C8AA26144B1F0098A923 /* TTLocalLibModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTLocalLibModel.h; sourceTree = "<group>"; };
@@ -384,6 +387,15 @@
 				F21C51526D9EA7087BA1860E /* Pods-TestCHGAdapterOCTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C04B6AD26267AC000ED2900 /* 测试YYText */ = {
+			isa = PBXGroup;
+			children = (
+				9C04B6C526267AFB00ED2900 /* TTTestYYTextController.h */,
+				9C04B6C626267AFB00ED2900 /* TTTestYYTextController.m */,
+			);
+			path = "测试YYText";
 			sourceTree = "<group>";
 		};
 		9C29C878261428A90098A923 /* 测试本地库 */ = {
@@ -991,6 +1003,7 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9C04B6AD26267AC000ED2900 /* 测试YYText */,
 				9C29C878261428A90098A923 /* 测试本地库 */,
 				9C85CEE02609D2D900258E1E /* 测试StackView */,
 				9C55F12C26047D5000184129 /* 测试数据库 */,
@@ -1387,6 +1400,7 @@
 				9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */,
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
+				9C04B6C726267AFB00ED2900 /* TTTestYYTextController.m in Sources */,
 				9C44A5D425FB4F68000E6839 /* TTTableView.m in Sources */,
 				9C29C94A261458BE0098A923 /* TTRunEngine.m in Sources */,
 				9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */,

@@ -29,6 +29,14 @@
     [[[DNVideoPlayHandle sharedInstance] player] play];
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [[[DNVideoPlayHandle sharedInstance] player] stop:^id(id data) {
+        
+        return nil;
+    }];
+}
+
 - (DNPlayer *)playerView {
     if (!_playerView) {
         DNPlayer *obj = [[DNVideoPlayHandle sharedInstance] createPlayerLayerWithUrl:self.url rect:self.view.bounds];

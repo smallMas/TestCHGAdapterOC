@@ -217,7 +217,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试Safe布局" toCS:@"TTTestSafeViewController"],
             [TTMenuModel createT:@"测试数据库" type:TTMenuTypeDataBase],
             [TTMenuModel createT:@"测试UIStackView" toCS:@"TTTestStackViewController"],
-            [TTMenuModel createT:@"测试本地库" type:TTMenuTypeLocalLib]
+            [TTMenuModel createT:@"测试本地库" type:TTMenuTypeLocalLib],
+            [TTMenuModel createT:@"测试YYText" toCS:@"TTTestYYTextController"]
         ];
     }
 }

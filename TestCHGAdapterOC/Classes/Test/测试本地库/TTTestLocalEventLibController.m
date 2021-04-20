@@ -72,6 +72,7 @@
     NSLog(@"%s ",__FUNCTION__);
 //    UIViewController *vc = [self.view currentTopViewController];
 //    NSLog(@"vc : %@",vc);
+    
 }
 
 - (void)ttTestView {
