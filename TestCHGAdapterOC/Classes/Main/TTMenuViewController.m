@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeDataBase,
     // 本地库
     TTMenuTypeLocalLib,
+    // 加密
+    TTMenuTypeEncryption,
 };
 
 @interface TTMenuViewController ()
@@ -178,6 +180,13 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                     [self gotoSecondMenuTitle:model.title menuArray:[self localLibArray]];
                 }
                     break;
+                    
+                case TTMenuTypeEncryption:
+                {
+                    // 加密
+                    [self gotoSecondMenuTitle:model.title menuArray:[self encryptionLibArray]];
+                }
+                    break;
                 default:
                     break;
             }
@@ -218,7 +227,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试数据库" type:TTMenuTypeDataBase],
             [TTMenuModel createT:@"测试UIStackView" toCS:@"TTTestStackViewController"],
             [TTMenuModel createT:@"测试本地库" type:TTMenuTypeLocalLib],
-            [TTMenuModel createT:@"测试YYText" toCS:@"TTTestYYTextController"]
+            [TTMenuModel createT:@"测试YYText" toCS:@"TTTestYYTextController"],
+            [TTMenuModel createT:@"测试加密" type:TTMenuTypeEncryption],
         ];
     }
 }
@@ -293,6 +303,12 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
 - (NSArray *)localLibArray {
     return @[
         [TTMenuModel createT:@"测试本地库[事件引擎]" toCS:@"TTTestLocalEventLibController"]
+    ];
+}
+
+- (NSArray *)encryptionLibArray {
+    return @[
+        [TTMenuModel createT:@"测试base64加密" toCS:@"TTTestBase64Controller"]
     ];
 }
 

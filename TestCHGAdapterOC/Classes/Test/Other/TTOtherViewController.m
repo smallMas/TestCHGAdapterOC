@@ -9,11 +9,31 @@
 #import <Photos/Photos.h>
 #import "UITextView+TT.h"
 
+#define kPingFangRegular    @"PingFangSC-Regular"
+
 @interface TTOtherViewController ()
 @property (nonatomic, copy) dispatch_block_t block;
+
+@property (weak, nonatomic)   UIButton *rightBtn;
+@property (weak, nonatomic)   UIButton *rightButton2;
+
 @end
 
 @implementation TTOtherViewController
+
+static inline UIFont *_PingFangFont(NSString *fontName, CGFloat fontSize){
+    if (fontName.length == 0) return nil;
+    return [UIFont fontWithName:fontName size:fontSize];
+}
+
++ (UIFont *)kl_systemFontOfSize:(CGFloat)fontSize {
+    return _PingFangFont(kPingFangRegular, fontSize) ?: [UIFont systemFontOfSize:fontSize];
+}
+
+UIFont *kl_font(CGFloat fontSize){
+    return [TTOtherViewController kl_systemFontOfSize:fontSize];
+}
+
 
 - (void)dealloc
 {
@@ -32,9 +52,63 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self testLabToLab];
+//    [self testLabToLab];
+//
+//    [self testLabToBtn];
     
-    [self testLabToBtn];
+    
+    [self.rightBtn setImage:[UIImage imageNamed:@"视频_循环播放"] forState:UIControlStateNormal];
+    [self.rightBtn setTitle:@"循环播放" forState:UIControlStateNormal];
+    
+    [self.rightButton2 setImage:[UIImage imageNamed:@"赠送好友"] forState:UIControlStateNormal];
+    [self.rightButton2 setTitle:@"赠送好友" forState:UIControlStateNormal];
+    
+    
+    CGFloat w1 = [self.rightBtn.titleLabel.text fsj_calculateWidthWithFont:self.rightBtn.titleLabel.font size:CGSizeMake(0, 21)];
+    
+    CGFloat w2 = [self.rightButton2.titleLabel.text fsj_calculateWidthWithFont:self.rightButton2.titleLabel.font size:CGSizeMake(0, 21)];
+    [self.rightBtn mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(0);
+        make.width.mas_equalTo(w1+22);
+    }];
+    [self.rightButton2 mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(w2+23);
+    }];
+    [self.rightBtn fsj_setIconInTopWithSpacing:0];
+    [self.rightButton2 fsj_setIconInTopWithSpacing:0];
+}
+
+- (UIButton *)rightBtn{
+    if (!_rightBtn) {
+        UIButton *obj = [UIButton buttonWithType:UIButtonTypeSystem];
+        [self.view addSubview:_rightBtn = obj];
+        [obj mas_makeConstraints:^(MASConstraintMaker *make) {
+            kMakeRV(-20);
+            kMakeBV(-100);
+            kMakeHV(44);
+            kMakeWV(70);
+        }];
+        obj.titleLabel.font = kl_font(14);
+        [obj setTitleColor:[UIColor fsj_colorWithHexString:@"#333333"] forState:(UIControlStateNormal)];
+        obj.backgroundColor = [UIColor fsj_randomColor];
+    }
+    return _rightBtn;
+}
+- (UIButton *)rightButton2{
+    if (!_rightButton2) {
+        UIButton *obj = [UIButton buttonWithType:UIButtonTypeSystem];
+        [self.view addSubview:_rightButton2 = obj];
+        [obj mas_makeConstraints:^(MASConstraintMaker *make) {
+            kMakeR(self.rightBtn.mas_left).offset(0);
+            kMakeBV(-100);
+            kMakeHV(44);
+            kMakeWV(78);
+        }];
+        obj.titleLabel.font = kl_font(14);
+        [obj setTitleColor:[UIColor fsj_colorWithHexString:@"#333333"] forState:(UIControlStateNormal)];
+        obj.backgroundColor = [UIColor fsj_randomColor];
+    }
+    return _rightButton2;
 }
 
 - (void)testLabToLab {

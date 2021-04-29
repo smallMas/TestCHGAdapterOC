@@ -9,6 +9,7 @@
 #import "TTTestRandomData.h"
 
 @interface TTTestWCDBDataController ()
+@property (strong, nonatomic) NSTimer *timer;
 @property (strong, nonatomic) NSMutableArray *dataArray;
 @end
 
@@ -33,8 +34,8 @@
 }
 
 - (void)selectedALL {
-    NSArray *a = [TTTestRandomData selectedAllData];
-    [self.dataArray addObjectsFromArray:a];
+//    NSArray *a = [TTTestRandomData selectedAllData];
+//    [self.dataArray addObjectsFromArray:a];
     [self reload];
 }
 
@@ -54,14 +55,62 @@
 }
 
 - (void)addAction:(id)sender {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        FSJ_WEAK_SELF
+        if (self.timer) {
+            [self.timer invalidate];
+            self.timer = nil;
+        }
+        NSTimer *timer = [NSTimer timerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+            FSJ_STRONG_SELF
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self addData];
+            });
+        }];
+        self.timer = timer;
+        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
+        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    });
+}
+
+- (void)addData {
     TTTestRandomData *data = [TTTestRandomData new];
     data.uuid = [FSJUtility fsj_uuid];
     data.randomNum = [NSString stringWithFormat:@"%d",arc4random()/100000];
     data.name = [NSString stringWithFormat:@"%dshijian",arc4random()/100];
     
-    if ([TTTestRandomData insertToDatabase:data]) {
+    BOOL isToBottom = YES;
+    
+//    if ([TTTestRandomData insertToDatabase:data]) {
         [self.dataArray addObject:data];
-        [self reload];
+        
+        
+        NSIndexPath *idxPath = self.tableView.indexPathsForVisibleRows.lastObject;
+        if ( !idxPath || self.dataArray.count - idxPath.row > 3) {
+            isToBottom = NO;
+        }
+        
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:(self.dataArray.count-1) inSection:0];
+        [self.tableView beginUpdates];
+        [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
+        [self.tableView endUpdates];
+//    }
+    
+    if (isToBottom) {
+        // 滚动到最底部
+        [self scrollToBottom];
+    }
+}
+
+
+- (void)scrollToBottom {
+    // 滚动到最底部
+    NSArray *array = self.dataArray;
+    NSLog(@"array >>> %d",array.count);
+    if ([array count] > 0 && !self.tableView.dragging) {
+        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[array count] - 1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     }
 }
 
@@ -75,7 +124,7 @@
 //        }
 //    }
     
-    [self updateAction:sender];
+//    [self updateAction:sender];
 }
 
 - (void)updateAction:(id)sender {

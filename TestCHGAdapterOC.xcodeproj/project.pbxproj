@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6EE29B54C8158701606F9046 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */; };
-		86F44DF2EC57C4097E4ECD61 /* Pods_TestCHGAdapterOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0185A8F4590D895340DF2AF9 /* Pods_TestCHGAdapterOC.framework */; };
-		99A1AF87777D4B74B31C2034 /* Pods_TestCHGAdapterOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */; };
+		01C7B41BAF04829D8D8A20DA /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4BCE9AEFE16939D5F8ECC6 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */; };
+		03B7E8BF0C13E274BC78168F /* Pods_TestCHGAdapterOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DD5904AE2264F95B8CDEBB /* Pods_TestCHGAdapterOCTests.framework */; };
+		481CC76F568C2D4DB31F476E /* Pods_TestCHGAdapterOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A47D97936219A962C0BB0 /* Pods_TestCHGAdapterOC.framework */; };
 		9C04B6C726267AFB00ED2900 /* TTTestYYTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C04B6C626267AFB00ED2900 /* TTTestYYTextController.m */; };
 		9C29C87B261429E40098A923 /* TTTestLocalEventLibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C87A261429E40098A923 /* TTTestLocalEventLibController.m */; };
 		9C29C8AC26144B1F0098A923 /* TTLocalLibModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C8AB26144B1F0098A923 /* TTLocalLibModel.m */; };
@@ -54,6 +54,12 @@
 		9CB8647C25E74B4100904C82 /* DNPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647925E74B4000904C82 /* DNPlayerControlView.m */; };
 		9CB8648225E74B9700904C82 /* DNBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8648025E74B9600904C82 /* DNBaseView.m */; };
 		9CB864BB25E7502F00904C82 /* TTTestVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB864BA25E7502F00904C82 /* TTTestVideoViewController.m */; };
+		9CE680092636B272003CAC5D /* RYTBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE680002636B271003CAC5D /* RYTBase64.m */; };
+		9CE6800A2636B272003CAC5D /* RYTRSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE680012636B271003CAC5D /* RYTRSAEncryptor.m */; };
+		9CE6800B2636B272003CAC5D /* RYTAESEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE680022636B271003CAC5D /* RYTAESEncryptor.m */; };
+		9CE6800C2636B272003CAC5D /* RYTMD5Encryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE680032636B271003CAC5D /* RYTMD5Encryptor.m */; };
+		9CE6800D2636B272003CAC5D /* RSAHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE680082636B271003CAC5D /* RSAHandle.m */; };
+		9CE6810726394482003CAC5D /* TTTestBase64Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE6810626394482003CAC5D /* TTTestBase64Controller.m */; };
 		E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660E825C12FDB002DFCCA /* TTGongShiViewController.m */; };
 		E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = E95660FA25C131E8002DFCCA /* NSString+TT.m */; };
 		E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E956611A25C142DF002DFCCA /* TTExerciseModel.m */; };
@@ -132,11 +138,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0185A8F4590D895340DF2AF9 /* Pods_TestCHGAdapterOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0D93ECC26E4E79119FF125 /* Pods-TestCHGAdapterOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC.release.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC/Pods-TestCHGAdapterOC.release.xcconfig"; sourceTree = "<group>"; };
 		33D598B4D5AAF2B987D7A2EC /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.release.xcconfig"; sourceTree = "<group>"; };
-		3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB6AE0B33F7077206339566 /* Pods-TestCHGAdapterOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOCTests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOCTests/Pods-TestCHGAdapterOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65DD5904AE2264F95B8CDEBB /* Pods_TestCHGAdapterOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4BCE9AEFE16939D5F8ECC6 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C04B6C526267AFB00ED2900 /* TTTestYYTextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestYYTextController.h; sourceTree = "<group>"; };
 		9C04B6C626267AFB00ED2900 /* TTTestYYTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestYYTextController.m; sourceTree = "<group>"; };
 		9C29C879261429E40098A923 /* TTTestLocalEventLibController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestLocalEventLibController.h; sourceTree = "<group>"; };
@@ -226,9 +232,21 @@
 		9CB8648125E74B9700904C82 /* DNBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNBaseView.h; sourceTree = "<group>"; };
 		9CB864B925E7502F00904C82 /* TTTestVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestVideoViewController.h; sourceTree = "<group>"; };
 		9CB864BA25E7502F00904C82 /* TTTestVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestVideoViewController.m; sourceTree = "<group>"; };
+		9CE67FFE2636B271003CAC5D /* RYTAESEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTAESEncryptor.h; sourceTree = "<group>"; };
+		9CE67FFF2636B271003CAC5D /* RYTMD5Encryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTMD5Encryptor.h; sourceTree = "<group>"; };
+		9CE680002636B271003CAC5D /* RYTBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTBase64.m; sourceTree = "<group>"; };
+		9CE680012636B271003CAC5D /* RYTRSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTRSAEncryptor.m; sourceTree = "<group>"; };
+		9CE680022636B271003CAC5D /* RYTAESEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTAESEncryptor.m; sourceTree = "<group>"; };
+		9CE680032636B271003CAC5D /* RYTMD5Encryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTMD5Encryptor.m; sourceTree = "<group>"; };
+		9CE680042636B271003CAC5D /* RYTBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTBase64.h; sourceTree = "<group>"; };
+		9CE680052636B271003CAC5D /* RYTRSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTRSAEncryptor.h; sourceTree = "<group>"; };
+		9CE680072636B271003CAC5D /* RSAHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAHandle.h; sourceTree = "<group>"; };
+		9CE680082636B271003CAC5D /* RSAHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAHandle.m; sourceTree = "<group>"; };
+		9CE6810526394482003CAC5D /* TTTestBase64Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestBase64Controller.h; sourceTree = "<group>"; };
+		9CE6810626394482003CAC5D /* TTTestBase64Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestBase64Controller.m; sourceTree = "<group>"; };
 		9D7EB3D324D38DF0E22CA51B /* Pods-TestCHGAdapterOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC/Pods-TestCHGAdapterOC.debug.xcconfig"; sourceTree = "<group>"; };
-		B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA613E6C0B9690659D7C3C1C /* Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests/Pods-TestCHGAdapterOC-TestCHGAdapterOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E46A47D97936219A962C0BB0 /* Pods_TestCHGAdapterOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95660E725C12FDB002DFCCA /* TTGongShiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTGongShiViewController.h; sourceTree = "<group>"; };
 		E95660E825C12FDB002DFCCA /* TTGongShiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTGongShiViewController.m; sourceTree = "<group>"; };
 		E95660F925C131E8002DFCCA /* NSString+TT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TT.h"; sourceTree = "<group>"; };
@@ -353,7 +371,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F44DF2EC57C4097E4ECD61 /* Pods_TestCHGAdapterOC.framework in Frameworks */,
+				481CC76F568C2D4DB31F476E /* Pods_TestCHGAdapterOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +379,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99A1AF87777D4B74B31C2034 /* Pods_TestCHGAdapterOCTests.framework in Frameworks */,
+				03B7E8BF0C13E274BC78168F /* Pods_TestCHGAdapterOCTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +387,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EE29B54C8158701606F9046 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework in Frameworks */,
+				01C7B41BAF04829D8D8A20DA /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +600,48 @@
 			path = "测试视频播放";
 			sourceTree = "<group>";
 		};
+		9CE67FFC2636B271003CAC5D /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				9CE67FFD2636B271003CAC5D /* EncryptionTools */,
+				9CE680062636B271003CAC5D /* tool */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		9CE67FFD2636B271003CAC5D /* EncryptionTools */ = {
+			isa = PBXGroup;
+			children = (
+				9CE67FFE2636B271003CAC5D /* RYTAESEncryptor.h */,
+				9CE680022636B271003CAC5D /* RYTAESEncryptor.m */,
+				9CE680042636B271003CAC5D /* RYTBase64.h */,
+				9CE680002636B271003CAC5D /* RYTBase64.m */,
+				9CE67FFF2636B271003CAC5D /* RYTMD5Encryptor.h */,
+				9CE680032636B271003CAC5D /* RYTMD5Encryptor.m */,
+				9CE680052636B271003CAC5D /* RYTRSAEncryptor.h */,
+				9CE680012636B271003CAC5D /* RYTRSAEncryptor.m */,
+			);
+			path = EncryptionTools;
+			sourceTree = "<group>";
+		};
+		9CE680062636B271003CAC5D /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				9CE680072636B271003CAC5D /* RSAHandle.h */,
+				9CE680082636B271003CAC5D /* RSAHandle.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		9CE6810426394457003CAC5D /* 测试加密 */ = {
+			isa = PBXGroup;
+			children = (
+				9CE6810526394482003CAC5D /* TTTestBase64Controller.h */,
+				9CE6810626394482003CAC5D /* TTTestBase64Controller.m */,
+			);
+			path = "测试加密";
+			sourceTree = "<group>";
+		};
 		E95660E625C12FB8002DFCCA /* 公式算法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +656,7 @@
 		E95660F725C131C6002DFCCA /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				9CE67FFC2636B271003CAC5D /* RSA */,
 				9CB8647325E74AFA00904C82 /* VideoPlay */,
 				E95660F825C131D0002DFCCA /* Tool */,
 			);
@@ -1003,6 +1064,7 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9CE6810426394457003CAC5D /* 测试加密 */,
 				9C04B6AD26267AC000ED2900 /* 测试YYText */,
 				9C29C878261428A90098A923 /* 测试本地库 */,
 				9C85CEE02609D2D900258E1E /* 测试StackView */,
@@ -1101,9 +1163,9 @@
 		FC3D60A8FF85478560626811 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0185A8F4590D895340DF2AF9 /* Pods_TestCHGAdapterOC.framework */,
-				B1E153023391838AFA8E90FF /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */,
-				3A2E6A07D40DAE7582802A25 /* Pods_TestCHGAdapterOCTests.framework */,
+				E46A47D97936219A962C0BB0 /* Pods_TestCHGAdapterOC.framework */,
+				8E4BCE9AEFE16939D5F8ECC6 /* Pods_TestCHGAdapterOC_TestCHGAdapterOCUITests.framework */,
+				65DD5904AE2264F95B8CDEBB /* Pods_TestCHGAdapterOCTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1374,6 +1436,7 @@
 				9C66E6D525F349B300F4496A /* TTObject.m in Sources */,
 				E95660E925C12FDB002DFCCA /* TTGongShiViewController.m in Sources */,
 				9C5A4CF5260316CC00784145 /* ZHDevice.m in Sources */,
+				9CE6810726394482003CAC5D /* TTTestBase64Controller.m in Sources */,
 				E9A3452025B96953003EB215 /* TTSameModel+SameA.m in Sources */,
 				E9A3452625B9695F003EB215 /* TTSameModel+SameB.m in Sources */,
 				9C6374DB25D250EF0078F146 /* TTKLViewController.m in Sources */,
@@ -1389,6 +1452,7 @@
 				E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */,
 				E956618825C3B151002DFCCA /* TTTestCopyViewController.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
+				9CE680092636B272003CAC5D /* RYTBase64.m in Sources */,
 				9C5176F325C8E81E00B0526D /* TTOtherViewController.m in Sources */,
 				9CB8648225E74B9700904C82 /* DNBaseView.m in Sources */,
 				E956613A25C25FCF002DFCCA /* TTSudoModel.m in Sources */,
@@ -1396,6 +1460,7 @@
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E960EDD025BABBC100AFB3AB /* TTAnimationWaterController.m in Sources */,
 				9CB8647A25E74B4100904C82 /* DNPlayerNetworkErrView.m in Sources */,
+				9CE6800D2636B272003CAC5D /* RSAHandle.m in Sources */,
 				E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */,
 				9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */,
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
@@ -1438,10 +1503,13 @@
 				E956618F25C3DBFE002DFCCA /* TTTestThreadViewController.m in Sources */,
 				E960EDDA25BABBE000AFB3AB /* TTWaterView.m in Sources */,
 				9C540B9A25E8D02C00CF0074 /* TTTestAudioViewController.m in Sources */,
+				9CE6800B2636B272003CAC5D /* RYTAESEncryptor.m in Sources */,
+				9CE6800A2636B272003CAC5D /* RYTRSAEncryptor.m in Sources */,
 				E9A344DE25B7DE6A003EB215 /* TTViewControllerB.m in Sources */,
 				E9A3445625B7D7EE003EB215 /* TestCHGAdapterOC.xcdatamodeld in Sources */,
 				E9A3444D25B7D7EE003EB215 /* SceneDelegate.m in Sources */,
 				E956615725C28B4D002DFCCA /* TTSudoCollectionViewCell.m in Sources */,
+				9CE6800C2636B272003CAC5D /* RYTMD5Encryptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1616,6 +1684,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66V5PFWDR7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = TestCHGAdapterOC/PrefixHeader.pch;
 				INFOPLIST_FILE = TestCHGAdapterOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1636,6 +1705,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66V5PFWDR7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = TestCHGAdapterOC/PrefixHeader.pch;
 				INFOPLIST_FILE = TestCHGAdapterOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

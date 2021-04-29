@@ -24,6 +24,7 @@ target 'TestCHGAdapterOC' do
     pod 'WCDB'
     pod 'AFNetworking'
     pod 'YYText'
+    pod 'OpenSSL-Universal', '1.0.2.19' #1.0.2.20 编译报错
     
   target 'TestCHGAdapterOCTests' do
     inherit! :search_paths
