@@ -14,7 +14,7 @@ target 'TestCHGAdapterOC' do
     pod 'Masonry', '~> 1.1.0'
     pod 'MJExtension', '~> 3.0.17'
     pod 'ReactiveObjC'
-    pod 'ReactiveCocoa'
+#    pod 'ReactiveCocoa'
     pod 'CHGAdapter'
     pod 'FSJUtility', '~> 1.0.6'
     pod 'IQKeyboardManager' #键盘库

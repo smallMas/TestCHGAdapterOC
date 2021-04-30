@@ -308,7 +308,10 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
 
 - (NSArray *)encryptionLibArray {
     return @[
-        [TTMenuModel createT:@"测试base64加密" toCS:@"TTTestBase64Controller"]
+        [TTMenuModel createT:@"测试base64加密" toCS:@"TTTestBase64Controller"],
+        [TTMenuModel createT:@"测试RSA加密" toCS:@"TTTestRSAController"],
+        [TTMenuModel createT:@"测试文件权限" toCS:@"TTFileSecretViewController"],
+        [TTMenuModel createT:@"测试AES加密" toCS:@"TTTestAESViewController"]
     ];
 }
 

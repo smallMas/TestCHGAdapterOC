@@ -43,6 +43,9 @@
 		9C5A4CD12602F4DC00784145 /* TTTestSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A4CD02602F4DA00784145 /* TTTestSafeViewController.m */; };
 		9C5A4CEF2603001A00784145 /* KLLiveGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A4CEE2603001A00784145 /* KLLiveGradientView.m */; };
 		9C5A4CF5260316CC00784145 /* ZHDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A4CF4260316CC00784145 /* ZHDevice.m */; };
+		9C60566D263AC28A005F8D8B /* TTTestRSAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C60566C263AC28A005F8D8B /* TTTestRSAController.m */; };
+		9C60569A263B902C005F8D8B /* TTFileSecretViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C605699263B902C005F8D8B /* TTFileSecretViewController.m */; };
+		9C6056A3263BABDA005F8D8B /* TTTestAESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6056A2263BABDA005F8D8B /* TTTestAESViewController.m */; };
 		9C6374DB25D250EF0078F146 /* TTKLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6374D925D250EF0078F146 /* TTKLViewController.m */; };
 		9C6374DC25D250EF0078F146 /* TTKLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6374DA25D250EF0078F146 /* TTKLViewController.xib */; };
 		9C66E6CF25F349A200F4496A /* UITextView+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C66E6CE25F349A200F4496A /* UITextView+TT.m */; };
@@ -211,6 +214,12 @@
 		9C5A4CEE2603001A00784145 /* KLLiveGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLLiveGradientView.m; sourceTree = "<group>"; };
 		9C5A4CF3260316CC00784145 /* ZHDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHDevice.h; sourceTree = "<group>"; };
 		9C5A4CF4260316CC00784145 /* ZHDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHDevice.m; sourceTree = "<group>"; };
+		9C60566B263AC28A005F8D8B /* TTTestRSAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestRSAController.h; sourceTree = "<group>"; };
+		9C60566C263AC28A005F8D8B /* TTTestRSAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestRSAController.m; sourceTree = "<group>"; };
+		9C605698263B902C005F8D8B /* TTFileSecretViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTFileSecretViewController.h; sourceTree = "<group>"; };
+		9C605699263B902C005F8D8B /* TTFileSecretViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTFileSecretViewController.m; sourceTree = "<group>"; };
+		9C6056A1263BABDA005F8D8B /* TTTestAESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestAESViewController.h; sourceTree = "<group>"; };
+		9C6056A2263BABDA005F8D8B /* TTTestAESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestAESViewController.m; sourceTree = "<group>"; };
 		9C6374D825D250EF0078F146 /* TTKLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTKLViewController.h; sourceTree = "<group>"; };
 		9C6374D925D250EF0078F146 /* TTKLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTKLViewController.m; sourceTree = "<group>"; };
 		9C6374DA25D250EF0078F146 /* TTKLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTKLViewController.xib; sourceTree = "<group>"; };
@@ -638,6 +647,12 @@
 			children = (
 				9CE6810526394482003CAC5D /* TTTestBase64Controller.h */,
 				9CE6810626394482003CAC5D /* TTTestBase64Controller.m */,
+				9C60566B263AC28A005F8D8B /* TTTestRSAController.h */,
+				9C60566C263AC28A005F8D8B /* TTTestRSAController.m */,
+				9C605698263B902C005F8D8B /* TTFileSecretViewController.h */,
+				9C605699263B902C005F8D8B /* TTFileSecretViewController.m */,
+				9C6056A1263BABDA005F8D8B /* TTTestAESViewController.h */,
+				9C6056A2263BABDA005F8D8B /* TTTestAESViewController.m */,
 			);
 			path = "测试加密";
 			sourceTree = "<group>";
@@ -1472,10 +1487,12 @@
 				E9A3453825B9710A003EB215 /* TTGCDSemaphoreController.m in Sources */,
 				9CB8647C25E74B4100904C82 /* DNPlayerControlView.m in Sources */,
 				9C540B8E25E8BC8600CF0074 /* DNVideoPlayHandle.m in Sources */,
+				9C6056A3263BABDA005F8D8B /* TTTestAESViewController.m in Sources */,
 				9C29C8BE26144C8A0098A923 /* TTBaseTableViewCell.m in Sources */,
 				9C29C97726145FFE0098A923 /* UIViewController+TTMeta.m in Sources */,
 				E956619825C3DC41002DFCCA /* UIViewController+TTThread.m in Sources */,
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
+				9C60569A263B902C005F8D8B /* TTFileSecretViewController.m in Sources */,
 				9C44A5DA25FB592E000E6839 /* TTTestLoadDataCollectionController.m in Sources */,
 				9C29C97126145B570098A923 /* FSJControlUtil.m in Sources */,
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
@@ -1484,6 +1501,7 @@
 				E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */,
 				E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */,
 				9C55F1752604981300184129 /* TTWCDBService.mm in Sources */,
+				9C60566D263AC28A005F8D8B /* TTTestRSAController.m in Sources */,
 				9C29C97D261461E20098A923 /* TTTestToController.m in Sources */,
 				E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */,
 				9C5A4CEF2603001A00784145 /* KLLiveGradientView.m in Sources */,

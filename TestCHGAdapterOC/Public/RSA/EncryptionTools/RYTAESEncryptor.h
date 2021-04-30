@@ -16,4 +16,6 @@
 //AES解密
 + (NSData *)AES128DecryptWithKey:(NSString *)key iv:(NSString *)iv withNSData:(NSData *)data;
 
+//随机生成AES密钥
++ (NSString *)randomlyGenerated16BitString;
 @end
