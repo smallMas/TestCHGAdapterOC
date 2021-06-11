@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
     TTMenuTypeLocalLib,
     // 加密
     TTMenuTypeEncryption,
+    // block链式编程
+    TTMenuTypeBlock,
 };
 
 @interface TTMenuViewController ()
@@ -73,50 +75,35 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 case TTMenuTypeGCD:
                 {
                     // GCD 功能测试集合
-                    TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = model.title;
-                    vc.dataArray = [self gcdArray];
-                    [self.navigationController pushViewController:vc animated:YES];
+                    [self gotoSecondMenuTitle:model.title menuArray:[self gcdArray]];
                 }
                     break;
                     
                 case TTMenuTypeAnimation:
                 {
                     // 动画 功能测试集合
-                    TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = model.title;
-                    vc.dataArray = [self animationArray];
-                    [self.navigationController pushViewController:vc animated:YES];
+                    [self gotoSecondMenuTitle:model.title menuArray:[self animationArray]];
                 }
                     break;
                     
                 case TTMenuTypeRunloop:
                 {
                     // RunLoop 功能测试集合
-                    TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = model.title;
-                    vc.dataArray = [self runloopArray];
-                    [self.navigationController pushViewController:vc animated:YES];
+                    [self gotoSecondMenuTitle:model.title menuArray:[self runloopArray]];
                 }
                     break;
                     
                 case TTMenuTypeTimer:
                 {
                     // 定时器 功能
-                    TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = model.title;
-                    vc.dataArray = [self timerArray];
-                    [self.navigationController pushViewController:vc animated:YES];
+                    [self gotoSecondMenuTitle:model.title menuArray:[self timerArray]];
                 }
                     break;
                     
                 case TTMenuTypeSuanFa:
                 {
                     // 算法
-                    TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = model.title;
-                    vc.dataArray = [self suanfaArray];
-                    [self.navigationController pushViewController:vc animated:YES];
+                    [self gotoSecondMenuTitle:model.title menuArray:[self suanfaArray]];
                 }
                     break;
                     
@@ -129,10 +116,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                         [self.navigationController pushViewController:vc animated:YES];
                     }else {
                         // 计算公式题目列表
-                        TTMenuViewController *vc = [TTMenuViewController new];
-                        vc.title = model.title;
-                        vc.dataArray = [self gongShiArray];
-                        [self.navigationController pushViewController:vc animated:YES];
+                        [self gotoSecondMenuTitle:model.title menuArray:[self gongShiArray]];
                     }
                 }
                     break;
@@ -146,10 +130,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                         [self.navigationController pushViewController:vc animated:YES];
                     }else {
                         // 二叉树题目列表
-                        TTMenuViewController *vc = [TTMenuViewController new];
-                        vc.title = model.title;
-                        vc.dataArray = [self treeArray];
-                        [self.navigationController pushViewController:vc animated:YES];
+                        [self gotoSecondMenuTitle:model.title menuArray:[self treeArray]];
                     }
                 }
                     break;
@@ -157,20 +138,14 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 case TTMenuTypeNineSudoku:
                 {
                     // 九宫格数独
-                    TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = model.title;
-                    vc.dataArray = [self sudoKuArray];
-                    [self.navigationController pushViewController:vc animated:YES];
+                    [self gotoSecondMenuTitle:model.title menuArray:[self sudoKuArray]];
                 }
                     break;
                     
                 case TTMenuTypeDataBase:
                 {
                     // 数据库
-                    TTMenuViewController *vc = [TTMenuViewController new];
-                    vc.title = model.title;
-                    vc.dataArray = [self databaseArray];
-                    [self.navigationController pushViewController:vc animated:YES];
+                    [self gotoSecondMenuTitle:model.title menuArray:[self databaseArray]];
                 }
                     break;
                     
@@ -185,6 +160,13 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 {
                     // 加密
                     [self gotoSecondMenuTitle:model.title menuArray:[self encryptionLibArray]];
+                }
+                    break;
+                    
+                case TTMenuTypeBlock:
+                {
+                    // block链式编程
+                    [self gotoSecondMenuTitle:model.title menuArray:[self blockChainArray]];
                 }
                     break;
                 default:
@@ -229,6 +211,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试本地库" type:TTMenuTypeLocalLib],
             [TTMenuModel createT:@"测试YYText" toCS:@"TTTestYYTextController"],
             [TTMenuModel createT:@"测试加密" type:TTMenuTypeEncryption],
+            [TTMenuModel createT:@"测试Block及链式编程" type:TTMenuTypeBlock],
         ];
     }
 }
@@ -247,7 +230,8 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
         [TTMenuModel createT:@"动画 测试postion动画" toCS:@"TTAnimationPositionController"],
         [TTMenuModel createT:@"动画 测试属性动画" toCS:@"TTAnimationPropertyController"],
         [TTMenuModel createT:@"动画 测试组合动画" toCS:@"TTAnimationGroupController"],
-        [TTMenuModel createT:@"动画 测试波浪动画" toCS:@"TTAnimationWaterController"]
+        [TTMenuModel createT:@"动画 测试波浪动画" toCS:@"TTAnimationWaterController"],
+        [TTMenuModel createT:@"动画 测试转场动画" toCS:@"TTTrainsViewController"]
     ];
 }
 
@@ -312,6 +296,13 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
         [TTMenuModel createT:@"测试RSA加密" toCS:@"TTTestRSAController"],
         [TTMenuModel createT:@"测试文件权限" toCS:@"TTFileSecretViewController"],
         [TTMenuModel createT:@"测试AES加密" toCS:@"TTTestAESViewController"]
+    ];
+}
+
+- (NSArray *)blockChainArray {
+    return @[
+        [TTMenuModel createT:@"测试链式开发-TableView" toCS:@"TTChainBlockTableController"],
+        [TTMenuModel createT:@"测试链式开发-Collection" toCS:@"TTChainBlockCollectionController"]
     ];
 }
 

@@ -5,6 +5,7 @@
 
 #import "RSAHandle.h"
 #import <Security/Security.h>
+#import "NSString+TTEncrypty.h"
 
 @implementation RSAHandle
 
@@ -285,6 +286,12 @@ static NSData *base64_decode(NSString *str){
 	return ret;
 }
 
++ (NSString *)encryptHEXString:(NSString *)str privateKey:(NSString *)privKey{
+    NSData *data = [RSAHandle encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] privateKey:privKey];
+    NSString *ret = [str convertDataToHexStr:data];
+    return ret;
+}
+
 + (NSString *)encryptString:(NSString *)str privateKey:(NSString *)privKey{
 	NSData *data = [RSAHandle encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] privateKey:privKey];
 	NSString *ret = base64_encode_data(data);
@@ -355,6 +362,13 @@ static NSData *base64_decode(NSString *str){
 	return ret;
 }
 
++ (NSString *)decryptHEXString:(NSString *)str privateKey:(NSString *)privKey {
+    // 使用HEX
+    NSData *data = [str convertHexStrToData:str];
+    data = [RSAHandle decryptData:data privateKey:privKey];
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return ret;
+}
 
 + (NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey{
 	NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
@@ -384,6 +398,12 @@ static NSData *base64_decode(NSString *str){
 	return ret;
 }
 
++ (NSString *)encryptHEXString:(NSString *)str publicKey:(NSString *)pubKey{
+    NSData *data = [RSAHandle encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] publicKey:pubKey];
+    NSString *ret = [str convertDataToHexStr:data];
+    return ret;
+}
+
 + (NSData *)encryptData:(NSData *)data publicKey:(NSString *)pubKey{
 	if(!data || !pubKey){
 		return nil;
@@ -393,6 +413,14 @@ static NSData *base64_decode(NSString *str){
 		return nil;
 	}
 	return [RSAHandle encryptData:data withKeyRef:keyRef isSign:NO];
+}
+
++ (NSString *)decryptHEXString:(NSString *)str publicKey:(NSString *)pubKey {
+    // 使用HEX
+    NSData *data = [str convertHexStrToData:str];
+    data = [RSAHandle decryptData:data publicKey:pubKey];
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return ret;
 }
 
 + (NSString *)decryptString:(NSString *)str publicKey:(NSString *)pubKey{

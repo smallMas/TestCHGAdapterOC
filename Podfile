@@ -9,13 +9,14 @@ target 'TestCHGAdapterOC' do
   pod 'FSJEventEngine', :path => './LocalPods/FSJEventEngine'
   pod 'FSJBaseMacro', :path => './LocalPods/FSJBaseMacro'
   pod 'FSJAudioPlayer', :path => './LocalPods/FSJAudioPlayer' #语音播放器
+  pod 'SMChainBlocker', :path => './LocalPods/SMChainBlocker' #链式编程
   
   # Pods for TestCHGAdapterOC
     pod 'Masonry', '~> 1.1.0'
     pod 'MJExtension', '~> 3.0.17'
     pod 'ReactiveObjC'
 #    pod 'ReactiveCocoa'
-    pod 'CHGAdapter'
+#    pod 'CHGAdapter'
     pod 'FSJUtility', '~> 1.0.6'
     pod 'IQKeyboardManager' #键盘库
     pod 'AFNetworking'

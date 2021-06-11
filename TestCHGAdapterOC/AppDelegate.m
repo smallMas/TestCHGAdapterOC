@@ -9,6 +9,7 @@
 #import "TTMenuViewController.h"
 #import "TTNavigationViewController.h"
 #import "IQKeyboardManager.h"
+#define klSafeParameterSpace(parameter) ((!parameter || parameter == (id)kCFNull) ? @"" : (parameter))
 
 @interface AppDelegate ()
 

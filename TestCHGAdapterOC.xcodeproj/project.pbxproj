@@ -21,11 +21,15 @@
 		9C29C97126145B570098A923 /* FSJControlUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C97026145B570098A923 /* FSJControlUtil.m */; };
 		9C29C97726145FFE0098A923 /* UIViewController+TTMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C97626145FFE0098A923 /* UIViewController+TTMeta.m */; };
 		9C29C97D261461E20098A923 /* TTTestToController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C97C261461E20098A923 /* TTTestToController.m */; };
+		9C2A41382673509400DBAF8B /* TTChainBlockCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A41372673509400DBAF8B /* TTChainBlockCollectionController.m */; };
+		9C2A41712673524100DBAF8B /* TTChainCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A41702673524100DBAF8B /* TTChainCollectionCell.m */; };
+		9C2A417A267353E000DBAF8B /* TTChainCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A4179267353E000DBAF8B /* TTChainCollectionHeaderView.m */; };
 		9C44A5B625FB47F9000E6839 /* TTTestLoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5B525FB47F9000E6839 /* TTTestLoadDataController.m */; };
 		9C44A5D425FB4F68000E6839 /* TTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5D325FB4F68000E6839 /* TTTableView.m */; };
 		9C44A5DA25FB592E000E6839 /* TTTestLoadDataCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5D925FB592E000E6839 /* TTTestLoadDataCollectionController.m */; };
 		9C44A5E025FB5A0A000E6839 /* TTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5DF25FB5A0A000E6839 /* TTCollectionView.m */; };
 		9C44A5E625FB5ADB000E6839 /* TTMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5E525FB5ADB000E6839 /* TTMenuCollectionViewCell.m */; };
+		9C44E721266A20B400CF89C1 /* TTTrainsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44E720266A20B400CF89C1 /* TTTrainsViewController.m */; };
 		9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176D325C685B300B0526D /* TTCallFunViewController.m */; };
 		9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176DD25C6878A00B0526D /* TTPeople.m */; };
 		9C5176E225C68F0E00B0526D /* TTOCOffsetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176E125C68F0E00B0526D /* TTOCOffsetViewController.m */; };
@@ -50,7 +54,12 @@
 		9C6374DC25D250EF0078F146 /* TTKLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6374DA25D250EF0078F146 /* TTKLViewController.xib */; };
 		9C66E6CF25F349A200F4496A /* UITextView+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C66E6CE25F349A200F4496A /* UITextView+TT.m */; };
 		9C66E6D525F349B300F4496A /* TTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C66E6D425F349B200F4496A /* TTObject.m */; };
+		9C7842A02670B93A009D480A /* TTChainBlockTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C78429F2670B93A009D480A /* TTChainBlockTableController.m */; };
+		9C7842A62670B9E9009D480A /* TTChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7842A52670B9E9009D480A /* TTChainModel.m */; };
+		9C7842AC2670BA5E009D480A /* TTChainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7842AB2670BA5E009D480A /* TTChainTableCell.m */; };
+		9C7842B22670C0A1009D480A /* TChainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7842B12670C0A1009D480A /* TChainHeaderView.m */; };
 		9C8042B825F0BC1A000D911E /* TTTestWKShowPDFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8042B725F0BC1A000D911E /* TTTestWKShowPDFController.m */; };
+		9C80EBE9264683B10026D20B /* NSString+TTEncrypty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80EBE8264683B10026D20B /* NSString+TTEncrypty.m */; };
 		9C85CEE32609D30200258E1E /* TTTestStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C85CEE22609D30200258E1E /* TTTestStackViewController.m */; };
 		9CB8647A25E74B4100904C82 /* DNPlayerNetworkErrView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */; };
 		9CB8647B25E74B4100904C82 /* DNPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647825E74B4000904C82 /* DNPlayer.m */; };
@@ -169,6 +178,12 @@
 		9C29C97B261461E20098A923 /* TTTestToController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestToController.h; sourceTree = "<group>"; };
 		9C29C97C261461E20098A923 /* TTTestToController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestToController.m; sourceTree = "<group>"; };
 		9C29C98A261486970098A923 /* TTMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMacro.h; sourceTree = "<group>"; };
+		9C2A41362673509400DBAF8B /* TTChainBlockCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTChainBlockCollectionController.h; sourceTree = "<group>"; };
+		9C2A41372673509400DBAF8B /* TTChainBlockCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainBlockCollectionController.m; sourceTree = "<group>"; };
+		9C2A416F2673524100DBAF8B /* TTChainCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTChainCollectionCell.h; sourceTree = "<group>"; };
+		9C2A41702673524100DBAF8B /* TTChainCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainCollectionCell.m; sourceTree = "<group>"; };
+		9C2A4178267353E000DBAF8B /* TTChainCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTChainCollectionHeaderView.h; sourceTree = "<group>"; };
+		9C2A4179267353E000DBAF8B /* TTChainCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainCollectionHeaderView.m; sourceTree = "<group>"; };
 		9C44A5B425FB47F9000E6839 /* TTTestLoadDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestLoadDataController.h; sourceTree = "<group>"; };
 		9C44A5B525FB47F9000E6839 /* TTTestLoadDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestLoadDataController.m; sourceTree = "<group>"; };
 		9C44A5D225FB4F68000E6839 /* TTTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTableView.h; sourceTree = "<group>"; };
@@ -179,6 +194,8 @@
 		9C44A5DF25FB5A0A000E6839 /* TTCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTCollectionView.m; sourceTree = "<group>"; };
 		9C44A5E425FB5ADB000E6839 /* TTMenuCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMenuCollectionViewCell.h; sourceTree = "<group>"; };
 		9C44A5E525FB5ADB000E6839 /* TTMenuCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMenuCollectionViewCell.m; sourceTree = "<group>"; };
+		9C44E71F266A20B400CF89C1 /* TTTrainsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTrainsViewController.h; sourceTree = "<group>"; };
+		9C44E720266A20B400CF89C1 /* TTTrainsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTrainsViewController.m; sourceTree = "<group>"; };
 		9C5176D225C685B300B0526D /* TTCallFunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTCallFunViewController.h; sourceTree = "<group>"; };
 		9C5176D325C685B300B0526D /* TTCallFunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTCallFunViewController.m; sourceTree = "<group>"; };
 		9C5176DC25C6878A00B0526D /* TTPeople.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPeople.h; sourceTree = "<group>"; };
@@ -227,8 +244,18 @@
 		9C66E6CE25F349A200F4496A /* UITextView+TT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TT.m"; sourceTree = "<group>"; };
 		9C66E6D325F349B200F4496A /* TTObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTObject.h; sourceTree = "<group>"; };
 		9C66E6D425F349B200F4496A /* TTObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTObject.m; sourceTree = "<group>"; };
+		9C78429E2670B93A009D480A /* TTChainBlockTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTChainBlockTableController.h; sourceTree = "<group>"; };
+		9C78429F2670B93A009D480A /* TTChainBlockTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainBlockTableController.m; sourceTree = "<group>"; };
+		9C7842A42670B9E9009D480A /* TTChainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTChainModel.h; sourceTree = "<group>"; };
+		9C7842A52670B9E9009D480A /* TTChainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainModel.m; sourceTree = "<group>"; };
+		9C7842AA2670BA5E009D480A /* TTChainTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTChainTableCell.h; sourceTree = "<group>"; };
+		9C7842AB2670BA5E009D480A /* TTChainTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainTableCell.m; sourceTree = "<group>"; };
+		9C7842B02670C0A1009D480A /* TChainHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TChainHeaderView.h; sourceTree = "<group>"; };
+		9C7842B12670C0A1009D480A /* TChainHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TChainHeaderView.m; sourceTree = "<group>"; };
 		9C8042B625F0BC1A000D911E /* TTTestWKShowPDFController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestWKShowPDFController.h; sourceTree = "<group>"; };
 		9C8042B725F0BC1A000D911E /* TTTestWKShowPDFController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestWKShowPDFController.m; sourceTree = "<group>"; };
+		9C80EBE7264683B10026D20B /* NSString+TTEncrypty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TTEncrypty.h"; sourceTree = "<group>"; };
+		9C80EBE8264683B10026D20B /* NSString+TTEncrypty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TTEncrypty.m"; sourceTree = "<group>"; };
 		9C85CEE12609D30200258E1E /* TTTestStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestStackViewController.h; sourceTree = "<group>"; };
 		9C85CEE22609D30200258E1E /* TTTestStackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestStackViewController.m; sourceTree = "<group>"; };
 		9CB8647425E74B4000904C82 /* DNPlayerNetworkErrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayerNetworkErrView.h; sourceTree = "<group>"; };
@@ -471,6 +498,15 @@
 			path = "测试上一页数据下一页数据";
 			sourceTree = "<group>";
 		};
+		9C44E71E266A207F00CF89C1 /* 测试转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				9C44E71F266A20B400CF89C1 /* TTTrainsViewController.h */,
+				9C44E720266A20B400CF89C1 /* TTTrainsViewController.m */,
+			);
+			path = "测试转场动画";
+			sourceTree = "<group>";
+		};
 		9C5176D125C6856A00B0526D /* 还原方法调用的本质 */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +601,35 @@
 			path = "测试SafeTop";
 			sourceTree = "<group>";
 		};
+		9C78427D2670B773009D480A /* 测试Block */ = {
+			isa = PBXGroup;
+			children = (
+				9C78427F2670B7A2009D480A /* 测试 */,
+			);
+			path = "测试Block";
+			sourceTree = "<group>";
+		};
+		9C78427F2670B7A2009D480A /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				9C78429E2670B93A009D480A /* TTChainBlockTableController.h */,
+				9C78429F2670B93A009D480A /* TTChainBlockTableController.m */,
+				9C2A41362673509400DBAF8B /* TTChainBlockCollectionController.h */,
+				9C2A41372673509400DBAF8B /* TTChainBlockCollectionController.m */,
+				9C7842A42670B9E9009D480A /* TTChainModel.h */,
+				9C7842A52670B9E9009D480A /* TTChainModel.m */,
+				9C7842AA2670BA5E009D480A /* TTChainTableCell.h */,
+				9C7842AB2670BA5E009D480A /* TTChainTableCell.m */,
+				9C7842B02670C0A1009D480A /* TChainHeaderView.h */,
+				9C7842B12670C0A1009D480A /* TChainHeaderView.m */,
+				9C2A416F2673524100DBAF8B /* TTChainCollectionCell.h */,
+				9C2A41702673524100DBAF8B /* TTChainCollectionCell.m */,
+				9C2A4178267353E000DBAF8B /* TTChainCollectionHeaderView.h */,
+				9C2A4179267353E000DBAF8B /* TTChainCollectionHeaderView.m */,
+			);
+			path = "测试";
+			sourceTree = "<group>";
+		};
 		9C8042B525F0BBEF000D911E /* 测试WK加载PDF */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +718,8 @@
 				9C605699263B902C005F8D8B /* TTFileSecretViewController.m */,
 				9C6056A1263BABDA005F8D8B /* TTTestAESViewController.h */,
 				9C6056A2263BABDA005F8D8B /* TTTestAESViewController.m */,
+				9C80EBE7264683B10026D20B /* NSString+TTEncrypty.h */,
+				9C80EBE8264683B10026D20B /* NSString+TTEncrypty.m */,
 			);
 			path = "测试加密";
 			sourceTree = "<group>";
@@ -798,6 +865,7 @@
 		E960ED9B25BA61A100AFB3AB /* 测试动画 */ = {
 			isa = PBXGroup;
 			children = (
+				9C44E71E266A207F00CF89C1 /* 测试转场动画 */,
 				E960EDCD25BABBA500AFB3AB /* 测试波纹动画 */,
 				E960EDC125BAA64A00AFB3AB /* 测试组动画 */,
 				E960EDA625BA7FE300AFB3AB /* 测试简单属性动画 */,
@@ -1079,6 +1147,7 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9C78427D2670B773009D480A /* 测试Block */,
 				9CE6810426394457003CAC5D /* 测试加密 */,
 				9C04B6AD26267AC000ED2900 /* 测试YYText */,
 				9C29C878261428A90098A923 /* 测试本地库 */,
@@ -1457,6 +1526,7 @@
 				9C6374DB25D250EF0078F146 /* TTKLViewController.m in Sources */,
 				E960EE1B25C0FC4900AFB3AB /* TTTreeModel.m in Sources */,
 				E9A3453025B96CA1003EB215 /* TTGCDGroupController.m in Sources */,
+				9C44E721266A20B400CF89C1 /* TTTrainsViewController.m in Sources */,
 				E9A3444A25B7D7EE003EB215 /* AppDelegate.m in Sources */,
 				9CB864BB25E7502F00904C82 /* TTTestVideoViewController.m in Sources */,
 				E956612C25C166F8002DFCCA /* TTTreeSortUtility.m in Sources */,
@@ -1474,9 +1544,12 @@
 				9C55F1392604802E00184129 /* TTTestRandomData.mm in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E960EDD025BABBC100AFB3AB /* TTAnimationWaterController.m in Sources */,
+				9C80EBE9264683B10026D20B /* NSString+TTEncrypty.m in Sources */,
+				9C7842AC2670BA5E009D480A /* TTChainTableCell.m in Sources */,
 				9CB8647A25E74B4100904C82 /* DNPlayerNetworkErrView.m in Sources */,
 				9CE6800D2636B272003CAC5D /* RSAHandle.m in Sources */,
 				E956611F25C142DF002DFCCA /* TTCalculateUtility.m in Sources */,
+				9C2A41712673524100DBAF8B /* TTChainCollectionCell.m in Sources */,
 				9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */,
 				E960EE0025BE5BD100AFB3AB /* TTTimeMedium.m in Sources */,
 				E9A344B625B7DA83003EB215 /* TTMenuViewController.m in Sources */,
@@ -1493,6 +1566,7 @@
 				E956619825C3DC41002DFCCA /* UIViewController+TTThread.m in Sources */,
 				E9A3450B25B968DA003EB215 /* TTSameMethodCallLogicController.m in Sources */,
 				9C60569A263B902C005F8D8B /* TTFileSecretViewController.m in Sources */,
+				9C7842A02670B93A009D480A /* TTChainBlockTableController.m in Sources */,
 				9C44A5DA25FB592E000E6839 /* TTTestLoadDataCollectionController.m in Sources */,
 				9C29C97126145B570098A923 /* FSJControlUtil.m in Sources */,
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
@@ -1501,11 +1575,13 @@
 				E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */,
 				E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */,
 				9C55F1752604981300184129 /* TTWCDBService.mm in Sources */,
+				9C2A417A267353E000DBAF8B /* TTChainCollectionHeaderView.m in Sources */,
 				9C60566D263AC28A005F8D8B /* TTTestRSAController.m in Sources */,
 				9C29C97D261461E20098A923 /* TTTestToController.m in Sources */,
 				E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */,
 				9C5A4CEF2603001A00784145 /* KLLiveGradientView.m in Sources */,
 				9C85CEE32609D30200258E1E /* TTTestStackViewController.m in Sources */,
+				9C7842B22670C0A1009D480A /* TChainHeaderView.m in Sources */,
 				9C66E6CF25F349A200F4496A /* UITextView+TT.m in Sources */,
 				9C5A4CD12602F4DC00784145 /* TTTestSafeViewController.m in Sources */,
 				9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */,
@@ -1520,6 +1596,7 @@
 				9C29C87B261429E40098A923 /* TTTestLocalEventLibController.m in Sources */,
 				E956618F25C3DBFE002DFCCA /* TTTestThreadViewController.m in Sources */,
 				E960EDDA25BABBE000AFB3AB /* TTWaterView.m in Sources */,
+				9C7842A62670B9E9009D480A /* TTChainModel.m in Sources */,
 				9C540B9A25E8D02C00CF0074 /* TTTestAudioViewController.m in Sources */,
 				9CE6800B2636B272003CAC5D /* RYTAESEncryptor.m in Sources */,
 				9CE6800A2636B272003CAC5D /* RYTRSAEncryptor.m in Sources */,
@@ -1528,6 +1605,7 @@
 				E9A3444D25B7D7EE003EB215 /* SceneDelegate.m in Sources */,
 				E956615725C28B4D002DFCCA /* TTSudoCollectionViewCell.m in Sources */,
 				9CE6800C2636B272003CAC5D /* RYTMD5Encryptor.m in Sources */,
+				9C2A41382673509400DBAF8B /* TTChainBlockCollectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

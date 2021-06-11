@@ -28,19 +28,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     FSJ_WEAK_SELF
-    [RYTRSAEncryptor keyWith:^(NSString *pubKey, NSString *priKey) {
-        FSJ_STRONG_SELF
-        self.pubKey = pubKey;
-        self.priKey = priKey;
-        NSLog(@"公钥 : %@ 私钥 : %@",pubKey, priKey);
-    }];
+//    [RYTRSAEncryptor keyWith:^(NSString *pubKey, NSString *priKey) {
+//        FSJ_STRONG_SELF
+//        self.pubKey = pubKey;
+//        self.priKey = priKey;
+//        NSLog(@"公钥 : %@",pubKey);
+//        NSLog(@"私钥 : %@",priKey);
+//    }];
     
-//    self.pubKey = @"MIGeMA0GCSqGSIb3DQEBAQUAA4GMADCBiAKBgHvqwDsa6v3CQl9Asw1sjXC4EZqajKl1eLEqjgmQUgK0QE7XJ4pVEqu4KUykwsoegl6VdOfFEgCid07Rw5E8jUq6pB6AHqv//Oug8q/tXufETabiqxwOl6PraATmj3eajph5zPRVJ7wTDIJN03Sda0Y6PIBV8ZCGmJSQqdUaaPUJAgMBAAE=";
-//    self.priKey = @"MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAJrjV7pcyeMehpfD+sUoYZxG/MHVKq/Bv2UQaqIfekLX1pK+q5d5HfTWCX/znA+VsshwpdB7D4I5qOOpoUWhdxaVed5cAFuZns82xbJA6HzxqhgRvvZOjsIYLlLsXJgm/plAEP6FX/g1D0nXTEhl/6bL54mjnIVL61vsS8mD4v1nAgMBAAECgYADhrF0mLAv73347olC+8xdFnCiqQuzvKFy15DV6AmMhAVqidS2Oheof0bwFseywyGy1n2v5V1RBacGp9H4F9jyLZWvQNt1W+yN/GsSDu/uTo96yLHp83aHcwpXsh5n5nxzFMvZJtHUPzXMrCJxgQCOPBkpOYtgJl/63a4hvA8LwQJBANZEL62V5DUe4tb+5XcDyR8JcqOynByPYRN6P7zxqgP7lHEXuaGgdT8cx/v9Pg8AE/5EDlSCTvgJzFfJXWtQpY8CQQC5Dmr8MR72W+gW2Dgyj2JooGpgM7SN4g20GH7cAvLJuq99fAX54qyl+3McqVq8OKtmG1ylegHdz4Dh5Krcui6pAkEAgCdcVPiX++WzS2A9oseS3YtrE9naYYKoT1wJD1uDkspAaLwF/VPZjJwMSP2YxqQHUUcnQwiFbvl9TOxVgcBEpQJAeGzBgkwU8gztA7DBIWXdjGiX0PLU1F/+uuwV4eapSE2MVgSXfv3bjEgNqOEsgr/+CfxUVfsHq+iU3muIJQujwQJAXOGZZM8Pkv4lieUs9i748XwGQxcR5/fP3r2toN0AOkjUNG3nSVQuXEOsgFFlQBWRG1nOic3wcQLAf3vqDhJ+Gw==";
-//    self.result = @"WDwg1GMs5XOT+MeJvn02QOuwDJdkf4hXPaxlPyVANJ6uq/7DnpdHP3J3FT2HcZ+zqJ1IPFgOziej0rjJaQ+HynAC4QH68r+W/aesURsQRLFaTJljpefZ0s7K/a9anFU+dZWWO7xmV00zua89r/Ff1YUIp+eTwwnF2fcbzA3xg5g=";
+    self.pubKey = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCArfE9riI9f6kmsed4J55Pl/mc2XEwEfeQQOSbaVIKZK+NtKxeQqrigEwxzTQIf5Yv3fExX1cQJOCkiz1FOkmCwO14EQ44e6NSA5gWtf+ZKtd5jB0hSTz13lWW0AUn5l5cIS5UnFUgZYc/80ZpeDQ4Wv4M0WsC/GVwfI0zDCVoJQIDAQAB";
+    self.priKey = @"MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANFcoVBFZ+dO64CdvxHX5FKzCzloulwA18h99ZNHxS6X0OM/j7hwaadJcuc/zX9f3ZHFARwgfuH/fKOo3ewGYt8fjuD0cmDKZDTCyNH+HxhNCdxIPtj7K80bA78/G63N4wCRjFzQRISUmSJxRVAgzV11B4xGYCEkoqJTGUjBlhdHAgEDAoGBAIuTFjWDmpo0nQBpKgvlQuHMsiZF0ZKrOoWpTmIv2Mm6i0IqX9BK8Row90TVM6o/6QvYq2gVqev/qG0bPp1Zlz40+GsiEWU/Pnl14IiyqUJZCHGGUFVdMyM9YXV+d/vT7bY8wQLqLHY4Soakn06KOTFpcim3vhaUmdXgpo8MIvSLAkEA9+Y9mjjkNLKB/pzNnchraBs8OIxTO4cG4OO9QDZ8vceJW3WPLuJDB60DXBrT0xZxAtx2W9y2drfE7of8fBwXXwJBANg0AqcfZLbT/JNbN1RYyV9h9cY6BbPYEV4N0cExN1I25dr1SUIfkDh8VR47hn5hIlP/11bmSM8EHJOXdbNFkRkCQQClRCkRe0LNzFapvd5pMEeavNLQXYzSWgSV7SjVeah+hQY8+QofQYIFHgI9ZzfiDvYB6E7n6HmkeoNJr/2oEro/AkEAkCKsb2pDJI1TDOd6ODsw6kFOhCaud+Vg6V6L1iDPjCSZPKOGLBUK0FLjaX0EVEDBjVU6Oe7bNK1oYmT5Ii5guwJBAJ3Unu6Vct8IqalbCLU5TjSrrZMEN8VJBwIExg9xWzvDTwxpP2YR4+hOYTkVlxy06g0snGjVCGGOA3EHexoIaJI=";
+    self.result = @"A207AEFF60679FD00C3190DA7EBA77F80B19DEC09937B704FD293BD949A21050A5876893198574A23274455B7314E3A35B45260E35EECD59560513A813A6A5ED202887A6F2D82DC9B44841283007DBEA3B1A3789D500CB88DF003CAC3CD370E50F6FD0C233809C5C2A9064E918CA95D6FE4A994ECFAE9EA7D06F9AB5B3B97B26";
     [self initData];
     
-    self.oriStr = @"你好吗？万财神";
+    self.oriStr = @"xtsgpq6lgaomtb97";
     [self.view addSubview:self.tableView];
     self.tableView.tableViewAdapter.headerHeight = 0;
     self.tableView.tableViewAdapter.footerHeight = 0;
@@ -55,8 +56,12 @@
             self.result = [RSAHandle encryptString:self.oriStr publicKey:self.pubKey];
         }else if (itemData.type == 3) {
             self.decryptionStr = [RSAHandle decryptString:self.result privateKey:self.priKey];
+        }else if (itemData.type == 4) {
+            self.result = [RSAHandle encryptHEXString:self.oriStr publicKey:self.pubKey];
+        }else if (itemData.type == 5) {
+            self.decryptionStr = [RSAHandle decryptHEXString:self.result privateKey:self.priKey];
         }
-        NSLog(@"%@ : %@",itemData.title,(itemData.type == 0 || itemData.type == 2)?self.result:self.decryptionStr);
+        NSLog(@"%@ : %@",itemData.title,(itemData.type == 0 || itemData.type == 2 || itemData.type == 4)?self.result:self.decryptionStr);
     };
 }
 
@@ -74,6 +79,8 @@
     [self.dataSource addObject:[TTMenuModel createT:@"RSA公钥解密" type:1]];
     [self.dataSource addObject:[TTMenuModel createT:@"RSA公钥加密" type:2]];
     [self.dataSource addObject:[TTMenuModel createT:@"RSA私钥解密" type:3]];
+    [self.dataSource addObject:[TTMenuModel createT:@"RSA公钥加密(HEX)" type:4]];
+    [self.dataSource addObject:[TTMenuModel createT:@"RSA私钥钥解密(HEX)" type:5]];
 }
 
 

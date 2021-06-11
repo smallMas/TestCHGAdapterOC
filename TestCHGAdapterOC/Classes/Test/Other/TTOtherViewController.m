@@ -8,6 +8,7 @@
 #import "TTOtherViewController.h"
 #import <Photos/Photos.h>
 #import "UITextView+TT.h"
+#import "TTObject.h"
 
 #define kPingFangRegular    @"PingFangSC-Regular"
 
@@ -16,6 +17,10 @@
 
 @property (weak, nonatomic)   UIButton *rightBtn;
 @property (weak, nonatomic)   UIButton *rightButton2;
+
+@property (strong, nonatomic) UIPageControl *pageControl;
+
+@property (strong, nonatomic) NSString *log;
 
 @end
 
@@ -52,30 +57,57 @@ UIFont *kl_font(CGFloat fontSize){
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    TTObject *obj = TTObject.new;
+    obj.run().listen(@"花的声音").look();
+    [obj work:@"修改bug"](@"iOS",@"Android").look();
+    
 //    [self testLabToLab];
 //
 //    [self testLabToBtn];
     
     
-    [self.rightBtn setImage:[UIImage imageNamed:@"视频_循环播放"] forState:UIControlStateNormal];
-    [self.rightBtn setTitle:@"循环播放" forState:UIControlStateNormal];
+//    [self.rightBtn setImage:[UIImage imageNamed:@"视频_循环播放"] forState:UIControlStateNormal];
+//    [self.rightBtn setTitle:@"循环播放" forState:UIControlStateNormal];
+//
+//    [self.rightButton2 setImage:[UIImage imageNamed:@"赠送好友"] forState:UIControlStateNormal];
+//    [self.rightButton2 setTitle:@"赠送好友" forState:UIControlStateNormal];
+//
+//
+//    CGFloat w1 = [self.rightBtn.titleLabel.text fsj_calculateWidthWithFont:self.rightBtn.titleLabel.font size:CGSizeMake(0, 21)];
+//
+//    CGFloat w2 = [self.rightButton2.titleLabel.text fsj_calculateWidthWithFont:self.rightButton2.titleLabel.font size:CGSizeMake(0, 21)];
+//    [self.rightBtn mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.right.mas_equalTo(0);
+//        make.width.mas_equalTo(w1+22);
+//    }];
+//    [self.rightButton2 mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.width.mas_equalTo(w2+23);
+//    }];
+//    [self.rightBtn fsj_setIconInTopWithSpacing:0];
+//    [self.rightButton2 fsj_setIconInTopWithSpacing:0];
     
-    [self.rightButton2 setImage:[UIImage imageNamed:@"赠送好友"] forState:UIControlStateNormal];
-    [self.rightButton2 setTitle:@"赠送好友" forState:UIControlStateNormal];
-    
-    
-    CGFloat w1 = [self.rightBtn.titleLabel.text fsj_calculateWidthWithFont:self.rightBtn.titleLabel.font size:CGSizeMake(0, 21)];
-    
-    CGFloat w2 = [self.rightButton2.titleLabel.text fsj_calculateWidthWithFont:self.rightButton2.titleLabel.font size:CGSizeMake(0, 21)];
-    [self.rightBtn mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(0);
-        make.width.mas_equalTo(w1+22);
-    }];
-    [self.rightButton2 mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(w2+23);
-    }];
-    [self.rightBtn fsj_setIconInTopWithSpacing:0];
-    [self.rightButton2 fsj_setIconInTopWithSpacing:0];
+//    UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(20, 100, 100, 40)];
+////    pageControl.backgroundStyle = UIPageControlBackgroundStyleProminent;
+//    pageControl.numberOfPages = 4;
+//    pageControl.currentPageIndicatorTintColor = [UIColor redColor];
+//    pageControl.pageIndicatorTintColor = [UIColor blueColor];
+////    pageControl.userInteractionEnabled = NO;
+//    pageControl.currentPage = 0;
+//    _pageControl = pageControl;
+//    [self.view addSubview:pageControl];
+//
+//    if (@available(iOS 14.0, *)) {
+//       [self.pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
+////           make.centerX.equalTo(self.view);
+//           make.right.offset(-10);
+//           make.bottom.offset(-10);
+//           make.height.offset(40);
+//       }];
+//    }else{
+//        self.pageControl.frame = CGRectMake(20, 100, 100, 40);
+//    }
+//
+//    [self rightBtn];
 }
 
 - (UIButton *)rightBtn{
@@ -91,6 +123,8 @@ UIFont *kl_font(CGFloat fontSize){
         obj.titleLabel.font = kl_font(14);
         [obj setTitleColor:[UIColor fsj_colorWithHexString:@"#333333"] forState:(UIControlStateNormal)];
         obj.backgroundColor = [UIColor fsj_randomColor];
+        [obj addTarget:self
+                action:@selector(ttAc) forControlEvents:UIControlEventTouchUpInside];
     }
     return _rightBtn;
 }
@@ -173,5 +207,13 @@ UIFont *kl_font(CGFloat fontSize){
     [btn setTitle:@"赠送好友" forState:UIControlStateNormal];
 }
 
+- (void)ttAc {
+    NSInteger current = self.pageControl.currentPage;
+    current = current+1;
+    if (current >= 4) {
+        current = 0;
+    }
+    [self.pageControl setCurrentPage:current];
+}
 
 @end

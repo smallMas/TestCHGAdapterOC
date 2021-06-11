@@ -4,7 +4,7 @@
 */
 
 #import <Foundation/Foundation.h>
-
+static NSString *base64_encode_data(NSData *data);
 @interface RSAHandle : NSObject
 
 // return base64 encoded string
@@ -21,5 +21,10 @@
 + (NSData *)decryptData:(NSData *)data publicKey:(NSString *)pubKey;
 + (NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey;
 + (NSData *)decryptData:(NSData *)data privateKey:(NSString *)privKey;
+
++ (NSString *)decryptHEXString:(NSString *)str publicKey:(NSString *)pubKey;
++ (NSString *)decryptHEXString:(NSString *)str privateKey:(NSString *)privKey;
++ (NSString *)encryptHEXString:(NSString *)str privateKey:(NSString *)privKey;
++ (NSString *)encryptHEXString:(NSString *)str publicKey:(NSString *)pubKey;
 
 @end
