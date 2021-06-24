@@ -30,6 +30,30 @@
     .sm_reloadData();
 }
 
+- (id)getParameterOfUrl:(NSString *)url {
+    NSRange range = [url rangeOfString:@"?"];
+    if (range.length) {
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        NSString *parameterUrl = [url substringFromIndex:range.location+1];
+        NSArray *parameterArr = [parameterUrl componentsSeparatedByString:@"&"];
+        for (NSString *parameter in parameterArr) {
+            NSArray *parameterBoby = [parameter componentsSeparatedByString:@"="];
+            if (parameterBoby.count == 2) {
+                [dic setObject:parameterBoby[1] forKey:parameterBoby[0]];
+            }else
+            {
+                return @"非法字符串";
+            }
+        }
+        NSString *localhostStr = [url substringToIndex:range.location];
+        [dic setObject:localhostStr forKey:@"localhost"];
+        return dic;
+    }else
+    {
+        return @"没有参数";
+    }
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
