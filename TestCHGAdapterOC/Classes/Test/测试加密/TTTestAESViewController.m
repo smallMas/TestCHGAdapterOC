@@ -29,7 +29,7 @@
     // Do any additional setup after loading the view.
     
 //    self.priKey = @"oBgheKHkAjKtqKeL";//@"kunlunxuetang20210403";
-    self.priKey = @"kunlunxuetang202";//[RYTAESEncryptor randomlyGenerated16BitString];
+    self.priKey = @"X1FACP69GOQ9LUDQ";//[RYTAESEncryptor randomlyGenerated16BitString];
 //    self.iv = @"6859505890402435";
     NSLog(@"self.prikey1 : %@",self.priKey);
 //    NSString *s = [NSString hexStringFromString:self.priKey];
@@ -38,7 +38,7 @@
 //    NSLog(@"self.prikey2 : %@",self.priKey);
 //    self.priKey = [self.priKey uppercaseString];
 //    NSLog(@"self.prikey3 : %@",self.priKey);
-    self.result = @"o6OJSHQg6LBXdewsI1FSnILy78sVbYGwMRoObyFbsFtPb1jaQLQe3GtlYgWiIug1U1HTpyJANDRq\nWvD7kqomMI2/4+9Ma1D7dsnqOvLRzhloiDoSZcvupJjlFwiFpdFOQEqwmoCbOa9IQCZx60305297\nwdkkRFuTsE08qiXzRCRMbnR0awh9FDT43WNg3pwDyhvcEiFCStIUycD7KfoBQ7gYb220o1UrLjkc\n7NjYWwtZlNLjiK8rRGqT+ECSk7bCEI3yZ5XEs1HOb1I1lM9Gu+NHWw7SXfppYLTv2v/OqRQ=";
+    self.result = @"fTVHai3pM2+7WPrxAdI4w8CKVy3FLGqwjEEZIQKHvFoyaKwLymxcP3kZ3JbpbeKxMBLyJw0q4L7rtfa0/kAbrg6LpZIzWdjeGeVYQSr5cJR6+2dSdXeW6oLxNaU9g3dtgAzqRZC9QL6PuPBMWlj/uM6ITmjAObrW4XwgBgZ6nExd3GF09VoIN1TFjS8664I9Aa+cj7Y708CHau34lF9toHPp3afsF+15obCQRb2SW9VNxzvuS7iX5+juCK7XN+SJBPfcz35oaR69eMWT00IqqtqfC7sXBIjiOd7WhKWVj80Ejt3Uj7tWH76q84eToFidJPdUzruhYodvWrNFFrAkYqbSFzjCEaR6Jb2f0kgDW3YfOu4Cp1mecdPUqWAvVDX6bz6lC7ruNDdxwNfz5GE6Y7rbunFyS0dMY3cwqRqVslTwI15UYnQoIMuhdyvkp9vVqofad4SNFGpa5qITINQjrsnYH/UrtMYKp4LU1bY1A/bjvJp/eY9AG1v7PC81EOkS";
     
     [self initData];
     

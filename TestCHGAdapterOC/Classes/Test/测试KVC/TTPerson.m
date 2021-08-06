@@ -25,11 +25,16 @@
     NSLog(@"%s",__func__);
 }
 
+- (id)valueForUndefinedKey:(NSString *)key {
+    NSLog(@"%s",__func__);
+    return [super valueForUndefinedKey:key];
+}
+
 //- (void)setName:(NSString *)name {
 //    NSLog(@"%s",__func__);
 //    _name = name;
 //}
-//
+
 //- (void)_setName:(NSString *)a {
 //    NSLog(@"%s",__func__);
 //    name = a;
@@ -39,9 +44,36 @@
 //    isName = a;
 //}
 //
-//- (void)set_isName:(NSString *)name {
+//- (void)_setIsName:(NSString *)a {
 //    NSLog(@"%s",__func__);
-//    _isName = name;
+//    _isName = a;
+//}
+
+//- (void)setIsIsName:(NSString *)a {
+//    NSLog(@"%s",__func__);
+//    name = a;
+//}
+
+//- (void)set_isName:(NSString *)a {
+//    NSLog(@"%s",__func__);
+//    name = a;
+//}
+
+
+#pragma mark - 获取
+//- (NSString *)getName {
+//    NSLog(@"%s",__func__);
+//    return _name;
+//}
+
+//- (NSString *)name {
+//    NSLog(@"%s",__func__);
+//    return _name;
+//}
+
+//- (NSString *)isName {
+//    NSLog(@"%s",__func__);
+//    return _name;
 //}
 
 - (void)test {

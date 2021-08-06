@@ -65,13 +65,23 @@
     self.link = [CADisplayLink displayLinkWithTarget:self selector:@selector(upadte)];
     [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
     self.player = [AVPlayer playerWithPlayerItem:playerItem];
-    self.player.volume = 0;
+//    self.player.volume = 0;
     [self addObserver];
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
     self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     self.playerLayer.frame = self.frame;
     [self.layer addSublayer:self.playerLayer];
     [self buildUI];
+    
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self
+               selector:@selector(removePlayerOnPlayerLayer)
+                   name:UIApplicationDidEnterBackgroundNotification
+                 object:nil];
+    [center addObserver:self
+               selector:@selector(resetPlayerToPlayerLayer)
+                   name:UIApplicationWillEnterForegroundNotification
+                 object:nil];
 }
 
 - (void)layoutSubviews {
@@ -319,6 +329,17 @@
         self.player = nil;
         callback ? callback(nil) : nil;
     }
+}
+
+#pragma mark - APP 后台前台
+- (void)removePlayerOnPlayerLayer {
+    NSLog(@"%s",__FUNCTION__);
+    _playerLayer.player = nil;
+}
+
+- (void)resetPlayerToPlayerLayer {
+    NSLog(@"%s",__FUNCTION__);
+    _playerLayer.player = _player;
 }
 
 @end

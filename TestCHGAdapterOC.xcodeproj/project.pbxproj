@@ -24,6 +24,13 @@
 		9C2A41382673509400DBAF8B /* TTChainBlockCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A41372673509400DBAF8B /* TTChainBlockCollectionController.m */; };
 		9C2A41712673524100DBAF8B /* TTChainCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A41702673524100DBAF8B /* TTChainCollectionCell.m */; };
 		9C2A417A267353E000DBAF8B /* TTChainCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A4179267353E000DBAF8B /* TTChainCollectionHeaderView.m */; };
+		9C2BAF5B26B8E3DD00534333 /* KLUnSudoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2BAF5A26B8E3DD00534333 /* KLUnSudoViewController.m */; };
+		9C2BAF5E26B8E3F900534333 /* TTUnSudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2BAF5D26B8E3F900534333 /* TTUnSudoku.m */; };
+		9C3D5CAF26A8FC10002B790B /* TTSudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D5CAE26A8FC10002B790B /* TTSudoku.m */; };
+		9C3D5CB226A900A2002B790B /* TTSudok9Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D5CB126A900A2002B790B /* TTSudok9Controller.m */; };
+		9C40EC4726AA9C9B00828ED3 /* TTSudokuNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C40EC4626AA9C9B00828ED3 /* TTSudokuNumCell.m */; };
+		9C40EC4A26AAC15E00828ED3 /* TTSudokuPropertyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C40EC4926AAC15E00828ED3 /* TTSudokuPropertyModel.m */; };
+		9C40EC4D26AD103000828ED3 /* TTSelectNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C40EC4C26AD103000828ED3 /* TTSelectNumCell.m */; };
 		9C44A5B625FB47F9000E6839 /* TTTestLoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5B525FB47F9000E6839 /* TTTestLoadDataController.m */; };
 		9C44A5D425FB4F68000E6839 /* TTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5D325FB4F68000E6839 /* TTTableView.m */; };
 		9C44A5DA25FB592E000E6839 /* TTTestLoadDataCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5D925FB592E000E6839 /* TTTestLoadDataCollectionController.m */; };
@@ -72,6 +79,9 @@
 		9C8DB5B126806EE000A51ECB /* TTFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DB5B026806EE000A51ECB /* TTFormView.m */; };
 		9C8DB5B72680703600A51ECB /* TTFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DB5B62680703600A51ECB /* TTFormModel.m */; };
 		9C8DB5BD268070A700A51ECB /* TTFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DB5BC268070A700A51ECB /* TTFormCell.m */; };
+		9C99AECA26BBCFF800B3C509 /* TTErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C99AEC926BBCFF800B3C509 /* TTErrorView.m */; };
+		9C99AECD26BBD36C00B3C509 /* TTRotaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C99AECC26BBD36C00B3C509 /* TTRotaryViewController.m */; };
+		9C99AED126BBE6A900B3C509 /* TTTurnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C99AED026BBE6A900B3C509 /* TTTurnTableView.m */; };
 		9CB8647A25E74B4100904C82 /* DNPlayerNetworkErrView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */; };
 		9CB8647B25E74B4100904C82 /* DNPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647825E74B4000904C82 /* DNPlayer.m */; };
 		9CB8647C25E74B4100904C82 /* DNPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8647925E74B4000904C82 /* DNPlayerControlView.m */; };
@@ -195,6 +205,20 @@
 		9C2A41702673524100DBAF8B /* TTChainCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainCollectionCell.m; sourceTree = "<group>"; };
 		9C2A4178267353E000DBAF8B /* TTChainCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTChainCollectionHeaderView.h; sourceTree = "<group>"; };
 		9C2A4179267353E000DBAF8B /* TTChainCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainCollectionHeaderView.m; sourceTree = "<group>"; };
+		9C2BAF5926B8E3DD00534333 /* KLUnSudoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLUnSudoViewController.h; sourceTree = "<group>"; };
+		9C2BAF5A26B8E3DD00534333 /* KLUnSudoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLUnSudoViewController.m; sourceTree = "<group>"; };
+		9C2BAF5C26B8E3F900534333 /* TTUnSudoku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTUnSudoku.h; sourceTree = "<group>"; };
+		9C2BAF5D26B8E3F900534333 /* TTUnSudoku.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTUnSudoku.m; sourceTree = "<group>"; };
+		9C3D5CAD26A8FC10002B790B /* TTSudoku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudoku.h; sourceTree = "<group>"; };
+		9C3D5CAE26A8FC10002B790B /* TTSudoku.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudoku.m; sourceTree = "<group>"; };
+		9C3D5CB026A900A2002B790B /* TTSudok9Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudok9Controller.h; sourceTree = "<group>"; };
+		9C3D5CB126A900A2002B790B /* TTSudok9Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudok9Controller.m; sourceTree = "<group>"; };
+		9C40EC4526AA9C9B00828ED3 /* TTSudokuNumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudokuNumCell.h; sourceTree = "<group>"; };
+		9C40EC4626AA9C9B00828ED3 /* TTSudokuNumCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudokuNumCell.m; sourceTree = "<group>"; };
+		9C40EC4826AAC15E00828ED3 /* TTSudokuPropertyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSudokuPropertyModel.h; sourceTree = "<group>"; };
+		9C40EC4926AAC15E00828ED3 /* TTSudokuPropertyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSudokuPropertyModel.m; sourceTree = "<group>"; };
+		9C40EC4B26AD103000828ED3 /* TTSelectNumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSelectNumCell.h; sourceTree = "<group>"; };
+		9C40EC4C26AD103000828ED3 /* TTSelectNumCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSelectNumCell.m; sourceTree = "<group>"; };
 		9C44A5B425FB47F9000E6839 /* TTTestLoadDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestLoadDataController.h; sourceTree = "<group>"; };
 		9C44A5B525FB47F9000E6839 /* TTTestLoadDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestLoadDataController.m; sourceTree = "<group>"; };
 		9C44A5D225FB4F68000E6839 /* TTTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTableView.h; sourceTree = "<group>"; };
@@ -291,6 +315,12 @@
 		9C8DB5B62680703600A51ECB /* TTFormModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTFormModel.m; sourceTree = "<group>"; };
 		9C8DB5BB268070A700A51ECB /* TTFormCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTFormCell.h; sourceTree = "<group>"; };
 		9C8DB5BC268070A700A51ECB /* TTFormCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTFormCell.m; sourceTree = "<group>"; };
+		9C99AEC826BBCFF800B3C509 /* TTErrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTErrorView.h; sourceTree = "<group>"; };
+		9C99AEC926BBCFF800B3C509 /* TTErrorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTErrorView.m; sourceTree = "<group>"; };
+		9C99AECB26BBD36C00B3C509 /* TTRotaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRotaryViewController.h; sourceTree = "<group>"; };
+		9C99AECC26BBD36C00B3C509 /* TTRotaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRotaryViewController.m; sourceTree = "<group>"; };
+		9C99AECF26BBE6A900B3C509 /* TTTurnTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTurnTableView.h; sourceTree = "<group>"; };
+		9C99AED026BBE6A900B3C509 /* TTTurnTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTurnTableView.m; sourceTree = "<group>"; };
 		9CB8647425E74B4000904C82 /* DNPlayerNetworkErrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayerNetworkErrView.h; sourceTree = "<group>"; };
 		9CB8647525E74B4000904C82 /* DNPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayer.h; sourceTree = "<group>"; };
 		9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPlayerNetworkErrView.m; sourceTree = "<group>"; };
@@ -516,6 +546,37 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		9C2BAF5826B8E3AC00534333 /* 非宫数独 */ = {
+			isa = PBXGroup;
+			children = (
+				9C99AECE26BBE68600B3C509 /* View */,
+				9C2BAF5926B8E3DD00534333 /* KLUnSudoViewController.h */,
+				9C2BAF5A26B8E3DD00534333 /* KLUnSudoViewController.m */,
+				9C2BAF5C26B8E3F900534333 /* TTUnSudoku.h */,
+				9C2BAF5D26B8E3F900534333 /* TTUnSudoku.m */,
+				9C99AECB26BBD36C00B3C509 /* TTRotaryViewController.h */,
+				9C99AECC26BBD36C00B3C509 /* TTRotaryViewController.m */,
+			);
+			path = "非宫数独";
+			sourceTree = "<group>";
+		};
+		9C3D5CAC26A8FBAA002B790B /* 9x9数独 */ = {
+			isa = PBXGroup;
+			children = (
+				9C3D5CAD26A8FC10002B790B /* TTSudoku.h */,
+				9C3D5CAE26A8FC10002B790B /* TTSudoku.m */,
+				9C3D5CB026A900A2002B790B /* TTSudok9Controller.h */,
+				9C3D5CB126A900A2002B790B /* TTSudok9Controller.m */,
+				9C40EC4526AA9C9B00828ED3 /* TTSudokuNumCell.h */,
+				9C40EC4626AA9C9B00828ED3 /* TTSudokuNumCell.m */,
+				9C40EC4826AAC15E00828ED3 /* TTSudokuPropertyModel.h */,
+				9C40EC4926AAC15E00828ED3 /* TTSudokuPropertyModel.m */,
+				9C40EC4B26AD103000828ED3 /* TTSelectNumCell.h */,
+				9C40EC4C26AD103000828ED3 /* TTSelectNumCell.m */,
+			);
+			path = "9x9数独";
+			sourceTree = "<group>";
+		};
 		9C44A59F25FB475D000E6839 /* 测试上一页数据下一页数据 */ = {
 			isa = PBXGroup;
 			children = (
@@ -715,6 +776,24 @@
 				9C8DB5BC268070A700A51ECB /* TTFormCell.m */,
 			);
 			path = "测试表格显示";
+			sourceTree = "<group>";
+		};
+		9C99AEC726BBCFDB00B3C509 /* 弹框 */ = {
+			isa = PBXGroup;
+			children = (
+				9C99AEC826BBCFF800B3C509 /* TTErrorView.h */,
+				9C99AEC926BBCFF800B3C509 /* TTErrorView.m */,
+			);
+			path = "弹框";
+			sourceTree = "<group>";
+		};
+		9C99AECE26BBE68600B3C509 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C99AECF26BBE6A900B3C509 /* TTTurnTableView.h */,
+				9C99AED026BBE6A900B3C509 /* TTTurnTableView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9CB8647325E74AFA00904C82 /* VideoPlay */ = {
@@ -1058,6 +1137,8 @@
 		E960EE0D25C0FA5B00AFB3AB /* 测试算法题 */ = {
 			isa = PBXGroup;
 			children = (
+				9C2BAF5826B8E3AC00534333 /* 非宫数独 */,
+				9C3D5CAC26A8FBAA002B790B /* 9x9数独 */,
 				E956613025C254BD002DFCCA /* 九宫格数独 */,
 				E95660E625C12FB8002DFCCA /* 公式算法 */,
 				E960EE0E25C0FA6500AFB3AB /* 二叉树 */,
@@ -1152,6 +1233,7 @@
 		E9A3449725B7D961003EB215 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9C99AEC726BBCFDB00B3C509 /* 弹框 */,
 				E9A344D125B7DE35003EB215 /* Test */,
 				E9A3449925B7D97E003EB215 /* Base */,
 				E9A3449825B7D966003EB215 /* Main */,
@@ -1602,8 +1684,11 @@
 				E960EE1B25C0FC4900AFB3AB /* TTTreeModel.m in Sources */,
 				E9A3453025B96CA1003EB215 /* TTGCDGroupController.m in Sources */,
 				9C44E721266A20B400CF89C1 /* TTTrainsViewController.m in Sources */,
+				9C99AECD26BBD36C00B3C509 /* TTRotaryViewController.m in Sources */,
 				E9A3444A25B7D7EE003EB215 /* AppDelegate.m in Sources */,
+				9C40EC4A26AAC15E00828ED3 /* TTSudokuPropertyModel.m in Sources */,
 				9CB864BB25E7502F00904C82 /* TTTestVideoViewController.m in Sources */,
+				9C2BAF5B26B8E3DD00534333 /* KLUnSudoViewController.m in Sources */,
 				E956612C25C166F8002DFCCA /* TTTreeSortUtility.m in Sources */,
 				E960EE1225C0FC3300AFB3AB /* TTTreeSortViewController.m in Sources */,
 				E9A3449C25B7D993003EB215 /* TTBaseViewController.m in Sources */,
@@ -1619,12 +1704,14 @@
 				9C5176F325C8E81E00B0526D /* TTOtherViewController.m in Sources */,
 				9CB8648225E74B9700904C82 /* DNBaseView.m in Sources */,
 				E956613A25C25FCF002DFCCA /* TTSudoModel.m in Sources */,
+				9C40EC4726AA9C9B00828ED3 /* TTSudokuNumCell.m in Sources */,
 				9C8DB5B126806EE000A51ECB /* TTFormView.m in Sources */,
 				9C55F1392604802E00184129 /* TTTestRandomData.mm in Sources */,
 				E9A344CD25B7DD9F003EB215 /* TTNavigationViewController.m in Sources */,
 				E960EDD025BABBC100AFB3AB /* TTAnimationWaterController.m in Sources */,
 				9C80EBE9264683B10026D20B /* NSString+TTEncrypty.m in Sources */,
 				9C7842AC2670BA5E009D480A /* TTChainTableCell.m in Sources */,
+				9C3D5CB226A900A2002B790B /* TTSudok9Controller.m in Sources */,
 				9CB8647A25E74B4100904C82 /* DNPlayerNetworkErrView.m in Sources */,
 				9C50F8C5268422CD0066AF0C /* TTTestLoadController.m in Sources */,
 				9CE6800D2636B272003CAC5D /* RSAHandle.m in Sources */,
@@ -1636,6 +1723,7 @@
 				9C04B6C726267AFB00ED2900 /* TTTestYYTextController.m in Sources */,
 				9C44A5D425FB4F68000E6839 /* TTTableView.m in Sources */,
 				9C29C94A261458BE0098A923 /* TTRunEngine.m in Sources */,
+				9C2BAF5E26B8E3F900534333 /* TTUnSudoku.m in Sources */,
 				9C50F8D1268422EF0066AF0C /* TTChildLoad.m in Sources */,
 				9C50F8EC268426200066AF0C /* TTChildLoad+TT.m in Sources */,
 				9C5176DE25C6878A00B0526D /* TTPeople.m in Sources */,
@@ -1654,6 +1742,7 @@
 				E960EDF725BE5A9A00AFB3AB /* TTTimerReleaseController.m in Sources */,
 				E960ED9F25BA61D800AFB3AB /* TTAnimationPositionController.m in Sources */,
 				9C55F13026047D9300184129 /* TTTestWCDBDataController.m in Sources */,
+				9C99AECA26BBCFF800B3C509 /* TTErrorView.m in Sources */,
 				E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */,
 				E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */,
 				9C55F1752604981300184129 /* TTWCDBService.mm in Sources */,
@@ -1671,8 +1760,11 @@
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
 				E956614725C285D2002DFCCA /* TTSudoCalculateUtility.m in Sources */,
 				9CB8647B25E74B4100904C82 /* DNPlayer.m in Sources */,
+				9C3D5CAF26A8FC10002B790B /* TTSudoku.m in Sources */,
+				9C40EC4D26AD103000828ED3 /* TTSelectNumCell.m in Sources */,
 				9C29C8B226144B420098A923 /* TTBaseModel.m in Sources */,
 				E960EDC425BAA7CE00AFB3AB /* TTAnimationGroupController.m in Sources */,
+				9C99AED126BBE6A900B3C509 /* TTTurnTableView.m in Sources */,
 				E956612525C15D4A002DFCCA /* TTTreeQuestionModel.m in Sources */,
 				E960EDEF25BAD89700AFB3AB /* TTRunloopObserverController.m in Sources */,
 				9C29C87B261429E40098A923 /* TTTestLocalEventLibController.m in Sources */,

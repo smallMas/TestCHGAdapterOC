@@ -12,17 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TTPerson : NSObject {
     
     @public
-    NSString *__name;
-    NSString *_name;
-    NSString *_isName;
-    NSString *name;
+//    NSString *__name;
+//    NSString *_name;
+//    NSString *_isName;
+//    NSString *name;
     NSString *isName;
 }
 
-@property (nonatomic, strong) NSString *name;
+//@property (nonatomic, strong) NSString *name;
 
 @property (nonatomic, copy) void (^ block)(void);
-
+@property (strong, nonatomic) NSString *str;
+@property (strong, nonatomic) NSString *id;
 - (void)test;
 @end
 

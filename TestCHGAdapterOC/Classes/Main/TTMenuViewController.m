@@ -60,6 +60,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
                 vc.title = model.title;
                 vc.name = @"fansj";
                 vc.dict = @{@"model":model};
+//                UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
                 [self.navigationController pushViewController:vc animated:YES];
             }else {
                 NSString *clsStr = model.toClassString;
@@ -276,7 +277,10 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
 
 - (NSArray *)sudoKuArray {
     return @[
-        [TTMenuModel createT:@"计算九宫格数独" toCS:@"TTSudoKuViewController"]
+        [TTMenuModel createT:@"计算九宫格数独" toCS:@"TTSudoKuViewController"],
+        [TTMenuModel createT:@"9X9数独" toCS:@"TTSudok9Controller"],
+        [TTMenuModel createT:@"儿童数独" toCS:@"KLUnSudoViewController"],
+        [TTMenuModel createT:@"幸运大转盘" toCS:@"TTRotaryViewController"]
     ];
 }
 
