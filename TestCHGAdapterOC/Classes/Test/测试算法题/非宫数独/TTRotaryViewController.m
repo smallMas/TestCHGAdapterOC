@@ -18,9 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"幸运大转盘";
     [self turnView];
 }
-
 
 - (TTTurnTableView *)turnView {
     if (!_turnView) {

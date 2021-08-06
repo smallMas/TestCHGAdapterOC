@@ -26,8 +26,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Seleted" style:UIBarButtonItemStyleDone target:self action:@selector(selectedAction:)];
-    self.navigationItem.rightBarButtonItem = rightItem;
+    if (self.index == 0) {
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Seleted" style:UIBarButtonItemStyleDone target:self action:@selector(selectedAction:)];
+        self.navigationItem.rightBarButtonItem = rightItem;
+    }else {
+        self.sudo.factorial = self.index;
+    }
     
     FSJ_WEAK_SELF
     [self.view addSubview:self.collectionView];
@@ -244,7 +248,6 @@
     if (self.tmpModel) {
         NSIndexPath *indexPath = self.tmpModel.indexPath;
         [self.dataSource enumerateObjectsUsingBlock:^(NSArray * _Nonnull arr, NSUInteger idx, BOOL * _Nonnull stop) {
-            NSLog(@"idx >>> %d",idx);
             BOOL isLine = idx == indexPath.section;
             [arr enumerateObjectsUsingBlock:^(TTSudokuPropertyModel *  _Nonnull obj, NSUInteger idxx, BOOL * _Nonnull stop2) {
                 if (isLine) {

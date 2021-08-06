@@ -6,6 +6,7 @@
 //
 
 #import "TTBaseViewController.h"
+#import "TTMainSectionModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,9 @@ typedef NSString * _Nullable (^ TTCollectionClassStringBlock) (void);
 @property (nonatomic, strong) UICollectionViewFlowLayout *layout;
 
 @property (copy, nonatomic) TTCollectionClassStringBlock clsBlock;
+
+@property (strong, nonatomic) NSMutableArray *datasources;
+
 @end
 
 NS_ASSUME_NONNULL_END

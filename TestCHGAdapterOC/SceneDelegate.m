@@ -8,6 +8,7 @@
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
 #import "TTMenuViewController.h"
+#import "TTHomeViewController.h"
 #import "TTNavigationViewController.h"
 #import "IQKeyboardManager.h"
 #import <AVFAudio/AVAudioSession.h>
@@ -29,8 +30,9 @@
     [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
     [audioSession setActive:YES error:nil];
     
-    TTMenuViewController *vc = [TTMenuViewController new];
-    vc.title = @"OC 知识点总结";
+//    TTMenuViewController *vc = [TTMenuViewController new];
+//    vc.title = @"OC 知识点总结";
+    TTHomeViewController *vc = [TTHomeViewController new];
     TTNavigationViewController *nav = [[TTNavigationViewController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     self.window.backgroundColor = [UIColor whiteColor];

@@ -37,6 +37,13 @@
 		9C44A5E025FB5A0A000E6839 /* TTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5DF25FB5A0A000E6839 /* TTCollectionView.m */; };
 		9C44A5E625FB5ADB000E6839 /* TTMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44A5E525FB5ADB000E6839 /* TTMenuCollectionViewCell.m */; };
 		9C44E721266A20B400CF89C1 /* TTTrainsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44E720266A20B400CF89C1 /* TTTrainsViewController.m */; };
+		9C4EBBAE26BCE59D00B15C34 /* TTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EBBAD26BCE59D00B15C34 /* TTHomeViewController.m */; };
+		9C4EBBB126BD01CB00B15C34 /* TTHomeMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EBBB026BD01CB00B15C34 /* TTHomeMenuModel.m */; };
+		9C4EBBBA26BD081400B15C34 /* TTHomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EBBB926BD081400B15C34 /* TTHomeMenuCell.m */; };
+		9C4EBBC026BD0B1200B15C34 /* TTHomeBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EBBBC26BD0B1200B15C34 /* TTHomeBaseModel.m */; };
+		9C4EBBC126BD0B1200B15C34 /* TTMainSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EBBBD26BD0B1200B15C34 /* TTMainSectionModel.m */; };
+		9C4EBBC426BD0B4600B15C34 /* TTHomeMenuCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EBBC326BD0B4600B15C34 /* TTHomeMenuCell2.m */; };
+		9C4EBBC726BD0CDD00B15C34 /* UIView+TT.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EBBC626BD0CDD00B15C34 /* UIView+TT.m */; };
 		9C50F8C5268422CD0066AF0C /* TTTestLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C50F8C4268422CD0066AF0C /* TTTestLoadController.m */; };
 		9C50F8CB268422DC0066AF0C /* TTLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C50F8CA268422DC0066AF0C /* TTLoad.m */; };
 		9C50F8D1268422EF0066AF0C /* TTChildLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C50F8D0268422EF0066AF0C /* TTChildLoad.m */; };
@@ -231,6 +238,20 @@
 		9C44A5E525FB5ADB000E6839 /* TTMenuCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMenuCollectionViewCell.m; sourceTree = "<group>"; };
 		9C44E71F266A20B400CF89C1 /* TTTrainsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTrainsViewController.h; sourceTree = "<group>"; };
 		9C44E720266A20B400CF89C1 /* TTTrainsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTrainsViewController.m; sourceTree = "<group>"; };
+		9C4EBBAC26BCE59D00B15C34 /* TTHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTHomeViewController.h; sourceTree = "<group>"; };
+		9C4EBBAD26BCE59D00B15C34 /* TTHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTHomeViewController.m; sourceTree = "<group>"; };
+		9C4EBBAF26BD01CB00B15C34 /* TTHomeMenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTHomeMenuModel.h; sourceTree = "<group>"; };
+		9C4EBBB026BD01CB00B15C34 /* TTHomeMenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTHomeMenuModel.m; sourceTree = "<group>"; };
+		9C4EBBB826BD081400B15C34 /* TTHomeMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTHomeMenuCell.h; sourceTree = "<group>"; };
+		9C4EBBB926BD081400B15C34 /* TTHomeMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTHomeMenuCell.m; sourceTree = "<group>"; };
+		9C4EBBBC26BD0B1200B15C34 /* TTHomeBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHomeBaseModel.m; sourceTree = "<group>"; };
+		9C4EBBBD26BD0B1200B15C34 /* TTMainSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMainSectionModel.m; sourceTree = "<group>"; };
+		9C4EBBBE26BD0B1200B15C34 /* TTMainSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMainSectionModel.h; sourceTree = "<group>"; };
+		9C4EBBBF26BD0B1200B15C34 /* TTHomeBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTHomeBaseModel.h; sourceTree = "<group>"; };
+		9C4EBBC226BD0B4600B15C34 /* TTHomeMenuCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTHomeMenuCell2.h; sourceTree = "<group>"; };
+		9C4EBBC326BD0B4600B15C34 /* TTHomeMenuCell2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTHomeMenuCell2.m; sourceTree = "<group>"; };
+		9C4EBBC526BD0CDD00B15C34 /* UIView+TT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TT.h"; sourceTree = "<group>"; };
+		9C4EBBC626BD0CDD00B15C34 /* UIView+TT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TT.m"; sourceTree = "<group>"; };
 		9C50F8C3268422CD0066AF0C /* TTTestLoadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestLoadController.h; sourceTree = "<group>"; };
 		9C50F8C4268422CD0066AF0C /* TTTestLoadController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestLoadController.m; sourceTree = "<group>"; };
 		9C50F8C9268422DC0066AF0C /* TTLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTLoad.h; sourceTree = "<group>"; };
@@ -542,6 +563,8 @@
 				9C29C97526145FFE0098A923 /* UIViewController+TTMeta.h */,
 				9C29C97626145FFE0098A923 /* UIViewController+TTMeta.m */,
 				9C29C98A261486970098A923 /* TTMacro.h */,
+				9C4EBBC526BD0CDD00B15C34 /* UIView+TT.h */,
+				9C4EBBC626BD0CDD00B15C34 /* UIView+TT.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -599,6 +622,32 @@
 				9C44E720266A20B400CF89C1 /* TTTrainsViewController.m */,
 			);
 			path = "测试转场动画";
+			sourceTree = "<group>";
+		};
+		9C4EBBAB26BCE07000B15C34 /* 樊浩然 */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EBBAC26BCE59D00B15C34 /* TTHomeViewController.h */,
+				9C4EBBAD26BCE59D00B15C34 /* TTHomeViewController.m */,
+				9C4EBBAF26BD01CB00B15C34 /* TTHomeMenuModel.h */,
+				9C4EBBB026BD01CB00B15C34 /* TTHomeMenuModel.m */,
+				9C4EBBB826BD081400B15C34 /* TTHomeMenuCell.h */,
+				9C4EBBB926BD081400B15C34 /* TTHomeMenuCell.m */,
+				9C4EBBC226BD0B4600B15C34 /* TTHomeMenuCell2.h */,
+				9C4EBBC326BD0B4600B15C34 /* TTHomeMenuCell2.m */,
+			);
+			path = "樊浩然";
+			sourceTree = "<group>";
+		};
+		9C4EBBBB26BD0ADE00B15C34 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EBBBF26BD0B1200B15C34 /* TTHomeBaseModel.h */,
+				9C4EBBBC26BD0B1200B15C34 /* TTHomeBaseModel.m */,
+				9C4EBBBE26BD0B1200B15C34 /* TTMainSectionModel.h */,
+				9C4EBBBD26BD0B1200B15C34 /* TTMainSectionModel.m */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 		9C50F8C22684229F0066AF0C /* 测试load优先级 */ = {
@@ -1233,6 +1282,7 @@
 		E9A3449725B7D961003EB215 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9C4EBBAB26BCE07000B15C34 /* 樊浩然 */,
 				9C99AEC726BBCFDB00B3C509 /* 弹框 */,
 				E9A344D125B7DE35003EB215 /* Test */,
 				E9A3449925B7D97E003EB215 /* Base */,
@@ -1258,6 +1308,7 @@
 		E9A3449925B7D97E003EB215 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9C4EBBBB26BD0ADE00B15C34 /* BaseModel */,
 				9C29C8F8261450330098A923 /* Tools */,
 				E9A3449A25B7D993003EB215 /* TTBaseViewController.h */,
 				E9A3449B25B7D993003EB215 /* TTBaseViewController.m */,
@@ -1646,6 +1697,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E960EDB425BA974B00AFB3AB /* TTAnimationModel.m in Sources */,
+				9C4EBBAE26BCE59D00B15C34 /* TTHomeViewController.m in Sources */,
 				E956615025C28A74002DFCCA /* TTCollectionViewController.m in Sources */,
 				E956618125C3A454002DFCCA /* TTPerson.m in Sources */,
 				E956614025C27F67002DFCCA /* TTGongModel.m in Sources */,
@@ -1696,8 +1748,10 @@
 				9C29C8AC26144B1F0098A923 /* TTLocalLibModel.m in Sources */,
 				E9A344C425B7DB5F003EB215 /* TTMenuTableViewCell.m in Sources */,
 				E960ED8E25B9872800AFB3AB /* TTGCDBarrierController.m in Sources */,
+				9C4EBBC726BD0CDD00B15C34 /* UIView+TT.m in Sources */,
 				E956618825C3B151002DFCCA /* TTTestCopyViewController.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
+				9C4EBBC026BD0B1200B15C34 /* TTHomeBaseModel.m in Sources */,
 				9C50F8CB268422DC0066AF0C /* TTLoad.m in Sources */,
 				9C8DB5AB268060A400A51ECB /* TTFormScrollView.m in Sources */,
 				9CE680092636B272003CAC5D /* RYTBase64.m in Sources */,
@@ -1753,11 +1807,13 @@
 				9C5A4CEF2603001A00784145 /* KLLiveGradientView.m in Sources */,
 				9C85CEE32609D30200258E1E /* TTTestStackViewController.m in Sources */,
 				9C7842B22670C0A1009D480A /* TChainHeaderView.m in Sources */,
+				9C4EBBC126BD0B1200B15C34 /* TTMainSectionModel.m in Sources */,
 				9C66E6CF25F349A200F4496A /* UITextView+TT.m in Sources */,
 				9C5A4CD12602F4DC00784145 /* TTTestSafeViewController.m in Sources */,
 				9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */,
 				9C55F18A2604A23600184129 /* TTWCDBDataTableCell.m in Sources */,
 				E9A344BD25B7DA9E003EB215 /* TTMenuModel.m in Sources */,
+				9C4EBBB126BD01CB00B15C34 /* TTHomeMenuModel.m in Sources */,
 				E956614725C285D2002DFCCA /* TTSudoCalculateUtility.m in Sources */,
 				9CB8647B25E74B4100904C82 /* DNPlayer.m in Sources */,
 				9C3D5CAF26A8FC10002B790B /* TTSudoku.m in Sources */,
@@ -1770,6 +1826,8 @@
 				9C29C87B261429E40098A923 /* TTTestLocalEventLibController.m in Sources */,
 				E956618F25C3DBFE002DFCCA /* TTTestThreadViewController.m in Sources */,
 				E960EDDA25BABBE000AFB3AB /* TTWaterView.m in Sources */,
+				9C4EBBC426BD0B4600B15C34 /* TTHomeMenuCell2.m in Sources */,
+				9C4EBBBA26BD081400B15C34 /* TTHomeMenuCell.m in Sources */,
 				9C7842A62670B9E9009D480A /* TTChainModel.m in Sources */,
 				9C540B9A25E8D02C00CF0074 /* TTTestAudioViewController.m in Sources */,
 				9CE6800B2636B272003CAC5D /* RYTAESEncryptor.m in Sources */,

@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KLUnSudoViewController : TTCollectionViewController
-
+@property (assign, nonatomic) NSInteger index;
 @end
 
 NS_ASSUME_NONNULL_END
