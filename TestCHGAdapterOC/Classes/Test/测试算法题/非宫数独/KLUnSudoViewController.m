@@ -188,9 +188,16 @@
             [self showError];
         }else {
             if ([self isSuccess]) {
-                // 完成
-                TTRotaryViewController *vc = [TTRotaryViewController new];
-                [self.navigationController pushViewController:vc animated:YES];
+                FSJAlertSheetView *alert = [[FSJAlertSheetView alloc] initWithTitle:@"提示" message:@"恭喜你获得一次抽奖活动" style:UIAlertControllerStyleAlert cancelButtonTitle:@"放弃" otherButtonTitles:@"去抽奖", nil];
+                [alert show:^(NSInteger index) {
+                    if (index == 1) {
+                        // 完成
+                        TTRotaryViewController *vc = [TTRotaryViewController new];
+                        [self.navigationController pushViewController:vc animated:YES];
+                    }else {
+                        [self.navigationController popViewControllerAnimated:YES];
+                    }
+                }];
             }else {
                 [self reloadData];
             }

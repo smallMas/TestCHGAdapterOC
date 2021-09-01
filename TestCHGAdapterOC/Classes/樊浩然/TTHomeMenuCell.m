@@ -25,7 +25,7 @@
         TTHomeMenuModel *model = self.model;
         CGFloat offset = FSJSCREENWIDTH/5;
         [obj mas_makeConstraints:^(MASConstraintMaker *make) {
-            if (model.type % 2 == 0) {
+            if (model.index % 2 == 0) {
                 kMakeLV(offset);
             }else {
                 kMakeRV(-offset);

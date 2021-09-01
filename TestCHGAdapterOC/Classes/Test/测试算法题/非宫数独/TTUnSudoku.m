@@ -78,6 +78,9 @@
     
     
     int count = (int)(self.factorial*self.factorial)/2;
+    if (self.factorial > 4) {
+        count += 2;
+    }
     [self digHole:count];
     [self printArray:self.holdArray];
     

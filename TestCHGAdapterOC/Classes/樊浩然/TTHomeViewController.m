@@ -9,6 +9,7 @@
 #import "TTHomeMenuModel.h"
 #import "KLUnSudoViewController.h"
 #import "TTRotaryViewController.h"
+#import "TTTetrisViewController.h"
 
 @interface TTHomeViewController ()
 @property (weak, nonatomic) UIImageView *bgView;
@@ -31,6 +32,10 @@
             // 幸运大转盘
             TTRotaryViewController *vc = [TTRotaryViewController new];
             [self.navigationController pushViewController:vc animated:YES];
+        }else if (model.type == 5) {
+            // 俄罗斯方块
+            TTTetrisViewController *vc = [TTTetrisViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
         }else {
             KLUnSudoViewController *vc = KLUnSudoViewController.new;
             vc.index = indexPath.row+3;
@@ -45,11 +50,20 @@
     [s.items addObject:[self creaetTitle:@"4X4" type:1 color:@"#B8860B"]];
     [s.items addObject:[self creaetTitle:@"5X5" type:2 color:@"#FF4500"]];
     [s.items addObject:[self creaetTitle:@"6X6" type:3 color:@"#00BFFF"]];
-    [s.items addObject:[self creaetTitle:@"幸运大转盘" type:4 color:nil]];
+//    [s.items addObject:[self creaetTitle:@"幸运大转盘" type:4 color:nil]];
+    [s.items addObject:[self creaetTitle:@"俄罗斯方块" type:5 color:nil]];
+    
+    [self handleItems:s.items];
     
     [self.datasources addObject:s];
     
     [self reloadData];
+}
+
+- (void)handleItems:(NSArray <TTHomeMenuModel *>*)items {
+    [items enumerateObjectsUsingBlock:^(TTHomeMenuModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.index = idx;
+    }];
 }
 
 - (void)reloadData {

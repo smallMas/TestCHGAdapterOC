@@ -19,7 +19,7 @@
 }
 
 - (NSString *)idf {
-    if (self.type % 2 == 0) {
+    if (self.index % 2 == 0) {
         return @"TTHomeMenuCell";
     }else {
         return @"TTHomeMenuCell2";

@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TTHomeMenuModel : TTHomeBaseModel
 @property (assign, nonatomic) NSInteger type;
+@property (assign, nonatomic) NSInteger index;
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) UIColor *bgColor;
 @end

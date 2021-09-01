@@ -77,6 +77,10 @@
 		9C7842A62670B9E9009D480A /* TTChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7842A52670B9E9009D480A /* TTChainModel.m */; };
 		9C7842AC2670BA5E009D480A /* TTChainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7842AB2670BA5E009D480A /* TTChainTableCell.m */; };
 		9C7842B22670C0A1009D480A /* TChainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7842B12670C0A1009D480A /* TChainHeaderView.m */; };
+		9C7A7F4926DE298B0041A604 /* TTTetrisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A7F4726DE298B0041A604 /* TTTetrisViewController.m */; };
+		9C7A7F5026DE2A300041A604 /* BasicSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A7F4F26DE2A300041A604 /* BasicSquare.m */; };
+		9C7A7F5326DE2AC20041A604 /* SquareGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A7F5226DE2AC20041A604 /* SquareGroup.m */; };
+		9C7A7F5626DF78150041A604 /* tetris_bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C7A7F5526DF78140041A604 /* tetris_bgm.mp3 */; };
 		9C8042B825F0BC1A000D911E /* TTTestWKShowPDFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8042B725F0BC1A000D911E /* TTTestWKShowPDFController.m */; };
 		9C80EBE9264683B10026D20B /* NSString+TTEncrypty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80EBE8264683B10026D20B /* NSString+TTEncrypty.m */; };
 		9C85CEE32609D30200258E1E /* TTTestStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C85CEE22609D30200258E1E /* TTTestStackViewController.m */; };
@@ -318,6 +322,13 @@
 		9C7842AB2670BA5E009D480A /* TTChainTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChainTableCell.m; sourceTree = "<group>"; };
 		9C7842B02670C0A1009D480A /* TChainHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TChainHeaderView.h; sourceTree = "<group>"; };
 		9C7842B12670C0A1009D480A /* TChainHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TChainHeaderView.m; sourceTree = "<group>"; };
+		9C7A7F4626DE298B0041A604 /* TTTetrisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTetrisViewController.h; sourceTree = "<group>"; };
+		9C7A7F4726DE298B0041A604 /* TTTetrisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTetrisViewController.m; sourceTree = "<group>"; };
+		9C7A7F4E26DE2A300041A604 /* BasicSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicSquare.h; sourceTree = "<group>"; };
+		9C7A7F4F26DE2A300041A604 /* BasicSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicSquare.m; sourceTree = "<group>"; };
+		9C7A7F5126DE2AC20041A604 /* SquareGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquareGroup.h; sourceTree = "<group>"; };
+		9C7A7F5226DE2AC20041A604 /* SquareGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquareGroup.m; sourceTree = "<group>"; };
+		9C7A7F5526DF78140041A604 /* tetris_bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tetris_bgm.mp3; sourceTree = "<group>"; };
 		9C8042B625F0BC1A000D911E /* TTTestWKShowPDFController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestWKShowPDFController.h; sourceTree = "<group>"; };
 		9C8042B725F0BC1A000D911E /* TTTestWKShowPDFController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestWKShowPDFController.m; sourceTree = "<group>"; };
 		9C80EBE7264683B10026D20B /* NSString+TTEncrypty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TTEncrypty.h"; sourceTree = "<group>"; };
@@ -627,6 +638,7 @@
 		9C4EBBAB26BCE07000B15C34 /* 樊浩然 */ = {
 			isa = PBXGroup;
 			children = (
+				9C7A7F4226DE27E50041A604 /* 俄罗斯方块 */,
 				9C4EBBAC26BCE59D00B15C34 /* TTHomeViewController.h */,
 				9C4EBBAD26BCE59D00B15C34 /* TTHomeViewController.m */,
 				9C4EBBAF26BD01CB00B15C34 /* TTHomeMenuModel.h */,
@@ -788,6 +800,27 @@
 				9C2A4179267353E000DBAF8B /* TTChainCollectionHeaderView.m */,
 			);
 			path = "测试";
+			sourceTree = "<group>";
+		};
+		9C7A7F4226DE27E50041A604 /* 俄罗斯方块 */ = {
+			isa = PBXGroup;
+			children = (
+				9C7A7F4626DE298B0041A604 /* TTTetrisViewController.h */,
+				9C7A7F4726DE298B0041A604 /* TTTetrisViewController.m */,
+				9C7A7F4E26DE2A300041A604 /* BasicSquare.h */,
+				9C7A7F4F26DE2A300041A604 /* BasicSquare.m */,
+				9C7A7F5126DE2AC20041A604 /* SquareGroup.h */,
+				9C7A7F5226DE2AC20041A604 /* SquareGroup.m */,
+			);
+			path = "俄罗斯方块";
+			sourceTree = "<group>";
+		};
+		9C7A7F5426DF77E40041A604 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C7A7F5526DF78140041A604 /* tetris_bgm.mp3 */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		9C8042B525F0BBEF000D911E /* 测试WK加载PDF */ = {
@@ -1249,6 +1282,7 @@
 				E9A3444B25B7D7EE003EB215 /* SceneDelegate.h */,
 				E9A3444C25B7D7EE003EB215 /* SceneDelegate.m */,
 				E9A3444E25B7D7EE003EB215 /* ViewController.h */,
+				9C7A7F5426DF77E40041A604 /* Sources */,
 				E9A3444F25B7D7EE003EB215 /* ViewController.m */,
 				E9A3445125B7D7EE003EB215 /* Main.storyboard */,
 				E9A3445725B7D7F0003EB215 /* Assets.xcassets */,
@@ -1565,6 +1599,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C7A7F5626DF78150041A604 /* tetris_bgm.mp3 in Resources */,
 				E9A3445B25B7D7F0003EB215 /* LaunchScreen.storyboard in Resources */,
 				9C6374DC25D250EF0078F146 /* TTKLViewController.xib in Resources */,
 				E9A3445825B7D7F0003EB215 /* Assets.xcassets in Resources */,
@@ -1705,6 +1740,7 @@
 				E9A3445025B7D7EE003EB215 /* ViewController.m in Sources */,
 				9C29C8FB261450590098A923 /* TTWeakProxy.m in Sources */,
 				E960EDBD25BA976D00AFB3AB /* TTAnimationTableViewCell.m in Sources */,
+				9C7A7F5326DE2AC20041A604 /* SquareGroup.m in Sources */,
 				E9A344D525B7DE5B003EB215 /* TTViewControllerA.m in Sources */,
 				E956611E25C142DF002DFCCA /* TTExerciseModel.m in Sources */,
 				9C5176E525C69D1300B0526D /* TTNewReceiver.m in Sources */,
@@ -1803,12 +1839,14 @@
 				9C2A417A267353E000DBAF8B /* TTChainCollectionHeaderView.m in Sources */,
 				9C60566D263AC28A005F8D8B /* TTTestRSAController.m in Sources */,
 				9C29C97D261461E20098A923 /* TTTestToController.m in Sources */,
+				9C7A7F5026DE2A300041A604 /* BasicSquare.m in Sources */,
 				E95660FB25C131E8002DFCCA /* NSString+TT.m in Sources */,
 				9C5A4CEF2603001A00784145 /* KLLiveGradientView.m in Sources */,
 				9C85CEE32609D30200258E1E /* TTTestStackViewController.m in Sources */,
 				9C7842B22670C0A1009D480A /* TChainHeaderView.m in Sources */,
 				9C4EBBC126BD0B1200B15C34 /* TTMainSectionModel.m in Sources */,
 				9C66E6CF25F349A200F4496A /* UITextView+TT.m in Sources */,
+				9C7A7F4926DE298B0041A604 /* TTTetrisViewController.m in Sources */,
 				9C5A4CD12602F4DC00784145 /* TTTestSafeViewController.m in Sources */,
 				9C5176D425C685B300B0526D /* TTCallFunViewController.m in Sources */,
 				9C55F18A2604A23600184129 /* TTWCDBDataTableCell.m in Sources */,

@@ -46,17 +46,20 @@
 }
 
 - (void)showAlertResult:(TTTurnItemModel *)result {
+    FSJ_WEAK_SELF
     if (result.type == TTTurnTypeNormal) {
         FSJAlertSheetView *alert = [[FSJAlertSheetView alloc] initWithTitle:result.title message:nil style:UIAlertControllerStyleAlert cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show:^(NSInteger index) {
-                    
+            FSJ_STRONG_SELF
+            [self.navigationController popToRootViewControllerAnimated:YES];
         }];
     }else {
         NSString *title = kStringFormat(@"恭喜你中奖了");
         NSString *msg = result.title;
         FSJAlertSheetView *alert = [[FSJAlertSheetView alloc] initWithTitle:title message:msg style:UIAlertControllerStyleAlert cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show:^(NSInteger index) {
-                    
+            FSJ_STRONG_SELF
+            [self.navigationController popToRootViewControllerAnimated:YES];
         }];
     }
 }

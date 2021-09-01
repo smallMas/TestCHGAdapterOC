@@ -38,7 +38,6 @@
 }
 
 - (CGSize)chg_collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"self.layout.itemSize >>> %@",NSStringFromCGSize(self.layout.itemSize));
     return self.layout.itemSize;
 }
 

@@ -18,7 +18,6 @@ typedef void(^ TTUnSudokuArrayBlock) (NSArray *array);
 
 - (void)randomDataBlock:(TTUnSudokuArrayBlock)block;
 
-//- (BOOL)
 
 @end
 
