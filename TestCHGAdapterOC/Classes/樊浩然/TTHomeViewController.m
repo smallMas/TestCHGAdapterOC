@@ -71,8 +71,23 @@
     self.collectionView.cellDatas = self.datasources;
     self.collectionView.headerDatas = self.datasources;
     [self.collectionView reloadData];
+    
+    [self.collectionView layoutIfNeeded];
+    [self animateCollection];
 }
 
+- (void)animateCollection{
+    NSArray *cells = self.collectionView.visibleCells;
+    CGFloat collectionHeight = self.collectionView.bounds.size.height;
+    for (UICollectionViewCell *cell in cells.objectEnumerator) {
+        cell.alpha = 1.0f;
+        cell.transform = CGAffineTransformMakeTranslation(0, collectionHeight);
+        NSUInteger index = [cells indexOfObject:cell];
+        [UIView animateWithDuration:0.7f delay:0.05*index usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+            cell.transform =  CGAffineTransformMakeTranslation(0, 0);
+        } completion:nil];
+    }
+}
 - (TTHomeMenuModel *)creaetTitle:(NSString *)title type:(NSInteger)type color:(NSString *)color {
     TTHomeMenuModel *model = TTHomeMenuModel.new;
     model.title = title;
