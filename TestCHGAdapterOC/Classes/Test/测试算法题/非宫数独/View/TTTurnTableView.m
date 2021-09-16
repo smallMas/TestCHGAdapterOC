@@ -103,7 +103,7 @@
 - (NSArray *)numberArray {
     if (!_numberArray) {
         _numberArray = @[
-            [self createTitle:@"1个梨" type:TTTurnType1],
+            [self createTitle:@"1个水果" type:TTTurnType1],
             [self createTitle:@"1个贴纸" type:TTTurnType1],
             [self createTitle:@"谢谢惠顾" type:TTTurnTypeNormal],
             [self createTitle:@"1级动画片" type:TTTurnType3],

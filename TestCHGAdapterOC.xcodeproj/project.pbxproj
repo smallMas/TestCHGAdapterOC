@@ -56,6 +56,9 @@
 		9C5176EC25C79B8800B0526D /* TTKindMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176EB25C79B8800B0526D /* TTKindMemberViewController.m */; };
 		9C5176EF25C79BC200B0526D /* TTSark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176EE25C79BC200B0526D /* TTSark.m */; };
 		9C5176F325C8E81E00B0526D /* TTOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5176F225C8E81E00B0526D /* TTOtherViewController.m */; };
+		9C53065A26E0B7C40034B433 /* TTChangedMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C53065926E0B7C40034B433 /* TTChangedMethodController.m */; };
+		9C53065D26E0B8150034B433 /* TTFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C53065C26E0B8150034B433 /* TTFather.m */; };
+		9C53066026E0B83B0034B433 /* TTSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C53065F26E0B83B0034B433 /* TTSon.m */; };
 		9C540B8E25E8BC8600CF0074 /* DNVideoPlayHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C540B8C25E8BC8600CF0074 /* DNVideoPlayHandle.m */; };
 		9C540B9A25E8D02C00CF0074 /* TTTestAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C540B9925E8D02C00CF0074 /* TTTestAudioViewController.m */; };
 		9C55F13026047D9300184129 /* TTTestWCDBDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C55F12F26047D9300184129 /* TTTestWCDBDataController.m */; };
@@ -280,6 +283,12 @@
 		9C5176EE25C79BC200B0526D /* TTSark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSark.m; sourceTree = "<group>"; };
 		9C5176F125C8E81E00B0526D /* TTOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTOtherViewController.h; sourceTree = "<group>"; };
 		9C5176F225C8E81E00B0526D /* TTOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTOtherViewController.m; sourceTree = "<group>"; };
+		9C53065826E0B7C40034B433 /* TTChangedMethodController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTChangedMethodController.h; sourceTree = "<group>"; };
+		9C53065926E0B7C40034B433 /* TTChangedMethodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChangedMethodController.m; sourceTree = "<group>"; };
+		9C53065B26E0B8150034B433 /* TTFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTFather.h; sourceTree = "<group>"; };
+		9C53065C26E0B8150034B433 /* TTFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTFather.m; sourceTree = "<group>"; };
+		9C53065E26E0B83B0034B433 /* TTSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSon.h; sourceTree = "<group>"; };
+		9C53065F26E0B83B0034B433 /* TTSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSon.m; sourceTree = "<group>"; };
 		9C540B8C25E8BC8600CF0074 /* DNVideoPlayHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNVideoPlayHandle.m; sourceTree = "<group>"; };
 		9C540B8D25E8BC8600CF0074 /* DNVideoPlayHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNVideoPlayHandle.h; sourceTree = "<group>"; };
 		9C540B9825E8D02C00CF0074 /* TTTestAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestAudioViewController.h; sourceTree = "<group>"; };
@@ -353,6 +362,7 @@
 		9C99AECC26BBD36C00B3C509 /* TTRotaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRotaryViewController.m; sourceTree = "<group>"; };
 		9C99AECF26BBE6A900B3C509 /* TTTurnTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTurnTableView.h; sourceTree = "<group>"; };
 		9C99AED026BBE6A900B3C509 /* TTTurnTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTurnTableView.m; sourceTree = "<group>"; };
+		9CB19CC726E5AE8900C0993F /* TestCHGAdapterOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestCHGAdapterOC.entitlements; sourceTree = "<group>"; };
 		9CB8647425E74B4000904C82 /* DNPlayerNetworkErrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayerNetworkErrView.h; sourceTree = "<group>"; };
 		9CB8647525E74B4000904C82 /* DNPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPlayer.h; sourceTree = "<group>"; };
 		9CB8647625E74B4000904C82 /* DNPlayerNetworkErrView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPlayerNetworkErrView.m; sourceTree = "<group>"; };
@@ -723,6 +733,19 @@
 				9C66E6D425F349B200F4496A /* TTObject.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		9C53065726E0B79E0034B433 /* 测试方法替换 */ = {
+			isa = PBXGroup;
+			children = (
+				9C53065826E0B7C40034B433 /* TTChangedMethodController.h */,
+				9C53065926E0B7C40034B433 /* TTChangedMethodController.m */,
+				9C53065B26E0B8150034B433 /* TTFather.h */,
+				9C53065C26E0B8150034B433 /* TTFather.m */,
+				9C53065E26E0B83B0034B433 /* TTSon.h */,
+				9C53065F26E0B83B0034B433 /* TTSon.m */,
+			);
+			path = "测试方法替换";
 			sourceTree = "<group>";
 		};
 		9C540B9725E8D00D00CF0074 /* 测试音频播放 */ = {
@@ -1275,6 +1298,7 @@
 		E9A3444725B7D7EE003EB215 /* TestCHGAdapterOC */ = {
 			isa = PBXGroup;
 			children = (
+				9CB19CC726E5AE8900C0993F /* TestCHGAdapterOC.entitlements */,
 				E95660F725C131C6002DFCCA /* Public */,
 				E9A3449725B7D961003EB215 /* Classes */,
 				E9A3444825B7D7EE003EB215 /* AppDelegate.h */,
@@ -1383,6 +1407,7 @@
 		E9A344D125B7DE35003EB215 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9C53065726E0B79E0034B433 /* 测试方法替换 */,
 				9C50F8C22684229F0066AF0C /* 测试load优先级 */,
 				9C8DB59026803AD500A51ECB /* 测试表格显示 */,
 				9C78427D2670B773009D480A /* 测试Block */,
@@ -1738,6 +1763,7 @@
 				E956614025C27F67002DFCCA /* TTGongModel.m in Sources */,
 				E9A3445E25B7D7F0003EB215 /* main.m in Sources */,
 				E9A3445025B7D7EE003EB215 /* ViewController.m in Sources */,
+				9C53065A26E0B7C40034B433 /* TTChangedMethodController.m in Sources */,
 				9C29C8FB261450590098A923 /* TTWeakProxy.m in Sources */,
 				E960EDBD25BA976D00AFB3AB /* TTAnimationTableViewCell.m in Sources */,
 				9C7A7F5326DE2AC20041A604 /* SquareGroup.m in Sources */,
@@ -1787,6 +1813,7 @@
 				9C4EBBC726BD0CDD00B15C34 /* UIView+TT.m in Sources */,
 				E956618825C3B151002DFCCA /* TTTestCopyViewController.m in Sources */,
 				E9A344A225B7D9A4003EB215 /* TTTableViewController.m in Sources */,
+				9C53065D26E0B8150034B433 /* TTFather.m in Sources */,
 				9C4EBBC026BD0B1200B15C34 /* TTHomeBaseModel.m in Sources */,
 				9C50F8CB268422DC0066AF0C /* TTLoad.m in Sources */,
 				9C8DB5AB268060A400A51ECB /* TTFormScrollView.m in Sources */,
@@ -1835,6 +1862,7 @@
 				9C99AECA26BBCFF800B3C509 /* TTErrorView.m in Sources */,
 				E956617B25C3A428002DFCCA /* TTTestKVCViewController.m in Sources */,
 				E956613325C254DF002DFCCA /* TTSudoKuViewController.m in Sources */,
+				9C53066026E0B83B0034B433 /* TTSon.m in Sources */,
 				9C55F1752604981300184129 /* TTWCDBService.mm in Sources */,
 				9C2A417A267353E000DBAF8B /* TTChainCollectionHeaderView.m in Sources */,
 				9C60566D263AC28A005F8D8B /* TTTestRSAController.m in Sources */,
@@ -2048,6 +2076,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestCHGAdapterOC/TestCHGAdapterOC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66V5PFWDR7;
 				ENABLE_BITCODE = NO;
@@ -2069,6 +2098,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestCHGAdapterOC/TestCHGAdapterOC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66V5PFWDR7;
 				ENABLE_BITCODE = NO;

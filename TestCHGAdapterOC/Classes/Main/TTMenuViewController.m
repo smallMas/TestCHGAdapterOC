@@ -215,6 +215,7 @@ typedef NS_ENUM(NSInteger, TTMenuType) {
             [TTMenuModel createT:@"测试Block及链式编程" type:TTMenuTypeBlock],
             [TTMenuModel createT:@"测试表格样式显示" toCS:@"TTTestFormViewController"],
             [TTMenuModel createT:@"测试load优先级" toCS:@"TTTestLoadController"],
+            [TTMenuModel createT:@"测试方法交换" toCS:@"TTChangedMethodController"]
         ];
     }
 }

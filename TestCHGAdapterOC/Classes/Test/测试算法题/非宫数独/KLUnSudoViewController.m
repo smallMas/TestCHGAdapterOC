@@ -187,6 +187,7 @@
         if (![self judgeIsCorrect]) {
             [self showError];
         }else {
+            [self reloadData];
             if ([self isSuccess]) {
                 FSJAlertSheetView *alert = [[FSJAlertSheetView alloc] initWithTitle:@"提示" message:@"恭喜你获得一次抽奖活动" style:UIAlertControllerStyleAlert cancelButtonTitle:@"放弃" otherButtonTitles:@"去抽奖", nil];
                 [alert show:^(NSInteger index) {
@@ -198,8 +199,6 @@
                         [self.navigationController popViewControllerAnimated:YES];
                     }
                 }];
-            }else {
-                [self reloadData];
             }
         }
     }
